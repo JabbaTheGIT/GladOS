@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GladOS.Droid.GladOS.Droid" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="GladOS.Droid" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <activity android:icon="@mipmap/icon" android:label="GladOS.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="FifthViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.MeetingView" />
+    <activity android:label="FirstViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.FirstView" />
+    <activity android:label="SecondViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SecondView" />
+    <activity android:label="FourthViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.FourthView" />
+    <activity android:label="ThirdViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ThirdView" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="GladOS.Droid.GladOS.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.GladOS.Droid.GladOS.Droid" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

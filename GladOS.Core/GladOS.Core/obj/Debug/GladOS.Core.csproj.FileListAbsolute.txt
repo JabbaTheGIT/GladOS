@@ -1,0 +1,14 @@
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.pdb
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\MvvmCross.Binding.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\MvvmCross.Core.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\MvvmCross.Localization.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\MvvmCross.Platform.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.pdb
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\Mono.Android.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\Mono.Android.xml
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll.mdb
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.dll.mdb
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll.mdb
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.dll.mdb

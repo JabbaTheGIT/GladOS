@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="40dp"
+      android:text="Add a meeting to the calendar"/>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:text="Meeting Date: "/>
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:hint="dd/mm/yyyy"/>
+  </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:text="Meeting Start Time: "/>
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:hint="hh:mm"/>
+  </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:text="Meeting End Time: "/>
+    <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      android:hint="hh:mm"/>
+  </LinearLayout>
+  <Button
+      android:text="Save Meeting"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+</LinearLayout>
