@@ -115,9 +115,10 @@ containing a value of this type.
         public static final int fourthview=0x7f040001;
         public static final int item_person=0x7f040002;
         public static final int meetingview=0x7f040003;
-        public static final int secondview=0x7f040004;
-        public static final int splashscreen=0x7f040005;
-        public static final int thirdview=0x7f040006;
+        public static final int officeview=0x7f040004;
+        public static final int secondview=0x7f040005;
+        public static final int splashscreen=0x7f040006;
+        public static final int thirdview=0x7f040007;
     }
     public static final class mipmap {
         public static final int icon=0x7f030000;

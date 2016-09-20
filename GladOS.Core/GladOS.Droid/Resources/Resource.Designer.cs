@@ -245,13 +245,16 @@ namespace GladOS.Droid
 			public const int MeetingView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int SecondView = 2130968580;
+			public const int OfficeView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int SplashScreen = 2130968581;
+			public const int SecondView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int ThirdView = 2130968582;
+			public const int SplashScreen = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int ThirdView = 2130968583;
 			
 			static Layout()
 			{
