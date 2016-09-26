@@ -3,7 +3,7 @@
 
 namespace GladOS.Core.Services
 {
-    public class PersonServices : Person
+    public class PersonServices : IPersonServices
     {
 
         public Person CreatePerson()
