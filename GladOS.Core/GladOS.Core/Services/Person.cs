@@ -8,14 +8,15 @@ namespace GladOS.Core.Models
 {
     public class Person
     {
+        //All the personal infomation about the person using the service
         public string Name { get; set; }
         public string Number { get; set; }
         public string Photo { get; set; }
         public string Employer { get; set; }
         public string Email { get; set; }
-        public bool NFC { get; set; }
-        public bool GPS { get; set; }
-        public bool WiFi { get; set; }
+        public bool Nfc { get; set; }
+        public bool Gps { get; set; }
+        public bool Wifi { get; set; }
         public bool Bluetooth { get; set; }
     }
 
