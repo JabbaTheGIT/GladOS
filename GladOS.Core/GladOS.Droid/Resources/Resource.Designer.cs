@@ -47,6 +47,8 @@ namespace GladOS.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::GladOS.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::GladOS.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::GladOS.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::GladOS.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::GladOS.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -159,65 +161,50 @@ namespace GladOS.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MvvmCrossTagId = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int MvvmCrossTagId = 2131099648;
 			
-			// aapt resource value: 0x7f050001
-			public const int MvxBindingTagUnique = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int MvxBindingTagUnique = 2131099649;
 			
-			// aapt resource value: 0x7f050013
-			public const int buttonSave = 2131034131;
+			// aapt resource value: 0x7f06000e
+			public const int checkBoxBluetooth = 2131099662;
 			
-			// aapt resource value: 0x7f050012
-			public const int checkBoxBluetooth = 2131034130;
+			// aapt resource value: 0x7f06000d
+			public const int checkBoxGPS = 2131099661;
 			
-			// aapt resource value: 0x7f050011
-			public const int checkBoxGPS = 2131034129;
+			// aapt resource value: 0x7f06000b
+			public const int checkBoxNFC = 2131099659;
 			
-			// aapt resource value: 0x7f05000f
-			public const int checkBoxNFC = 2131034127;
+			// aapt resource value: 0x7f06000c
+			public const int checkBoxWifi = 2131099660;
 			
-			// aapt resource value: 0x7f050010
-			public const int checkBoxWifi = 2131034128;
+			// aapt resource value: 0x7f060002
+			public const int gridLayout1 = 2131099650;
 			
-			// aapt resource value: 0x7f050007
-			public const int editTextEmail = 2131034119;
+			// aapt resource value: 0x7f060003
+			public const int imageViewDP = 2131099651;
 			
-			// aapt resource value: 0x7f050005
-			public const int editTextEmployer = 2131034117;
+			// aapt resource value: 0x7f060005
+			public const int imageViewFbIcon = 2131099653;
 			
-			// aapt resource value: 0x7f050004
-			public const int editTextName = 2131034116;
+			// aapt resource value: 0x7f060007
+			public const int imageViewGitIcon = 2131099655;
 			
-			// aapt resource value: 0x7f05000d
-			public const int editTextPhone = 2131034125;
+			// aapt resource value: 0x7f060006
+			public const int imageViewLinkedIcon = 2131099654;
 			
-			// aapt resource value: 0x7f050002
-			public const int gridLayout1 = 2131034114;
+			// aapt resource value: 0x7f060008
+			public const int imageViewSchedule = 2131099656;
 			
-			// aapt resource value: 0x7f050003
-			public const int imageViewDP = 2131034115;
+			// aapt resource value: 0x7f060004
+			public const int textViewEmail = 2131099652;
 			
-			// aapt resource value: 0x7f050008
-			public const int imageViewFbIcon = 2131034120;
+			// aapt resource value: 0x7f06000a
+			public const int textViewLocate = 2131099658;
 			
-			// aapt resource value: 0x7f05000a
-			public const int imageViewGitIcon = 2131034122;
-			
-			// aapt resource value: 0x7f050009
-			public const int imageViewLinkedIcon = 2131034121;
-			
-			// aapt resource value: 0x7f05000b
-			public const int imageViewSchedule = 2131034123;
-			
-			// aapt resource value: 0x7f050006
-			public const int textViewEmail = 2131034118;
-			
-			// aapt resource value: 0x7f05000e
-			public const int textViewLocate = 2131034126;
-			
-			// aapt resource value: 0x7f05000c
-			public const int textViewPhone = 2131034124;
+			// aapt resource value: 0x7f060009
+			public const int textViewPhone = 2131099657;
 			
 			static Id()
 			{
@@ -285,11 +272,11 @@ namespace GladOS.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int ApplicationName = 2131165185;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f070000
-			public const int Hello = 2131165184;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
@@ -304,8 +291,8 @@ namespace GladOS.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int Theme_Splash = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int Theme_Splash = 2131165184;
 			
 			static Style()
 			{

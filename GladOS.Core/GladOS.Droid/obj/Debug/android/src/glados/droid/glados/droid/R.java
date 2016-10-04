@@ -89,26 +89,21 @@ containing a value of this type.
         public static final int steve=0x7f020013;
     }
     public static final class id {
-        public static final int MvvmCrossTagId=0x7f050000;
-        public static final int MvxBindingTagUnique=0x7f050001;
-        public static final int buttonSave=0x7f050013;
-        public static final int checkBoxBluetooth=0x7f050012;
-        public static final int checkBoxGPS=0x7f050011;
-        public static final int checkBoxNFC=0x7f05000f;
-        public static final int checkBoxWifi=0x7f050010;
-        public static final int editTextEmail=0x7f050007;
-        public static final int editTextEmployer=0x7f050005;
-        public static final int editTextName=0x7f050004;
-        public static final int editTextPhone=0x7f05000d;
-        public static final int gridLayout1=0x7f050002;
-        public static final int imageViewDP=0x7f050003;
-        public static final int imageViewFbIcon=0x7f050008;
-        public static final int imageViewGitIcon=0x7f05000a;
-        public static final int imageViewLinkedIcon=0x7f050009;
-        public static final int imageViewSchedule=0x7f05000b;
-        public static final int textViewEmail=0x7f050006;
-        public static final int textViewLocate=0x7f05000e;
-        public static final int textViewPhone=0x7f05000c;
+        public static final int MvvmCrossTagId=0x7f060000;
+        public static final int MvxBindingTagUnique=0x7f060001;
+        public static final int checkBoxBluetooth=0x7f06000e;
+        public static final int checkBoxGPS=0x7f06000d;
+        public static final int checkBoxNFC=0x7f06000b;
+        public static final int checkBoxWifi=0x7f06000c;
+        public static final int gridLayout1=0x7f060002;
+        public static final int imageViewDP=0x7f060003;
+        public static final int imageViewFbIcon=0x7f060005;
+        public static final int imageViewGitIcon=0x7f060007;
+        public static final int imageViewLinkedIcon=0x7f060006;
+        public static final int imageViewSchedule=0x7f060008;
+        public static final int textViewEmail=0x7f060004;
+        public static final int textViewLocate=0x7f06000a;
+        public static final int textViewPhone=0x7f060009;
     }
     public static final class layout {
         public static final int firstview=0x7f040000;
@@ -124,11 +119,11 @@ containing a value of this type.
         public static final int icon=0x7f030000;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f070001;
-        public static final int Hello=0x7f070000;
+        public static final int ApplicationName=0x7f050001;
+        public static final int Hello=0x7f050000;
     }
     public static final class style {
-        public static final int Theme_Splash=0x7f060000;
+        public static final int Theme_Splash=0x7f070000;
     }
     public static final class styleable {
         /** Attributes that can be used with a MvxBinding.

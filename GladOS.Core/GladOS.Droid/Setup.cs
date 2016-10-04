@@ -2,6 +2,9 @@ using Android.Content;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
+using MvvmCross.Platform;
+using GladOS.Droid.Database;
+using GladOS.Core.Interfaces;
 
 namespace GladOS.Droid
 {
@@ -20,5 +23,11 @@ namespace GladOS.Droid
         {
             return new DebugTrace();
         }
+
+        protected override void InitializeFirstChance()
+        {
+            Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
+            base.InitializeFirstChance();
+        } 
     }
 }
