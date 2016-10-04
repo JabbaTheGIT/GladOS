@@ -13,7 +13,7 @@ namespace GladOS.Core.ViewModels
 {
     public class SecondViewModel : MvxViewModel
     {
-        private readonly PersonInfoDatabase personDb;
+        private readonly IPersonInfoDatabase personDb;
         private readonly IDialogService dialog;
 
         public string Name { get; set; }

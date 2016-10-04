@@ -35,11 +35,11 @@ namespace GladOS.Core.ViewModels
 
             //Create people
             var newList = new List<Person>();
-            PersonServices personServices = new PersonServices();
+            PersonProperties personProperties = new PersonProperties();
             for (var i = 0; i < 22; i++)
             {
                 Person newPerson = new Person();
-                newPerson = personServices.CreatePerson(personNames[i], personNumber[i], personImages[i], "Telstra", personEmail[i]);
+                newPerson = personProperties.CreatePerson(personNames[i], personNumber[i], personImages[i], "Telstra", personEmail[i]);
                 newList.Add(newPerson);
             }
 

@@ -11,7 +11,7 @@ namespace GladOS.Droid.Views
         {
             base.OnCreate(bundle);
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.SecondView);
         }
     }
 }

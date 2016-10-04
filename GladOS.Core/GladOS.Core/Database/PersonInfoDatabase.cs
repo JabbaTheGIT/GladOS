@@ -10,7 +10,7 @@ using GladOS.Core.Models;
 
 namespace GladOS.Core.Database
 {
-    public class PersonInfoDatabase
+    public class PersonInfoDatabase : IPersonInfoDatabase
     {
 
         private SQLiteConnection database;
