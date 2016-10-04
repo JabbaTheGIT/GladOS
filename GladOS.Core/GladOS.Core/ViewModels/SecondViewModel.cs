@@ -50,12 +50,17 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<ThirdViewModel>();
             });
 
-            AddNewPerson = new MvxCommand<Person>(personInfo =>
+            AddNewPerson = new MvxCommand(() =>
             {
+                Person personInfo = new Person();
+                personInfo.Name = Name;
+                personInfo.Number = Number;
+                personInfo.Email = Email;
+                personInfo.Employer = Employer;
                 SelectedPerson(personInfo);
             });
 
-        }
+        }//End SecondViewModel
 
         public void ClearEntires()
         {
@@ -63,7 +68,7 @@ namespace GladOS.Core.ViewModels
             this.Number = "";
             this.Email = "";
             this.Employer = "";
-        }
+        } //End ClearEntries
 
         public async void SelectedPerson(Person selectedPerson)
         {
@@ -83,6 +88,7 @@ namespace GladOS.Core.ViewModels
                     Close(this);
                 }
             }
-        }
+        } //End SelectedPerson
+
     }
 }

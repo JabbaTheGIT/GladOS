@@ -5,15 +5,16 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Linq;
+using GladOS.Core.Interfaces;
 
 namespace GladOS.Core.ViewModels
 {
     public class ThirdViewModel : MvxViewModel
     {
 
-        public ThirdViewModel()
+        public ThirdViewModel(IPersonInfoDatabase personDb)
         {
-            
+            this.personDb = personDb;
             //Nav buttons
             HomePressed = new MvxCommand(() =>
             {
@@ -31,31 +32,39 @@ namespace GladOS.Core.ViewModels
             });
 
             SelectedPerson = new MvxCommand<Person>(selectedPerson => 
-                                            base.ShowViewModel<FourthViewModel>(selectedPerson));
+                             base.ShowViewModel<FourthViewModel>(selectedPerson));
 
-            //Create people
-            var newList = new List<Person>();
-            PersonProperties personProperties = new PersonProperties();
-            for (var i = 0; i < 22; i++)
-            {
-                Person newPerson = new Person();
-                newPerson = personProperties.CreatePerson(personNames[i], personNumber[i], personImages[i], "Telstra", personEmail[i]);
-                newList.Add(newPerson);
-            }
-
-            Persons = newList;
-        }
+            GetPeople(personDb);
+            
+        }//EndThirdViewModel
 
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
         public ICommand SelectedPerson { get; private set; }
 
+        private readonly IPersonInfoDatabase personDb;
+
         private List<Person> persons;
         public List<Person> Persons
         {
             get { return persons; }
             set { persons = value; RaisePropertyChanged(() => Persons); }
+        }
+
+        public async void GetPeople(IPersonInfoDatabase personDb)
+        {
+            var newList = new List<Person>();
+            PersonProperties personProperties = new PersonProperties();
+            var personInfo = await personDb.GetPersons();
+            foreach (var person in personInfo)
+            {
+                Person newPerson = new Person();
+                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", "Telstra", person.Email);
+                newList.Add(newPerson);
+            }
+
+            Persons = newList;
         }
 
         // references to our images
