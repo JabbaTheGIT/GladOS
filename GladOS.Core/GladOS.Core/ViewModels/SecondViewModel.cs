@@ -30,7 +30,7 @@ namespace GladOS.Core.ViewModels
         public ICommand AddNewPerson { get; private set; }
 
 
-        public SecondViewModel(IDialogService dialog, PersonInfoDatabase personDb)
+        public SecondViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
         {
             this.personDb = personDb;
             this.dialog = dialog;

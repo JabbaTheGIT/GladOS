@@ -75,7 +75,6 @@ C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\GladOS.Core.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\GladOS.Droid.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
-C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\MvvmCross.Binding.dll.mdb
