@@ -55,6 +55,9 @@ C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\uploadflags.txt
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\fourthview.xml
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\meetingview.xml
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\officeview.xml
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\SQLite.Net.dll
+C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Droid.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Core.dll.mdb
 C:\Users\Will\Desktop\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Java.Interop.dll.mdb

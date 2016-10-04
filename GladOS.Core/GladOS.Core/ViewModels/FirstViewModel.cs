@@ -41,6 +41,7 @@ namespace GladOS.Core.ViewModels
         public ICommand BusyPressed { get; private set; }
         public ICommand FreeTimePressed { get; private set; }
         public ICommand Calendar { get; private set; }
+
         public FirstViewModel()
         {
             HomePressed = new MvxCommand(() =>
@@ -70,7 +71,7 @@ namespace GladOS.Core.ViewModels
 
             OfficeHoursPressed = new MvxCommand(() =>
             {
-                Update = "Show your office hours";
+                base.ShowViewModel<OfficeViewModel>();
             });
 
             BusyPressed = new MvxCommand(() =>

@@ -4,7 +4,7 @@ using MvvmCross.Droid.Views;
 
 namespace GladOS.Droid.Views
 {
-    [Activity(Label = "FifthViewModel")]
+    [Activity(Label = "MeetingViewModel")]
     public class MeetingView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
