@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--William Gwilt n9425438
-    NSC Industries prject GladOS-->
+    NSC Industries project GladOS-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"

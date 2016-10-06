@@ -22,10 +22,12 @@
     </activity>
     <activity android:label="OfficeViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.OfficeView" />
     <activity android:label="MeetingViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.MeetingView" />
-    <activity android:label="FirstViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.FirstView" />
-    <activity android:label="SecondViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SecondView" />
-    <activity android:label="FourthViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.FourthView" />
-    <activity android:label="ThirdViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ThirdView" />
+    <activity android:label="ScheduleViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView" />
+    <activity android:label="HomeViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.HomeView" />
+    <activity android:label="SelectedIndividualViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView" />
+    <activity android:label="SearchViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SearchView" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.WebAuthenticatorActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="GladOS.Droid.GladOS.Droid.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

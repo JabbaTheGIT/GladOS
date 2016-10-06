@@ -44,12 +44,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="Meeting Date: " />
     <DatePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:datePickerMode="spinner" />
   </LinearLayout>
   <LinearLayout
       android:orientation="horizontal"
@@ -58,12 +58,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="Meeting Start Time: " />
     <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:timePickerMode="spinner" />
   </LinearLayout>
   <LinearLayout
       android:orientation="horizontal"
@@ -72,12 +72,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:text="Meeting End Time: " />
     <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:timePickerMode="spinner" />
   </LinearLayout>
   <Button
       android:text="Save Meeting"

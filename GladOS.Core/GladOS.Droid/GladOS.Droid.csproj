@@ -169,29 +169,29 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\OfficeView.cs" />
     <Compile Include="Views\MeetingView.cs" />
-    <Compile Include="Views\FirstView.cs" />
-    <Compile Include="Views\SecondView.cs" />
-    <Compile Include="Views\FourthView.cs" />
-    <Compile Include="Views\ThirdView.cs" />
+    <Compile Include="Views\ScheduleView.cs" />
+    <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\SelectedIndividualView.cs" />
+    <Compile Include="Views\SearchView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\FirstView.axml">
+    <AndroidResource Include="Resources\layout\ScheduleView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SecondView.axml">
+    <AndroidResource Include="Resources\layout\HomeView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ThirdView.axml">
+    <AndroidResource Include="Resources\layout\SearchView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\item_person.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\FourthView.axml">
+    <AndroidResource Include="Resources\layout\SelectedIndividualView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MeetingView.axml">

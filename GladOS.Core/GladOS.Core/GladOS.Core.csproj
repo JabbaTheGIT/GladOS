@@ -51,10 +51,10 @@
     <Compile Include="Models\PersonProperties.cs" />
     <Compile Include="ViewModels\OfficeViewModel.cs" />
     <Compile Include="ViewModels\MeetingViewModel.cs" />
-    <Compile Include="ViewModels\FirstViewModel.cs" />
-    <Compile Include="ViewModels\SecondViewModel.cs" />
-    <Compile Include="ViewModels\FourthViewModel.cs" />
-    <Compile Include="ViewModels\ThirdViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\SelectedIndividualViewModel.cs" />
+    <Compile Include="ViewModels\SearchViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
