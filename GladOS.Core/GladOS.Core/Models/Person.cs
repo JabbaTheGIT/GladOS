@@ -9,7 +9,15 @@ namespace GladOS.Core.Models
 {
     public class Person
     {
+        public Person() { }
+        public Person(Person person)
+        {
+            Name = person.Name;
+            Number = person.Number;
+            Email = person.Employer;
+            Employer = person.Employer;
 
+        }
         //All the personal infomation about the person using the service
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

@@ -30,8 +30,10 @@ namespace GladOS.Droid
         {
             Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
             Mvx.LazyConstructAndRegisterSingleton<IDialogService, DialogService>();
-            Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabase>();
+            //Local Storage 
+            //Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabase>();
+            Mvx.LazyConstructAndRegisterSingleton<IAzureDatabase, AzureDatabase>();
             base.InitializeFirstChance();
-        } 
+        }
     }
 }
