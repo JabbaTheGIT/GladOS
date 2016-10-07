@@ -25,8 +25,9 @@ namespace GladOS.Core.Database
 
         public async Task<bool> CheckIfExists(Person person)
         {
-            var exists = await CheckIfExists(new Person(person));
-            return exists;
+            await SyncAsync(true);
+            var persons = await azureSyncTable.Where(x => x.Name == person.Name || x.Id == person.Id).ToListAsync();
+            return persons.Any();
         }
 
         public async Task<int> DeletePerson(object id)

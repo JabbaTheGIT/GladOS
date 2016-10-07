@@ -75,7 +75,7 @@ namespace GladOS.Core.ViewModels
 
         public async void SelectedPerson(Person selectedPerson)
         {
-            if(!await personDb.CheckIfExists(selectedPerson))
+            if (!await personDb.CheckIfExists(selectedPerson))
             {
                 await personDb.InsertPerson(selectedPerson);
                 Close(this);
