@@ -59,7 +59,7 @@ namespace GladOS.Core.ViewModels
         public void AssignHomePerson(List<Person> persons)
         {
             Person person = new Person();
-            if (persons.Any())
+            if (persons.Count() != 0)
             {
                 person = persons.FirstOrDefault();
                 this.Name = person.Name;

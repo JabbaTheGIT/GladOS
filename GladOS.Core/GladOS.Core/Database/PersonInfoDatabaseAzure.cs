@@ -33,7 +33,7 @@ namespace GladOS.Core.Database
         public async Task<int> DeletePerson(object id)
         {
             await SyncAsync(true);
-            var person = await azureSyncTable.Where(x => x.Id == (string)id).ToListAsync();
+            var person = await azureSyncTable.Where(x => x.Id.ToString() == id.ToString()).ToListAsync();
             if (person.Any())
             {
                 await azureSyncTable.DeleteAsync(person.FirstOrDefault());
