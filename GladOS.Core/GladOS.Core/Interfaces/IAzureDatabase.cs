@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using GladOS.Core.Models;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace GladOS.Core.Interfaces
     public interface IAzureDatabase
     {
         MobileServiceClient GetMobileServiceClient();
+
     }
 }

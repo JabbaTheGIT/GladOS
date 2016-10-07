@@ -6,6 +6,7 @@ using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Linq;
 using GladOS.Core.Interfaces;
+using GladOS.Core.Database;
 
 /*This view show all the people in the database, will update to show only searched 
  *for people
@@ -64,75 +65,11 @@ namespace GladOS.Core.ViewModels
             foreach (var person in personInfo)
             {
                 Person newPerson = new Person();
-                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", "Telstra", person.Email);
+                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", person.Employer, person.Email);
                 newList.Add(newPerson);
             }
 
             Persons = newList;
         }
-
-        // references to our images
-        string[] personImages = 
-        {
-        "sample_2", "sample_3",
-        "sample_4", "sample_5",
-        "sample_6", "sample_7",
-        "sample_0", "sample_1",
-        "sample_2", "sample_3",
-        "sample_4", "sample_5",
-        "sample_6", "sample_7",
-        "sample_0", "sample_1",
-        "sample_2", "sample_3",
-        "sample_4", "sample_5",
-        "sample_6", "sample_7"
-        };
-
-        // Person Names
-        string[] personNames =
-        {
-            "John Wayne", "Bruce Wayne",
-            "Paul Smith", "Eric Banner",
-            "Simon Pegg", "Clarke Kent",
-            "Julius Ceasar", "Floyd Pink",
-            "Suan White", "Eddie Eel",
-            "Doc Martin", "Plain Jane",
-            "John Doe", "Sarah Shizzle",
-            "Brian Blessed", "Bruce Lee",
-            "Haratio Nelson", "Hugh Trenchard",
-            "Isambard Kingdom Brunel", "Fritz Haber",
-            "Manfred von Richthofen", "Andy Penn",
-        };
-
-        // Phone Numbers
-        string[] personNumber =
-        {
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-            "0430220628","0430220628",
-        };
-
-        // Phone Numbers
-        string[] personEmail =
-        {
-            "JohnWayneEmail@Email.com","DarkKnightEmail@Email.com",
-            "PaulSmithEmail@Email.com","EricBEmail@Email.com",
-            "SimonPeggEmail@Email.com","SuperEmail@Email.com",
-            "JuliusCeasarEmail@Email.com","FloydEmail@Email.com",
-            "SuanWhiteEmail@Email.com","SwimEmail@Email.com",
-            "DocMartinEmail@Email.com","BoringEmail@Email.com",
-            "JohnDoeEmail@Email.com","ShizEmail@Email.com",
-            "BBlessedEmail@Email.com","FighterEmail@Email.com",
-            "HNelsonEmail@Email.com","LordTEmail@Email.com",
-            "BrunelEmail@Email.com","FritzEmail@Email.com",
-            "RedBaronEmail@Email.com","APennEmail@Email.com",
-        };
     }
 }

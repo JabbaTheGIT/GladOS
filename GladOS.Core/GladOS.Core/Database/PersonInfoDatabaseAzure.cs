@@ -8,10 +8,11 @@ using GladOS.Core.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.Sync;
 using MvvmCross.Platform;
+using System.Diagnostics;
 
 namespace GladOS.Core.Database
 {
-    class PersonInfoDatabaseAzure : IPersonInfoDatabase
+    public class PersonInfoDatabaseAzure : IPersonInfoDatabase
     {
 
         private MobileServiceClient azureDatbase;
@@ -28,19 +29,52 @@ namespace GladOS.Core.Database
             return exists;
         }
 
-        public Task<int> DeletePerson(object id)
+        public async Task<int> DeletePerson(object id)
         {
-            throw new NotImplementedException();
+            await SyncAsync(true);
+            var person = await azureSyncTable.Where(x => x.Id == (string)id).ToListAsync();
+            if (person.Any())
+            {
+                await azureSyncTable.DeleteAsync(person.FirstOrDefault());
+                await SyncAsync();
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        public Task<IEnumerable<Person>> GetPersons()
+        public async Task<IEnumerable<Person>> GetPersons()
         {
-            throw new NotImplementedException();
+            await SyncAsync(true);
+            var person = await azureSyncTable.ToListAsync();
+            return person;
         }
 
-        public Task<int> InsertPerson(Person person)
+        public async Task<int> InsertPerson(Person person)
         {
-            throw new NotImplementedException();
+            await SyncAsync(true);
+            await azureSyncTable.InsertAsync(person);
+            await SyncAsync();
+            return 1;
+        }
+
+        private async Task SyncAsync(bool pullData = false)
+        {
+            try
+            {
+                await azureDatbase.SyncContext.PushAsync();
+
+                if(pullData)
+                {
+                    await azureSyncTable.PullAsync("allPersons", azureSyncTable.CreateQuery());
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e);
+            }
         }
     }
 }
