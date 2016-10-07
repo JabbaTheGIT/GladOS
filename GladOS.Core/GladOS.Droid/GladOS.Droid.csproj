@@ -167,6 +167,7 @@
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\ProfileView.cs" />
     <Compile Include="Views\OfficeView.cs" />
     <Compile Include="Views\MeetingView.cs" />
     <Compile Include="Views\ScheduleView.cs" />
@@ -201,6 +202,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\ProfileView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

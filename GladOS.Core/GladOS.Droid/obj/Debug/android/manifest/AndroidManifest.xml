@@ -20,6 +20,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="ProfileViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ProfileView" />
     <activity android:label="OfficeViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.OfficeView" />
     <activity android:label="MeetingViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.MeetingView" />
     <activity android:label="ScheduleViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView" />

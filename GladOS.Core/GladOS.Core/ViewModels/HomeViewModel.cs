@@ -1,6 +1,7 @@
 ﻿using GladOS.Core.Database;
 using GladOS.Core.Interfaces;
 using GladOS.Core.Models;
+using GladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -30,13 +31,55 @@ namespace GladOS.Core.ViewModels
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
-        public ICommand AddNewPerson { get; private set; }
+        public ICommand ProfilePressed { get; private set; }
+
+        private List<Person> persons;
+        public List<Person> Persons
+        {
+            get { return persons; }
+            set { persons = value; RaisePropertyChanged(() => Persons); }
+        }
+
+        public async void GetPeople(IPersonInfoDatabase personDb)
+        {
+            var newList = new List<Person>();
+            PersonProperties personProperties = new PersonProperties();
+            var personInfo = await personDb.GetPersons();
+            foreach (var person in personInfo)
+            {
+                Person newPerson = new Person();
+                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", person.Employer, person.Email);
+                newList.Add(newPerson);
+            }
+
+            Persons = newList;
+        }
 
 
-        public HomeViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
+        public void AssignHomePerson(List<Person> persons)
+        {
+            Person person = new Person();
+            if (persons.Any())
+            {
+                person = persons.FirstOrDefault();
+                this.Name = person.Name;
+                this.Number = person.Number;
+                this.Email = person.Email;
+                this.Employer = person.Employer;
+            }
+            else
+            {
+                this.Name = "";
+                this.Number = "";
+                this.Email = "";
+                this.Employer = "";
+            }
+
+        }
+
+        public HomeViewModel(IPersonInfoDatabase personDb)
         {
             this.personDb = personDb;
-            this.dialog = dialog;
 
             HomePressed = new MvxCommand(() =>
             {
@@ -48,50 +91,19 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<ScheduleViewModel>();
             });
 
+            ProfilePressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<ProfileViewModel>();
+            });
+
             SearchPressed = new MvxCommand(() =>
             {
                 base.ShowViewModel<SearchViewModel>();
             });
 
-            AddNewPerson = new MvxCommand(() =>
-            {
-                Person personInfo = new Person();
-                personInfo.Name = Name;
-                personInfo.Number = Number;
-                personInfo.Email = Email;
-                personInfo.Employer = Employer;
-                SelectedPerson(personInfo);
-            });
+            GetPeople(personDb);
+            AssignHomePerson(persons);
 
         }//End SecondViewModel
-
-        public void ClearEntires()
-        {
-            this.Name = "";
-            this.Number = "";
-            this.Email = "";
-            this.Employer = "";
-        } //End ClearEntries
-
-        public async void SelectedPerson(Person selectedPerson)
-        {
-            if (!await personDb.CheckIfExists(selectedPerson))
-            {
-                await personDb.InsertPerson(selectedPerson);
-                Close(this);
-            }
-            else
-            {
-                if (await dialog.Show("This Person Exists", "Person Exists", "Seach Again", "Return"))
-                {
-                    ClearEntires();
-                }
-                else
-                {
-                    Close(this);
-                }
-            }
-        } //End SelectedPerson
-
     }
 }

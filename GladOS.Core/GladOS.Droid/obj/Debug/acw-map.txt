@@ -2,6 +2,10 @@ GladOS.Droid.SplashScreen, GladOS.Droid;md52a75d8120d735f7e9c7a1aaff9b265ff.Spla
 GladOS.Droid.SplashScreen, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
 GladOS.Droid.SplashScreen;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
 glados.droid.SplashScreen;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
+GladOS.Droid.Views.ProfileView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
+GladOS.Droid.Views.ProfileView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
+GladOS.Droid.Views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
+glados.droid.views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
 GladOS.Droid.Views.OfficeView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
 GladOS.Droid.Views.OfficeView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
 GladOS.Droid.Views.OfficeView;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView

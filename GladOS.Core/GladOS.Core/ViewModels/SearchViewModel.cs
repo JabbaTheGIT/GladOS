@@ -31,21 +31,27 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<ScheduleViewModel>();
             });
 
+            ProfilePressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<ProfileViewModel>();
+            });
+
             SearchPressed = new MvxCommand(() =>
             {
                 base.ShowViewModel<SearchViewModel>();
             });
 
+            GetPeople(personDb);
+
             SelectedPerson = new MvxCommand<Person>(selectedPerson => 
                              base.ShowViewModel<SelectedIndividualViewModel>(selectedPerson));
-
-            GetPeople(personDb);
-            
-        }//EndThirdViewModel
+      
+        }//EndSearchViewModel
 
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
+        public ICommand ProfilePressed { get;  private set;}
         public ICommand SelectedPerson { get; private set; }
 
         private readonly IPersonInfoDatabase personDb;

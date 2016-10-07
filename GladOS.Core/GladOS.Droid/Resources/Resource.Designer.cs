@@ -447,17 +447,17 @@ namespace GladOS.Droid
 			// aapt resource value: 0x7f08000c
 			public const int auto = 2131230732;
 			
-			// aapt resource value: 0x7f08001b
-			public const int checkBoxBluetooth = 2131230747;
-			
 			// aapt resource value: 0x7f08001a
-			public const int checkBoxGPS = 2131230746;
-			
-			// aapt resource value: 0x7f080018
-			public const int checkBoxNFC = 2131230744;
+			public const int checkBoxBluetooth = 2131230746;
 			
 			// aapt resource value: 0x7f080019
-			public const int checkBoxWifi = 2131230745;
+			public const int checkBoxGPS = 2131230745;
+			
+			// aapt resource value: 0x7f080017
+			public const int checkBoxNFC = 2131230743;
+			
+			// aapt resource value: 0x7f080018
+			public const int checkBoxWifi = 2131230744;
 			
 			// aapt resource value: 0x7f08000d
 			public const int dark = 2131230733;
@@ -507,11 +507,8 @@ namespace GladOS.Droid
 			// aapt resource value: 0x7f080011
 			public const int textViewEmail = 2131230737;
 			
-			// aapt resource value: 0x7f080017
-			public const int textViewLocate = 2131230743;
-			
 			// aapt resource value: 0x7f080016
-			public const int textViewPhone = 2131230742;
+			public const int textViewLocate = 2131230742;
 			
 			// aapt resource value: 0x7f08000b
 			public const int wide = 2131230731;
@@ -558,16 +555,19 @@ namespace GladOS.Droid
 			public const int OfficeView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int ScheduleView = 2130968580;
+			public const int ProfileView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int SearchView = 2130968581;
+			public const int ScheduleView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int SelectedIndividualView = 2130968582;
+			public const int SearchView = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int SplashScreen = 2130968583;
+			public const int SelectedIndividualView = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int SplashScreen = 2130968584;
 			
 			static Layout()
 			{

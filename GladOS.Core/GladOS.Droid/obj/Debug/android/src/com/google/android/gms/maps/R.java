@@ -376,10 +376,10 @@ containing a value of this type.
         public static int adjust_height=0x7f080007;
         public static int adjust_width=0x7f080008;
         public static int auto=0x7f08000c;
-        public static int checkBoxBluetooth=0x7f08001b;
-        public static int checkBoxGPS=0x7f08001a;
-        public static int checkBoxNFC=0x7f080018;
-        public static int checkBoxWifi=0x7f080019;
+        public static int checkBoxBluetooth=0x7f08001a;
+        public static int checkBoxGPS=0x7f080019;
+        public static int checkBoxNFC=0x7f080017;
+        public static int checkBoxWifi=0x7f080018;
         public static int dark=0x7f08000d;
         public static int gridLayout1=0x7f08000f;
         public static int hybrid=0x7f080002;
@@ -396,8 +396,7 @@ containing a value of this type.
         public static int standard=0x7f08000a;
         public static int terrain=0x7f080006;
         public static int textViewEmail=0x7f080011;
-        public static int textViewLocate=0x7f080017;
-        public static int textViewPhone=0x7f080016;
+        public static int textViewLocate=0x7f080016;
         public static int wide=0x7f08000b;
     }
     public static final class integer {
@@ -408,10 +407,11 @@ containing a value of this type.
         public static int item_person=0x7f040001;
         public static int meetingview=0x7f040002;
         public static int officeview=0x7f040003;
-        public static int scheduleview=0x7f040004;
-        public static int searchview=0x7f040005;
-        public static int selectedindividualview=0x7f040006;
-        public static int splashscreen=0x7f040007;
+        public static int profileview=0x7f040004;
+        public static int scheduleview=0x7f040005;
+        public static int searchview=0x7f040006;
+        public static int selectedindividualview=0x7f040007;
+        public static int splashscreen=0x7f040008;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

@@ -65,7 +65,7 @@ namespace GladOS.Core.ViewModels
 
             ProfilePressed = new MvxCommand(() =>
             {
-                Update = "Profile Pressed";
+                base.ShowViewModel<ProfileViewModel>();
             });
 
             InAMeetingPressed = new MvxCommand(() =>
