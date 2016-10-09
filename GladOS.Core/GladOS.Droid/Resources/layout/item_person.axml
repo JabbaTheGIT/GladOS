@@ -33,11 +33,6 @@
        android:layout_height="wrap_content"
        android:textSize="20dp"
        local:MvxBind="Text Employer"/>
-    <TextView
-   android:layout_width="fill_parent"
-   android:layout_height="wrap_content"
-   android:textSize="20dp"
-   local:MvxBind="Text Email"/>
   </LinearLayout>
 </LinearLayout>
 
