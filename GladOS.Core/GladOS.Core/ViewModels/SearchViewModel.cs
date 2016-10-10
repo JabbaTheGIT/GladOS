@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using GladOS.Core.Interfaces;
 using GladOS.Core.Database;
+using System;
 
 /*This view show all the people in the database, will update to show only searched 
  *for people
@@ -16,7 +17,12 @@ namespace GladOS.Core.ViewModels
 {
     public class SearchViewModel : MvxViewModel
     {
-        public string SearchName { get; set; }
+        private string searchName = "";
+        public string SearchName
+        {
+            get { return searchName; }
+            set { searchName = value; RaisePropertyChanged(() => SearchName); }
+        }
 
         public SearchViewModel(IPersonInfoDatabase personDb)
         {
@@ -75,13 +81,7 @@ namespace GladOS.Core.ViewModels
             var personInfo = await personDb.GetPersons();
             foreach (var person in personInfo)
             {
-                if(person.Name.Contains(null))
-                {
-                    Person newPerson = new Person();
-                    newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
-                    newList.Add(newPerson);
-                }
-                else if(person.Name.Contains(SearchName))
+                if(person.Name.Contains(SearchName.ToLower()) || person.Name.Contains(SearchName.ToUpper()))
                 {
                     Person newPerson = new Person();
                     newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
