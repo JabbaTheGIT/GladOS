@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite.Net.Attributes;
+using MvvmCross.Core.ViewModels;
 
 namespace GladOS.Core.Models
 {
@@ -30,6 +31,7 @@ namespace GladOS.Core.Models
         public bool Gps { get; set; }
         public bool Wifi { get; set; }
         public bool Bluetooth { get; set; }
+        public bool Contactable { get; set; }
     }
 
 

@@ -48,7 +48,7 @@ namespace GladOS.Core.ViewModels
             foreach (var person in personInfo)
             {
                 Person newPerson = new Person();
-                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", person.Employer, person.Email);
+                newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
                 newList.Add(newPerson);
             }
 

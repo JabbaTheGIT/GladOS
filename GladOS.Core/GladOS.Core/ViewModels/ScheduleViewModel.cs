@@ -13,6 +13,11 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.OS;
+using GladOS.Core.Interfaces;
+using GladOS.Core.Models;
+using System.Collections.Generic;
+using GladOS.Core.Services;
+using System.Linq;
 
 /*This view enable the user to log meeting times into their 
  *local calendar or set quite/do not disturb times
@@ -36,6 +41,47 @@ namespace GladOS.Core.ViewModels
             }
         }
 
+        private List<Person> persons;
+        public List<Person> Persons
+        {
+            get { return persons; }
+            set { persons = value; RaisePropertyChanged(() => Persons); }
+        }
+
+        public async void GetPeople(IPersonInfoDatabase personDb)
+        {
+            var newList = new List<Person>();
+            PersonProperties personProperties = new PersonProperties();
+            var personInfo = await personDb.GetPersons();
+            foreach (var person in personInfo)
+            {
+                Person newPerson = new Person();
+                newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                newList.Add(newPerson);
+            }
+
+            Persons = newList;
+        }
+
+        public void ChangeBusyStatus(List<Person> persons)
+        {
+            Person person = new Person();
+            if (persons.Count() != 0)
+            {
+                person = persons.FirstOrDefault();
+                if(person.Contactable)
+                {
+                    person.Contactable = false;
+                }
+                else if(!person.Contactable)
+                {
+                    person.Contactable = true;
+                }
+            }
+        }
+
+        private readonly IPersonInfoDatabase personDb;
+
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
@@ -46,8 +92,13 @@ namespace GladOS.Core.ViewModels
         public ICommand FreeTimePressed { get; private set; }
         public ICommand Calendar { get; private set; }
 
-        public ScheduleViewModel()
+
+
+        public ScheduleViewModel(IPersonInfoDatabase personDb)
         {
+            this.personDb = personDb;
+            GetPeople(personDb);
+
             HomePressed = new MvxCommand(() =>
             {
                 base.ShowViewModel<HomeViewModel>();
@@ -80,7 +131,8 @@ namespace GladOS.Core.ViewModels
 
             BusyPressed = new MvxCommand(() =>
             {
-                Update = "Busy / Private Time";
+                ChangeBusyStatus(persons);
+                Update = persons.FirstOrDefault().Contactable.ToString();
             });
 
             FreeTimePressed = new MvxCommand(() =>
