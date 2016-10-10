@@ -39,6 +39,15 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text SearchName"/>
+    <Button
+      android:text="Search"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Click SearchPerson"/>
   <Mvx.MvxListView
       android:layout_width="fill_parent"
       android:layout_height="wrap_content" 

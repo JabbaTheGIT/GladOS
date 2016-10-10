@@ -77,5 +77,6 @@ namespace GladOS.Core.Database
                 Debug.WriteLine(e);
             }
         }
+
     }
 }

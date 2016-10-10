@@ -23,7 +23,8 @@ namespace GladOS.Core.Database
 
         public async Task<IEnumerable<Person>> GetPersons()
         {
-            return database.Table<Person>().ToList();
+            var persons = database.Table<Person>().ToList();
+            return persons;
         }
 
         public async Task<int> DeletePerson(object id)

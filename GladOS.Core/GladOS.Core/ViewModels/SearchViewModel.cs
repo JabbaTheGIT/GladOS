@@ -16,6 +16,7 @@ namespace GladOS.Core.ViewModels
 {
     public class SearchViewModel : MvxViewModel
     {
+        public string SearchName { get; set; }
 
         public SearchViewModel(IPersonInfoDatabase personDb)
         {
@@ -41,8 +42,11 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<SearchViewModel>();
             });
 
-            GetPeople(personDb);
-
+            SearchPerson = new MvxCommand(() =>
+            {
+                GetPeople(personDb, SearchName);
+            });
+                                    
             SelectedPerson = new MvxCommand<Person>(selectedPerson => 
                              base.ShowViewModel<SelectedIndividualViewModel>(selectedPerson));
       
@@ -53,6 +57,7 @@ namespace GladOS.Core.ViewModels
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get;  private set;}
         public ICommand SelectedPerson { get; private set; }
+        public ICommand SearchPerson { get; private set; }
 
         private readonly IPersonInfoDatabase personDb;
 
@@ -63,18 +68,26 @@ namespace GladOS.Core.ViewModels
             set { persons = value; RaisePropertyChanged(() => Persons); }
         }
 
-        public async void GetPeople(IPersonInfoDatabase personDb)
+        public async void GetPeople(IPersonInfoDatabase personDb, string searchName)
         {
             var newList = new List<Person>();
             PersonProperties personProperties = new PersonProperties();
             var personInfo = await personDb.GetPersons();
             foreach (var person in personInfo)
             {
-                Person newPerson = new Person();
-                newPerson = personProperties.CreatePerson(person.Name, person.Number, "", person.Employer, person.Email);
-                newList.Add(newPerson);
+                if(person.Name.Contains(null))
+                {
+                    Person newPerson = new Person();
+                    newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                    newList.Add(newPerson);
+                }
+                else if(person.Name.Contains(SearchName))
+                {
+                    Person newPerson = new Person();
+                    newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                    newList.Add(newPerson);
+                }
             }
-
             Persons = newList;
         }
     }
