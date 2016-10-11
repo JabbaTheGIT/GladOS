@@ -39,13 +39,14 @@ namespace GladOS.Core.Services
             };
         }
 
-        public Person CreatePerson(string name, string number, string picture)
+        public Person CreatePerson(string name, string number, string employer, string email)
         {
             return new Person()
             {
                 Name = name,
                 Number = number,
-                Photo = picture
+                Employer = employer,
+                Email = email
 
             };
         }
