@@ -37,15 +37,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Database\EventInfoDatabase.cs" />
     <Compile Include="Database\PersonInfoDatabase.cs" />
+    <Compile Include="Database\EventInfoDatabaseAzure.cs" />
     <Compile Include="Database\PersonInfoDatabaseAzure.cs" />
     <Compile Include="Interfaces\IAzureDatabase.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
     <Compile Include="Interfaces\IGeoCoder.cs" />
+    <Compile Include="Interfaces\IEventInfoDatabase.cs" />
     <Compile Include="Interfaces\IPersonInfoDatabase.cs" />
+    <Compile Include="Interfaces\IEventProperties.cs" />
     <Compile Include="Interfaces\ISqlite.cs" />
     <Compile Include="Models\GeoLocation.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\EventProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IPersonProperties.cs" />
     <Compile Include="Models\PersonProperties.cs" />

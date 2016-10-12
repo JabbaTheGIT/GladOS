@@ -17,10 +17,18 @@ namespace GladOS.Core.Database
 
         private MobileServiceClient azureDatbase;
         private IMobileServiceSyncTable<Person> azureSyncTable;
+
         public PersonInfoDatabaseAzure()
         {
             azureDatbase = Mvx.Resolve<IAzureDatabase>().GetMobileServiceClient();
             azureSyncTable = azureDatbase.GetSyncTable<Person>();
+        }
+
+        public async Task<IEnumerable<Person>> GetPersons()
+        {
+            await SyncAsync(true);
+            var person = await azureSyncTable.ToListAsync();
+            return person;
         }
 
         public async Task<bool> CheckIfExists(Person person)
@@ -29,6 +37,8 @@ namespace GladOS.Core.Database
             var persons = await azureSyncTable.Where(x => x.Name == person.Name || x.Id == person.Id).ToListAsync();
             return persons.Any();
         }
+
+
 
         public async Task<int> DeletePerson(object id)
         {
@@ -44,13 +54,6 @@ namespace GladOS.Core.Database
             {
                 return 0;
             }
-        }
-
-        public async Task<IEnumerable<Person>> GetPersons()
-        {
-            await SyncAsync(true);
-            var person = await azureSyncTable.ToListAsync();
-            return person;
         }
 
         public async Task<int> InsertPerson(Person person)

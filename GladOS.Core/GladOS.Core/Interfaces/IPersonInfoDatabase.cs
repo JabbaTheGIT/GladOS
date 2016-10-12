@@ -13,5 +13,6 @@ namespace GladOS.Core.Interfaces
         Task<int> DeletePerson(object id);
         Task<int> InsertPerson(Person person);
         Task<bool> CheckIfExists(Person person);
+
     }
 }

@@ -79,16 +79,19 @@ namespace GladOS.Core.ViewModels
             var newList = new List<Person>();
             PersonProperties personProperties = new PersonProperties();
             var personInfo = await personDb.GetPersons();
-            foreach (var person in personInfo)
+            if(personInfo.Count() > 0)
             {
-                if(person.Name.Contains(SearchName.ToLower()) || person.Name.Contains(SearchName.ToUpper()))
+                foreach (var person in personInfo)
                 {
-                    Person newPerson = new Person();
-                    newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
-                    newList.Add(newPerson);
+                    if (person.Name.Contains(SearchName.ToLower()) || person.Name.Contains(SearchName.ToUpper()))
+                    {
+                        Person newPerson = new Person();
+                        newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                        newList.Add(newPerson);
+                    }
                 }
+                Persons = newList;
             }
-            Persons = newList;
         }
     }
 }

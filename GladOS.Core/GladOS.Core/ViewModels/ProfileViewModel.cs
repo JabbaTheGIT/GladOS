@@ -24,15 +24,39 @@ namespace GladOS.Core.ViewModels
         public string Email { get; set; }
         public string Employer { get; set; }
 
-
-
-
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
         public ICommand AddNewPerson { get; private set; }
 
+        public void ClearEntires()
+        {
+            this.Name = "";
+            this.Number = "";
+            this.Email = "";
+            this.Employer = "";
+        } //End ClearEntries
+
+        public async void SelectedPerson(Person selectedPerson)
+        {
+            if (!await personDb.CheckIfExists(selectedPerson))
+            {
+                await personDb.InsertPerson(selectedPerson);
+                Close(this);
+            }
+            else
+            {
+                if (await dialog.Show("This Person Exists", "Person Exists", "Add New", "Return"))
+                {
+                    ClearEntires();
+                }
+                else
+                {
+                    Close(this);
+                }
+            }
+        } //End SelectedPerson
 
         public ProfileViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
         {
@@ -70,34 +94,6 @@ namespace GladOS.Core.ViewModels
             });
 
         }//End ProfileViewModel
-
-        public void ClearEntires()
-        {
-            this.Name = "";
-            this.Number = "";
-            this.Email = "";
-            this.Employer = "";
-        } //End ClearEntries
-
-        public async void SelectedPerson(Person selectedPerson)
-        {
-            if (!await personDb.CheckIfExists(selectedPerson))
-            {
-                await personDb.InsertPerson(selectedPerson);
-                Close(this);
-            }
-            else
-            {
-                if (await dialog.Show("This Person Exists", "Person Exists", "Seach Again", "Return"))
-                {
-                    ClearEntires();
-                }
-                else
-                {
-                    Close(this);
-                }
-            }
-        } //End SelectedPerson
 
     }
 }

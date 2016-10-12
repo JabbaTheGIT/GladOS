@@ -42,6 +42,7 @@ namespace GladOS.Droid.Database
             }
             var store = new MobileServiceSQLiteStore(path);
             store.DefineTable<Person>();
+            store.DefineTable<Event>();
             azureDatabase.SyncContext.InitializeAsync(store);
         }
     }

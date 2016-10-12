@@ -46,6 +46,5 @@ namespace GladOS.Core.Database
             return exists;
         }
 
-
     }
 }

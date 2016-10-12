@@ -404,14 +404,15 @@ containing a value of this type.
     }
     public static final class layout {
         public static int homeview=0x7f040000;
-        public static int item_person=0x7f040001;
-        public static int meetingview=0x7f040002;
-        public static int officeview=0x7f040003;
-        public static int profileview=0x7f040004;
-        public static int scheduleview=0x7f040005;
-        public static int searchview=0x7f040006;
-        public static int selectedindividualview=0x7f040007;
-        public static int splashscreen=0x7f040008;
+        public static int item_events=0x7f040001;
+        public static int item_person=0x7f040002;
+        public static int meetingview=0x7f040003;
+        public static int officeview=0x7f040004;
+        public static int profileview=0x7f040005;
+        public static int scheduleview=0x7f040006;
+        public static int searchview=0x7f040007;
+        public static int selectedindividualview=0x7f040008;
+        public static int splashscreen=0x7f040009;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

@@ -35,18 +35,17 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="0.3">
-        <ImageView
-            android:src="@drawable/calendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:padding="20px"
-            local:MvxBind="Click Calendar" />
+      <Mvx.MvxListView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="40dp"
+          local:MvxBind="ItemsSource Events" 
+          local:MvxItemTemplate="@layout/item_events"/>
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"

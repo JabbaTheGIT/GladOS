@@ -28,6 +28,20 @@ namespace GladOS.Core.ViewModels
     public class ScheduleViewModel
         : MvxViewModel
     {
+
+        private readonly IPersonInfoDatabase personDb;
+        private readonly IEventInfoDatabase eventDb;
+
+        public ICommand HomePressed { get; private set; }
+        public ICommand SchedulePressed { get; private set; }
+        public ICommand SearchPressed { get; private set; }
+        public ICommand ProfilePressed { get; private set; }
+        public ICommand InAMeetingPressed { get; private set; }
+        public ICommand OfficeHoursPressed { get; private set; }
+        public ICommand BusyPressed { get; private set; }
+        public ICommand FreeTimePressed { get; private set; }
+
+
         private string update = "";
 
         public string Update
@@ -40,7 +54,7 @@ namespace GladOS.Core.ViewModels
                 RaisePropertyChanged(() => Update);
             }
         }
-
+        
         private List<Person> persons;
         public List<Person> Persons
         {
@@ -63,6 +77,28 @@ namespace GladOS.Core.ViewModels
             Persons = newList;
         }
 
+        private List<Event> events;
+        public List<Event> Events
+        {
+            get { return events; }
+            set { events = value; RaisePropertyChanged(() => Events); }
+        }
+
+        public async void GetEvents(IEventInfoDatabase eventDb)
+        {
+            var newList = new List<Event>();
+            EventProperties eventProperties = new EventProperties();
+            var eventsInfo = await eventDb.GetEvents();
+            foreach (var events in eventsInfo)
+            {
+                Event newEvent = new Event();
+                newEvent = eventProperties.CreateEvent(events.EventTitle, events.StartTime, events.EndTime);
+                newList.Add(newEvent);
+            }
+
+            Events = newList;
+        }
+
         public void ChangeBusyStatus(List<Person> persons)
         {
             Person person = new Person();
@@ -80,24 +116,13 @@ namespace GladOS.Core.ViewModels
             }
         }
 
-        private readonly IPersonInfoDatabase personDb;
 
-        public ICommand HomePressed { get; private set; }
-        public ICommand SchedulePressed { get; private set; }
-        public ICommand SearchPressed { get; private set; }
-        public ICommand ProfilePressed { get; private set; }
-        public ICommand InAMeetingPressed { get; private set; }
-        public ICommand OfficeHoursPressed { get; private set; }
-        public ICommand BusyPressed { get; private set; }
-        public ICommand FreeTimePressed { get; private set; }
-        public ICommand Calendar { get; private set; }
-
-
-
-        public ScheduleViewModel(IPersonInfoDatabase personDb)
+        public ScheduleViewModel(IPersonInfoDatabase personDb, IEventInfoDatabase eventDb)
         {
             this.personDb = personDb;
+            this.eventDb = eventDb;
             GetPeople(personDb);
+            GetEvents(eventDb);
 
             HomePressed = new MvxCommand(() =>
             {
@@ -140,10 +165,6 @@ namespace GladOS.Core.ViewModels
                 Update = "Free for meetings or meetup time";
             });
 
-            Calendar = new MvxCommand(() =>
-            {
-                Update = "Update Calendar and schedule";
-            });
         }
     }
 }
