@@ -116,7 +116,6 @@ namespace GladOS.Core.ViewModels
             }
         }
 
-
         public ScheduleViewModel(IPersonInfoDatabase personDb, IEventInfoDatabase eventDb)
         {
             this.personDb = personDb;
@@ -157,7 +156,11 @@ namespace GladOS.Core.ViewModels
             BusyPressed = new MvxCommand(() =>
             {
                 ChangeBusyStatus(persons);
-                Update = persons.FirstOrDefault().Contactable.ToString();
+                if(persons.Count() > 0)
+                {
+                    Update = persons.FirstOrDefault().Contactable.ToString();
+                }
+                
             });
 
             FreeTimePressed = new MvxCommand(() =>

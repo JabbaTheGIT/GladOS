@@ -39,7 +39,6 @@
     <Compile Include="App.cs" />
     <Compile Include="Database\EventInfoDatabase.cs" />
     <Compile Include="Database\PersonInfoDatabase.cs" />
-    <Compile Include="Database\EventInfoDatabaseAzure.cs" />
     <Compile Include="Database\PersonInfoDatabaseAzure.cs" />
     <Compile Include="Interfaces\IAzureDatabase.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />

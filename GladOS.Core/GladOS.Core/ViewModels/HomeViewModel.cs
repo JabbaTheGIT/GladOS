@@ -20,13 +20,51 @@ namespace GladOS.Core.ViewModels
         private readonly IPersonInfoDatabase personDb;
         private readonly IDialogService dialog;
 
-        public string Name { get; set; }
-        public string Number { get; set; }
-        public string Email { get; set; }
-        public string Employer { get; set; }
+        private string name = "";
 
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                RaisePropertyChanged(() => Name);
+            }
+        }
 
+        private string number = "";
 
+        public string Number
+        {
+            get { return number; }
+            set
+            {
+                number = value;
+                RaisePropertyChanged(() => Number);
+            }
+        }
+
+        private string email = "";
+        public string Email
+        {
+            get { return email; }
+            set
+            {
+                email = value;
+                RaisePropertyChanged(() => Email);
+            }
+        }
+
+        private string employer = "";
+        public string Employer
+        {
+            get { return employer; }
+            set
+            {
+                employer = value;
+                RaisePropertyChanged(() => Employer);
+            }
+        }
 
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
@@ -61,7 +99,7 @@ namespace GladOS.Core.ViewModels
             Person person = new Person();
             if (persons.Count() != 0)
             {
-                person = persons.FirstOrDefault();
+                person = persons[0];
                 this.Name = person.Name;
                 this.Number = person.Number;
                 this.Email = person.Email;
@@ -100,9 +138,6 @@ namespace GladOS.Core.ViewModels
             {
                 base.ShowViewModel<SearchViewModel>();
             });
-
-            GetPeople(personDb);
-            AssignHomePerson(persons);
 
         }//End SecondViewModel
     }

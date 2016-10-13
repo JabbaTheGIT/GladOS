@@ -67,7 +67,7 @@ namespace GladOS.Core.ViewModels
             Employer = selectedPerson.Employer;
             Email = selectedPerson.Email;
             PhoneNumber = selectedPerson.Number;
-            Image = selectedPerson.Photo;
+            //Image = selectedPerson.Photo;
         }
 
 

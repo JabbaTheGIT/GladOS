@@ -21,16 +21,12 @@ namespace GladOS.Core.Models
         }
         //All the personal infomation about the person using the service
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        public string id { get; set; }
         public string Name { get; set; }
         public string Number { get; set; }
-        public string Photo { get; set; }
+        //public string Photo { get; set; }
         public string Employer { get; set; }
         public string Email { get; set; }
-        public bool Nfc { get; set; }
-        public bool Gps { get; set; }
-        public bool Wifi { get; set; }
-        public bool Bluetooth { get; set; }
         public bool Contactable { get; set; }
     }
 

@@ -34,7 +34,7 @@ namespace GladOS.Core.Database
         public async Task<bool> CheckIfExists(Person person)
         {
             await SyncAsync(true);
-            var persons = await azureSyncTable.Where(x => x.Name == person.Name || x.Id == person.Id).ToListAsync();
+            var persons = await azureSyncTable.Where(x => x.Name == person.Name || x.id == person.id).ToListAsync();
             return persons.Any();
         }
 
@@ -43,7 +43,7 @@ namespace GladOS.Core.Database
         public async Task<int> DeletePerson(object id)
         {
             await SyncAsync(true);
-            var person = await azureSyncTable.Where(x => x.Id.ToString() == id.ToString()).ToListAsync();
+            var person = await azureSyncTable.Where(x => x.id.ToString() == id.ToString()).ToListAsync();
             if (person.Any())
             {
                 await azureSyncTable.DeleteAsync(person.FirstOrDefault());

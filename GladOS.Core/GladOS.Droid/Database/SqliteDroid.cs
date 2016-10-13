@@ -19,7 +19,7 @@ namespace GladOS.Droid.Database
     {
         public SQLiteConnection GetConnection()
         {
-                var sqliteFilename = "PersonSQLite.db3";
+                var sqliteFilename = "EventSQLite.db3";
                 string documentsPath = System.Environment.GetFolderPath(
                     System.Environment.SpecialFolder.Personal);
                 var path = Path.Combine(documentsPath, sqliteFilename);
