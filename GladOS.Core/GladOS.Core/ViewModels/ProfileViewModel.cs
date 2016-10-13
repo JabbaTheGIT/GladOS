@@ -17,6 +17,7 @@ namespace GladOS.Core.ViewModels
     public class ProfileViewModel : MvxViewModel
     {
         private readonly IPersonInfoDatabase personDb;
+        //private readonly ILocalPersonInfoDatabase localPersonDb;
         private readonly IDialogService dialog;
 
         public string Name { get; set; }

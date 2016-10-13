@@ -11,7 +11,7 @@ namespace GladOS.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.ScheduleViewModel>();
+            RegisterAppStart<ViewModels.LoginViewModel>();
         }
     }
 }

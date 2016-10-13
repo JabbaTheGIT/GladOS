@@ -218,7 +218,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\GladOS.Droid.
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\GladOS.Droid.pdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\bin\GladOS.Droid.GladOS.Droid.apk
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_person.xml
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\meetingview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\officeview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\splashscreen.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\values\strings.xml
@@ -269,6 +268,7 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\se
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\selectedindividualview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\profileview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_events.xml
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\loginview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Java.Interop.dll.mdb

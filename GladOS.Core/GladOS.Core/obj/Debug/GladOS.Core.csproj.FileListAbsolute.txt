@@ -51,8 +51,7 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\Newtonsoft.Jso
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\System.Net.Http.Extensions.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\System.Net.Http.Primitives.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.csproj.App.config
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll.mdb
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.csprojResolveAssemblyReference.cache
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Debug\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Debug\GladOS.Core.dll.mdb

@@ -145,7 +145,7 @@ namespace GladOS.Core.ViewModels
 
             InAMeetingPressed = new MvxCommand(() =>
             {
-                base.ShowViewModel<MeetingViewModel>();
+                base.ShowViewModel<LoginViewModel>();
             });
 
             OfficeHoursPressed = new MvxCommand(() =>

@@ -552,7 +552,7 @@ namespace GladOS.Droid
 			public const int item_person = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int MeetingView = 2130968579;
+			public const int LoginView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
 			public const int OfficeView = 2130968580;

@@ -17,7 +17,6 @@ namespace GladOS.Core.ViewModels
 {
     public class HomeViewModel : MvxViewModel
     {
-        private readonly IPersonInfoDatabase personDb;
         private readonly IDialogService dialog;
 
         private string name = "";
@@ -71,53 +70,17 @@ namespace GladOS.Core.ViewModels
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
 
-        private List<Person> persons;
-        public List<Person> Persons
+        private void LoggedInUser()
         {
-            get { return persons; }
-            set { persons = value; RaisePropertyChanged(() => Persons); }
+            Name = GlobalLocalPerson.Name;
+            Number = GlobalLocalPerson.Number;
+            Email = GlobalLocalPerson.Email;
+            Employer = GlobalLocalPerson.Employer;
         }
 
-        public async void GetPeople(IPersonInfoDatabase personDb)
+        public HomeViewModel()
         {
-            var newList = new List<Person>();
-            PersonProperties personProperties = new PersonProperties();
-            var personInfo = await personDb.GetPersons();
-            foreach (var person in personInfo)
-            {
-                Person newPerson = new Person();
-                newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
-                newList.Add(newPerson);
-            }
-
-            Persons = newList;
-        }
-
-
-        public void AssignHomePerson(List<Person> persons)
-        {
-            Person person = new Person();
-            if (persons.Count() != 0)
-            {
-                person = persons[0];
-                this.Name = person.Name;
-                this.Number = person.Number;
-                this.Email = person.Email;
-                this.Employer = person.Employer;
-            }
-            else
-            {
-                this.Name = "";
-                this.Number = "";
-                this.Email = "";
-                this.Employer = "";
-            }
-
-        }
-
-        public HomeViewModel(IPersonInfoDatabase personDb)
-        {
-            this.personDb = personDb;
+            LoggedInUser();
 
             HomePressed = new MvxCommand(() =>
             {
