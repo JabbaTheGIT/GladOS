@@ -8,6 +8,7 @@ namespace GladOS.Core.Services
 
         Person CreatePerson(string name, string number, string employer,
                                        string email);
-
+        Person CreatePerson(string id, string name, string number, string employer,
+                               string email);
     }
 }

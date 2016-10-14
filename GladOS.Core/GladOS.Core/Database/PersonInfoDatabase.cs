@@ -46,5 +46,9 @@ namespace GladOS.Core.Database
             return exists;
         }
 
+        public Task<int> UpdatePerson(Person person)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

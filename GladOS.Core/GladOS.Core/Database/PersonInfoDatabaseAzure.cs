@@ -56,6 +56,14 @@ namespace GladOS.Core.Database
             }
         }
 
+        public async Task<int> UpdatePerson(Person person)
+        {
+            await SyncAsync(true);
+            await azureSyncTable.UpdateAsync(person);
+            await SyncAsync();
+            return 1;
+        }
+
         public async Task<int> InsertPerson(Person person)
         {
             await SyncAsync(true);

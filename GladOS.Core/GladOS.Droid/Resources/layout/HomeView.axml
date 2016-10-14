@@ -182,6 +182,6 @@
         android:clickable="true"
         android:layout_rowSpan="2"
         android:layout_marginTop="20dp" 
-        local:MvxBind="Click AddNewPerson"/>
+        local:MvxBind="Click UpdateSearchMethod"/>
   </GridLayout>
 </LinearLayout>

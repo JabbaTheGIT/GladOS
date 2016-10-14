@@ -35,6 +35,7 @@ namespace GladOS.Core.ViewModels
                     //Find the searched person and assign him/her to the Global Person
                     if (person.Name == searchName && found == false)
                     {
+                        GlobalLocalPerson.Id = person.id;
                         GlobalLocalPerson.Name = person.Name;
                         GlobalLocalPerson.Number = person.Number;
                         GlobalLocalPerson.Email = person.Email;
@@ -52,6 +53,7 @@ namespace GladOS.Core.ViewModels
 
         private void DefaultPerson()
         {
+            GlobalLocalPerson.Id = "1d585760-c31b-40a2-aa73-4210d343d738";
             GlobalLocalPerson.Name = "Bruce Wayne";
             GlobalLocalPerson.Number = "0404889911";
             GlobalLocalPerson.Email = "darkKnight@telstra.com";
@@ -68,7 +70,7 @@ namespace GladOS.Core.ViewModels
                 foreach(var person in people)
                 {
                     Person newPerson = new Person();
-                    newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                    newPerson = personProperties.CreatePerson(person.id,person.Name, person.Number, person.Employer, person.Email);
                     newList.Add(newPerson);
                 }
                 People = newList;

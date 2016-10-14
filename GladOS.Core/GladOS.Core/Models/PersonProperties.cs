@@ -29,6 +29,19 @@ namespace GladOS.Core.Services
             };
         }
 
+        public Person CreatePerson(string inputId, string name, string number, string employer,
+                           string email)
+        {
+            return new Person()
+            {
+                id = inputId,
+                Name = name,
+                Number = number,
+                Employer = employer,
+                Email = email,
+            };
+        }
+
         public void SetName(Person person,string name)
         {
             person.Name = name;

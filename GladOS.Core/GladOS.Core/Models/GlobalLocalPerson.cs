@@ -10,6 +10,14 @@ namespace GladOS.Core.Models
 {
     public static class GlobalLocalPerson
     {
+        private static string id = "";
+
+        public static string Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         private static string name = "";
 
         public static string Name

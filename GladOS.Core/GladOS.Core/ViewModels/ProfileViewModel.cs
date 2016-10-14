@@ -1,13 +1,13 @@
-﻿using GladOS.Core.Database;
-using GladOS.Core.Interfaces;
-using GladOS.Core.Models;
+﻿using GladOS.Core.Models;
+using GladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
+using System.Linq;
+using GladOS.Core.Interfaces;
+using GladOS.Core.Database;
+using System;
 
 /*This view holds the infomation about the local user, view enables them
  *to decide how they would like to be located and save that choice
@@ -20,43 +20,64 @@ namespace GladOS.Core.ViewModels
         //private readonly ILocalPersonInfoDatabase localPersonDb;
         private readonly IDialogService dialog;
 
+        public string Identify { get; set; }
         public string Name { get; set; }
         public string Number { get; set; }
         public string Email { get; set; }
         public string Employer { get; set; }
+        public List<Person> People { get; set; }
 
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
-        public ICommand AddNewPerson { get; private set; }
+        public ICommand UpdatePerson { get; private set; }
 
-        public void ClearEntires()
+        public void SyncWithGlobal()
         {
-            this.Name = "";
-            this.Number = "";
-            this.Email = "";
-            this.Employer = "";
-        } //End ClearEntries
+            this.Identify = GlobalLocalPerson.Id;
+            if (Name == "" || Name == null)
+            {
+                this.Name = GlobalLocalPerson.Name;
+            }
+            if(Number == "" || Number == null)
+            {
+                this.Number = GlobalLocalPerson.Number;
+            }
+            if(Email == "" || Email == null)
+            {
+                this.Email = GlobalLocalPerson.Email;
+            }
+            if (Employer == "" || Employer == null)
+            {
+                this.Employer = GlobalLocalPerson.Employer;
+            }
+        }
 
-        public async void SelectedPerson(Person selectedPerson)
+        public async void UpdateGlobalValues(IPersonInfoDatabase persDb)
         {
-            if (!await personDb.CheckIfExists(selectedPerson))
+            bool updated = false;
+            var people = await personDb.GetPersons();
+            if(people.Count() > 0)
             {
-                await personDb.InsertPerson(selectedPerson);
-                Close(this);
-            }
-            else
-            {
-                if (await dialog.Show("This Person Exists", "Person Exists", "Add New", "Return"))
+                foreach(var person in people)
                 {
-                    ClearEntires();
-                }
-                else
-                {
-                    Close(this);
+                    if(person.id == GlobalLocalPerson.Id && updated == false)
+                    {
+                        GlobalLocalPerson.Name = person.Name;
+                        GlobalLocalPerson.Number = person.Number;
+                        GlobalLocalPerson.Email = person.Email;
+                        GlobalLocalPerson.Employer = person.Employer;
+                        updated = true;
+                    }
                 }
             }
+
+        }
+
+        public async void UpdatedPerson(Person updatePerson)
+        {
+            await personDb.UpdatePerson(updatePerson);
         } //End SelectedPerson
 
         public ProfileViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
@@ -84,14 +105,17 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<SearchViewModel>();
             });
 
-            AddNewPerson = new MvxCommand(() =>
+            UpdatePerson = new MvxCommand(() =>
             {
-                Person personInfo = new Person();
-                personInfo.Name = Name;
-                personInfo.Number = Number;
-                personInfo.Email = Email;
-                personInfo.Employer = Employer;
-                SelectedPerson(personInfo);
+                SyncWithGlobal();
+                Person uPerson = new Person();
+                uPerson.id = Identify;
+                uPerson.Name = Name;
+                uPerson.Number = Number;
+                uPerson.Email = Email;
+                uPerson.Employer = Employer;
+                UpdatedPerson(uPerson);
+                UpdateGlobalValues(personDb);
             });
 
         }//End ProfileViewModel
