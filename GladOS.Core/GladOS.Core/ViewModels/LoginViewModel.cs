@@ -33,7 +33,7 @@ namespace GladOS.Core.ViewModels
                 foreach (Person person in people)
                 {
                     //Find the searched person and assign him/her to the Global Person
-                    if (person.Name == searchName && found == false)
+                    if (person.Name.ToUpper() == searchName.ToUpper() && found == false)
                     {
                         GlobalLocalPerson.Id = person.id;
                         GlobalLocalPerson.Name = person.Name;

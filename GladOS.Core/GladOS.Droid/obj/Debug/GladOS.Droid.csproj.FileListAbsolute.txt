@@ -218,7 +218,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\GladOS.Droid.
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\GladOS.Droid.pdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\bin\GladOS.Droid.GladOS.Droid.apk
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_person.xml
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\officeview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\splashscreen.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\values\strings.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\icon.png
@@ -305,5 +304,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\asset
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\eventview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\GladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Droid.dll.mdb

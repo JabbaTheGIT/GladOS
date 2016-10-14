@@ -36,10 +36,9 @@ namespace GladOS.Core.ViewModels
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
-        public ICommand InAMeetingPressed { get; private set; }
-        public ICommand OfficeHoursPressed { get; private set; }
+        public ICommand EventPressed { get; private set; }
         public ICommand BusyPressed { get; private set; }
-        public ICommand FreeTimePressed { get; private set; }
+
 
 
         private string update = "";
@@ -99,28 +98,39 @@ namespace GladOS.Core.ViewModels
             Events = newList;
         }
 
-        public void ChangeBusyStatus(List<Person> persons)
+        public void ChangeBusyStatus()
         {
             Person person = new Person();
-            if (persons.Count() != 0)
+            person.id = GlobalLocalPerson.Id;
+            person.Name = GlobalLocalPerson.Name;
+            person.Number = GlobalLocalPerson.Number;
+            person.Email = GlobalLocalPerson.Email;
+            person.Employer = GlobalLocalPerson.Employer;
+            person.Contactable = GlobalLocalPerson.Contactable;
+
+            if(person.Contactable)
             {
-                person = persons.FirstOrDefault();
-                if(person.Contactable)
-                {
-                    person.Contactable = false;
-                }
-                else if(!person.Contactable)
-                {
-                    person.Contactable = true;
-                }
+                person.Contactable = false;
+                GlobalLocalPerson.Contactable = false;
             }
+            else if(!person.Contactable)
+            {
+                person.Contactable = true;
+                GlobalLocalPerson.Contactable = true;
+            }
+
+            UpdatedPerson(person);
         }
+
+        public async void UpdatedPerson(Person updatePerson)
+        {
+            await personDb.UpdatePerson(updatePerson);
+        } //End UpdateddPerson
 
         public ScheduleViewModel(IPersonInfoDatabase personDb, IEventInfoDatabase eventDb)
         {
             this.personDb = personDb;
             this.eventDb = eventDb;
-            GetPeople(personDb);
             GetEvents(eventDb);
 
             HomePressed = new MvxCommand(() =>
@@ -143,29 +153,16 @@ namespace GladOS.Core.ViewModels
                 base.ShowViewModel<ProfileViewModel>();
             });
 
-            InAMeetingPressed = new MvxCommand(() =>
+            EventPressed = new MvxCommand(() =>
             {
-                base.ShowViewModel<LoginViewModel>();
-            });
-
-            OfficeHoursPressed = new MvxCommand(() =>
-            {
-                base.ShowViewModel<OfficeViewModel>();
+                base.ShowViewModel<EventViewModel>();
             });
 
             BusyPressed = new MvxCommand(() =>
             {
-                ChangeBusyStatus(persons);
-                if(persons.Count() > 0)
-                {
-                    Update = persons.FirstOrDefault().Contactable.ToString();
-                }
-                
-            });
-
-            FreeTimePressed = new MvxCommand(() =>
-            {
-                Update = "Free for meetings or meetup time";
+                ChangeBusyStatus();
+                Update = GlobalLocalPerson.Contactable.ToString();
+          
             });
 
         }

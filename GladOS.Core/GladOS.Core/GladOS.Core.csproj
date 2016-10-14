@@ -56,7 +56,7 @@
     <Compile Include="Interfaces\IPersonProperties.cs" />
     <Compile Include="Models\PersonProperties.cs" />
     <Compile Include="ViewModels\ProfileViewModel.cs" />
-    <Compile Include="ViewModels\OfficeViewModel.cs" />
+    <Compile Include="ViewModels\EventViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />

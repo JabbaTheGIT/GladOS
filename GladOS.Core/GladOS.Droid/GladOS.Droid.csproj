@@ -168,7 +168,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\ProfileView.cs" />
-    <Compile Include="Views\OfficeView.cs" />
+    <Compile Include="Views\EventView.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\ScheduleView.cs" />
     <Compile Include="Views\HomeView.cs" />
@@ -198,7 +198,7 @@
     <AndroidResource Include="Resources\layout\LoginView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\OfficeView.axml">
+    <AndroidResource Include="Resources\layout\EventView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />

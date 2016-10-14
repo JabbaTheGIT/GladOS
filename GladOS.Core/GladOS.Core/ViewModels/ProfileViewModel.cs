@@ -78,7 +78,7 @@ namespace GladOS.Core.ViewModels
         public async void UpdatedPerson(Person updatePerson)
         {
             await personDb.UpdatePerson(updatePerson);
-        } //End SelectedPerson
+        } //End UpdateddPerson
 
         public ProfileViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
         {

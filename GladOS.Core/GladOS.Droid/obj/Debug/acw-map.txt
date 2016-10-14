@@ -6,10 +6,10 @@ GladOS.Droid.Views.ProfileView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b
 GladOS.Droid.Views.ProfileView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
 GladOS.Droid.Views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
 glados.droid.views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
-GladOS.Droid.Views.OfficeView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
-GladOS.Droid.Views.OfficeView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
-GladOS.Droid.Views.OfficeView;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
-glados.droid.views.OfficeView;md5806cbdcde086e6612e76aee9f4ef127b.OfficeView
+GladOS.Droid.Views.EventView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.EventView
+GladOS.Droid.Views.EventView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.EventView
+GladOS.Droid.Views.EventView;md5806cbdcde086e6612e76aee9f4ef127b.EventView
+glados.droid.views.EventView;md5806cbdcde086e6612e76aee9f4ef127b.EventView
 GladOS.Droid.Views.LoginView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
 GladOS.Droid.Views.LoginView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
 GladOS.Droid.Views.LoginView;md5806cbdcde086e6612e76aee9f4ef127b.LoginView

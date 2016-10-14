@@ -403,11 +403,11 @@ containing a value of this type.
         public static final int google_play_services_version=0x7f060000;
     }
     public static final class layout {
-        public static final int homeview=0x7f040000;
-        public static final int item_events=0x7f040001;
-        public static final int item_person=0x7f040002;
-        public static final int loginview=0x7f040003;
-        public static final int officeview=0x7f040004;
+        public static final int eventview=0x7f040000;
+        public static final int homeview=0x7f040001;
+        public static final int item_events=0x7f040002;
+        public static final int item_person=0x7f040003;
+        public static final int loginview=0x7f040004;
         public static final int profileview=0x7f040005;
         public static final int scheduleview=0x7f040006;
         public static final int searchview=0x7f040007;

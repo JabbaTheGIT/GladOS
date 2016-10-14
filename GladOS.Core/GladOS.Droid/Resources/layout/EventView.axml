@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:local="http://schemas.android.com/apk/res-auto"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:minWidth="25px"
+		android:minHeight="25px">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<Button
+				android:text="HOME"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				local:MvxBind="Click HomePressed" />
+		<Button
+				android:text="Schedule"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				local:MvxBind="Click SchedulePressed" />
+		<Button
+				android:text="Search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				local:MvxBind="Click SearchPressed" />
+		<Button
+				android:text="Profile"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				local:MvxBind="Click ProfilePressed" />
+	</LinearLayout>
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="40dp"
+			android:text="Enter office hours"/>
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:text="Event Name: "/>
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:hint="event name"
+			local:MvxBind="Text EventTitle"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:text="Start Time: "/>
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:hint="hh:mm"
+			local:MvxBind="Text StartTime"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:text="End of day: "/>
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30dp"
+			android:hint="hh:mm"
+			local:MvxBind="Text EndTime"/>
+	</LinearLayout>
+	<Button
+		 android:text="Update"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 local:MvxBind="Click AddNewEvent"/>
+</LinearLayout>
