@@ -20,6 +20,7 @@ namespace GladOS.Core.Models
         //The persons event infomation
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
+        public string PersonId { get; set; }
         public string EventTitle { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }

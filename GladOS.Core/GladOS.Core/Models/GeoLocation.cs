@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GladOS.Core.Models {
-    public class GeoLocation {
+    public class GeoLocation
+    {
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public string Locality { get; set; }

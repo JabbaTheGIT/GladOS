@@ -70,7 +70,7 @@ namespace GladOS.Core.ViewModels
                 foreach(var person in people)
                 {
                     Person newPerson = new Person();
-                    newPerson = personProperties.CreatePerson(person.id,person.Name, person.Number, person.Employer, person.Email);
+                    newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, person.Email);
                     newList.Add(newPerson);
                 }
                 People = newList;

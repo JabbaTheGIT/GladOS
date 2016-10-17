@@ -7,6 +7,7 @@ using GladOS.Droid.Database;
 using GladOS.Core.Interfaces;
 using GladOS.Droid.Services;
 using GladOS.Core.Database;
+using GladOS.Core.Models;
 
 namespace GladOS.Droid
 {
@@ -30,6 +31,7 @@ namespace GladOS.Droid
         {
             Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
             Mvx.LazyConstructAndRegisterSingleton<IDialogService, DialogService>();
+            Mvx.LazyConstructAndRegisterSingleton<IGeoCoder, GeoCoder>();
             //Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IEventInfoDatabase, EventInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabaseAzure>();

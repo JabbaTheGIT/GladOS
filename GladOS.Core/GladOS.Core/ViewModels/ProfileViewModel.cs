@@ -116,6 +116,7 @@ namespace GladOS.Core.ViewModels
                 uPerson.Employer = Employer;
                 UpdatedPerson(uPerson);
                 UpdateGlobalValues(personDb);
+                base.ShowViewModel<ScheduleViewModel>();
             });
 
         }//End ProfileViewModel
