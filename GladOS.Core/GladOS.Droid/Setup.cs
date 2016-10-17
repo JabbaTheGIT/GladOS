@@ -8,6 +8,7 @@ using GladOS.Core.Interfaces;
 using GladOS.Droid.Services;
 using GladOS.Core.Database;
 using GladOS.Core.Models;
+using GladOS.Droid.Maps;
 
 namespace GladOS.Droid
 {

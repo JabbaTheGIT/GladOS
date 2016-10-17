@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GladOS.Droid.GladOS.Droid" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:label="GladOS.Droid" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />
+    <meta-date android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:icon="@mipmap/icon" android:label="GladOS.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="LocationViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.LocationView" />
+    <activity android:label="ProfileViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ProfileView" />
+    <activity android:label="EventViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.EventView" />
+    <activity android:label="LoginViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.LoginView" />
+    <activity android:label="ScheduleViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView" />
+    <activity android:label="HomeViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.HomeView" />
+    <activity android:label="SelectedIndividualViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView" />
+    <activity android:label="SearchViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.SearchView" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.WebAuthenticatorActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="GladOS.Droid.GladOS.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.GladOS.Droid.GladOS.Droid" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

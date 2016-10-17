@@ -8,7 +8,8 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <application android:label="GladOS.Droid">
-    <!--AIzaSyCjGyY7eBmp9oXKJFqPdj-m427_NZgDk6M -->
-    <meta-date android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCjGyY7eBmp9oXKJFqPdj-m427_NZgDk6M" />
+    <!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g"/>
+    <meta-date android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g"/>
   </application>
 </manifest>

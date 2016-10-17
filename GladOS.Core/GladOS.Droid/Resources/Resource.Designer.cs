@@ -489,6 +489,9 @@ namespace GladOS.Droid
 			// aapt resource value: 0x7f08000e
 			public const int light = 2131230734;
 			
+			// aapt resource value: 0x7f08001b
+			public const int locationview = 2131230747;
+			
 			// aapt resource value: 0x7f080003
 			public const int none = 2131230723;
 			
@@ -555,22 +558,25 @@ namespace GladOS.Droid
 			public const int item_person = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int LoginView = 2130968580;
+			public const int LocationView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int ProfileView = 2130968581;
+			public const int LoginView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int ScheduleView = 2130968582;
+			public const int ProfileView = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int SearchView = 2130968583;
+			public const int ScheduleView = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int SelectedIndividualView = 2130968584;
+			public const int SearchView = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int SplashScreen = 2130968585;
+			public const int SelectedIndividualView = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int SplashScreen = 2130968586;
 			
 			static Layout()
 			{

@@ -21,16 +21,16 @@ namespace GladOS.Core.ViewModels
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
 
-        private GeoLocation myLocation;
-        private IGeoCoder geocoder;
+        private readonly IGeoCoder geocoder;
         private Action<GeoLocation, float> moveToLocation;
+        private GeoLocation myLocation;
         public GeoLocation MyLocation
         {
             get { return myLocation; }
             set { myLocation = value; }
         }
         
-        public void MyLocationChange(GeoLocation location)
+        public void OnMyLocationChanged(GeoLocation location)
         {
             MyLocation = location;
         }

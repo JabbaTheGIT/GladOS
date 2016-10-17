@@ -13,7 +13,8 @@ namespace GladOS.Droid.Maps
         public async Task<string> GetCityFromLocation(GeoLocation location)
         {
             var geocoder = new Geocoder(Application.Context);
-            var foundLocation = await geocoder.GetFromLocationAsync(location.Latitude, location.Longitude, 1);
+            var foundLocation = await geocoder.GetFromLocationAsync
+                                (location.Latitude, location.Longitude, 1);
             return foundLocation.FirstOrDefault().Locality;
         }
 

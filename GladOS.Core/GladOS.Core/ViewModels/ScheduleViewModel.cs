@@ -155,7 +155,7 @@ namespace GladOS.Core.ViewModels
 
             EventPressed = new MvxCommand(() =>
             {
-                base.ShowViewModel<EventViewModel>();
+                base.ShowViewModel<LocationViewModel>();
             });
 
             BusyPressed = new MvxCommand(() =>
