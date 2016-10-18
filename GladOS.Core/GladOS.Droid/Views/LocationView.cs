@@ -26,22 +26,23 @@ namespace GladOS.Droid.Views
 
         public void OnMapReady(GoogleMap googleMap)
         {
-            vm.OnMapSetup(MoveToLocation);
+            //vm.OnMapSetup(MoveToLocation);
             map = googleMap;
-            map.MyLocationEnabled = true;
-            map.MyLocationChange += Map_MyLocationChange;
+            MoveToSelectedPersonLocation();
+            //map.MyLocationEnabled = true;
+            //map.MyLocationChange += Map_MyLocationChange;
         }
 
         public void Map_MyLocationChange(object sender, GoogleMap.MyLocationChangeEventArgs e)
         {
             map.MyLocationChange -= Map_MyLocationChange;
             var location = new GeoLocation(e.Location.Latitude, e.Location.Longitude, e.Location.Altitude);
-            //MoveToLocation(location);
-            MoveToSelectedPersonLocation();
+            MoveToLocation(location);
             vm.OnMyLocationChanged(location);
         }
 
-        private void MoveToLocation(GeoLocation geoLocation, float zoom = 18)
+        //Move to current users location, signal from their phone
+        private void MoveToLocation(GeoLocation geoLocation, float zoom = 17)
         {
             CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
             builder.Target(new LatLng(geoLocation.Latitude, geoLocation.Longitude));
@@ -51,8 +52,18 @@ namespace GladOS.Droid.Views
             addPersonPin(geoLocation);
             map.MoveCamera(cameraUpdate);
         }
+        //adding pin for local user's mobile
+        private void addPersonPin(GeoLocation geoLocation)
+        {
+            var markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(geoLocation.Latitude, geoLocation.Longitude));
+            markerOptions.SetSnippet(vm.personNumber);
+            markerOptions.SetTitle(vm.personName);
+            map.AddMarker(markerOptions);
+        }
 
-        private void MoveToSelectedPersonLocation(float zoom = 18)
+        //This function moves the map to the selected persons location
+        private void MoveToSelectedPersonLocation(float zoom = 17)
         {
             CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
             builder.Target(new LatLng(vm.persLat, vm.persLong));
@@ -62,20 +73,11 @@ namespace GladOS.Droid.Views
             addSelectedPersonPin();
             map.MoveCamera(cameraUpdate);
         }
-
+        //Selected persons pin
         private void addSelectedPersonPin()
         {
             var markerOptions = new MarkerOptions();
             markerOptions.SetPosition(new LatLng(vm.persLat, vm.persLong));
-            markerOptions.SetSnippet(vm.personNumber);
-            markerOptions.SetTitle(vm.personName);
-            map.AddMarker(markerOptions);
-        }
-
-        private void addPersonPin(GeoLocation geoLocation)
-        {
-            var markerOptions = new MarkerOptions();
-            markerOptions.SetPosition(new LatLng(geoLocation.Latitude, geoLocation.Longitude));
             markerOptions.SetSnippet(vm.personNumber);
             markerOptions.SetTitle(vm.personName);
             map.AddMarker(markerOptions);
