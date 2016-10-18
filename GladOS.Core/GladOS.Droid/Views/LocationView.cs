@@ -36,7 +36,8 @@ namespace GladOS.Droid.Views
         {
             map.MyLocationChange -= Map_MyLocationChange;
             var location = new GeoLocation(e.Location.Latitude, e.Location.Longitude, e.Location.Altitude);
-            MoveToLocation(location);
+            //MoveToLocation(location);
+            MoveToSelectedPersonLocation();
             vm.OnMyLocationChanged(location);
         }
 
@@ -49,6 +50,26 @@ namespace GladOS.Droid.Views
             var cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
             addPersonPin(geoLocation);
             map.MoveCamera(cameraUpdate);
+        }
+
+        private void MoveToSelectedPersonLocation(float zoom = 18)
+        {
+            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
+            builder.Target(new LatLng(vm.persLat, vm.persLong));
+            builder.Zoom(zoom);
+            var cameraPosition = builder.Build();
+            var cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
+            addSelectedPersonPin();
+            map.MoveCamera(cameraUpdate);
+        }
+
+        private void addSelectedPersonPin()
+        {
+            var markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(vm.persLat, vm.persLong));
+            markerOptions.SetSnippet(vm.personNumber);
+            markerOptions.SetTitle(vm.personName);
+            map.AddMarker(markerOptions);
         }
 
         private void addPersonPin(GeoLocation geoLocation)

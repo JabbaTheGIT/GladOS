@@ -23,6 +23,8 @@ namespace GladOS.Core.ViewModels
 
         private readonly IGeoCoder geocoder;
 
+        public double persLat = GlobalLocalPerson.Latitude;
+        public double persLong = GlobalLocalPerson.Longitude;
         public string personName = GlobalLocalPerson.Name;
         public string personNumber = GlobalLocalPerson.Number;
 

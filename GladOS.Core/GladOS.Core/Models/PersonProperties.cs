@@ -1,4 +1,5 @@
-﻿using GladOS.Core.Models;
+﻿using System;
+using GladOS.Core.Models;
 
 
 namespace GladOS.Core.Services
@@ -42,6 +43,20 @@ namespace GladOS.Core.Services
             };
         }
 
+        internal Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude)
+        {
+            return new Person()
+            {
+                id = inputId,
+                Name = name,
+                Number = number,
+                Employer = employer,
+                Email = email,
+                Latitude = latitude,
+                Longitude = longitude
+            };
+        }
+
         public void SetName(Person person,string name)
         {
             person.Name = name;
@@ -61,7 +76,6 @@ namespace GladOS.Core.Services
         {
             person.Email = email;
         }
-
 
     }
 }

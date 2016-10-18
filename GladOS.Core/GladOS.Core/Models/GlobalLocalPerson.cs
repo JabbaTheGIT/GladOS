@@ -59,6 +59,22 @@ namespace GladOS.Core.Models
             set { contactable = value; }
         }
 
+        private static double latitude = 0;
+
+        public static double Latitude
+        {
+            get { return latitude; }
+            set { latitude = value; }
+        }
+
+        private static double longitude = 0;
+
+        public static double Longitude
+        {
+            get { return longitude; }
+            set { longitude = value; }
+        }
+
     }
 
 

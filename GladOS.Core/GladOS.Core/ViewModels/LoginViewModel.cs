@@ -40,6 +40,8 @@ namespace GladOS.Core.ViewModels
                         GlobalLocalPerson.Number = person.Number;
                         GlobalLocalPerson.Email = person.Email;
                         GlobalLocalPerson.Employer = person.Employer;
+                        GlobalLocalPerson.Latitude = person.Latitude;
+                        GlobalLocalPerson.Longitude = person.Longitude;
                         found = true;
                     }
                 }
@@ -58,6 +60,8 @@ namespace GladOS.Core.ViewModels
             GlobalLocalPerson.Number = "0404889911";
             GlobalLocalPerson.Email = "darkKnight@telstra.com";
             GlobalLocalPerson.Employer = "Telstra";
+            GlobalLocalPerson.Latitude = -27.4735519;
+            GlobalLocalPerson.Longitude = 153.025281;
         }
 
         public async void GetAllPeople(IPersonInfoDatabase persDb)
@@ -70,7 +74,8 @@ namespace GladOS.Core.ViewModels
                 foreach(var person in people)
                 {
                     Person newPerson = new Person();
-                    newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, person.Email);
+                    newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, 
+                                                              person.Email, person.Latitude, person.Longitude);
                     newList.Add(newPerson);
                 }
                 People = newList;
