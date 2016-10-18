@@ -29,4 +29,9 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         local:MvxBind="Text Image"/>
+  <Button
+      android:text="View Map"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Click ViewMap" />
 </LinearLayout>

@@ -13,6 +13,7 @@ namespace GladOS.Core.ViewModels
     public class SelectedIndividualViewModel : MvxViewModel
     {
         private Person selectedPerson;
+        public ICommand ViewMap { get; private set; }
 
         private string name;
 
@@ -67,10 +68,15 @@ namespace GladOS.Core.ViewModels
             Employer = selectedPerson.Employer;
             Email = selectedPerson.Email;
             PhoneNumber = selectedPerson.Number;
+            GlobalSelectedPerson.Name = selectedPerson.Name;
+            GlobalSelectedPerson.Number = selectedPerson.Number;
+            GlobalSelectedPerson.Latitude = selectedPerson.Latitude;
+            GlobalSelectedPerson.Longitude = selectedPerson.Longitude;
             //Image = selectedPerson.Photo;
+            ViewMap = new MvxCommand(() =>
+            {
+                base.ShowViewModel<LocationViewModel>();
+            });
         }
-
-
-
     }
 }

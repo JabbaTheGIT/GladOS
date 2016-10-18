@@ -86,7 +86,7 @@ namespace GladOS.Core.ViewModels
                     if (person.Name.Contains(SearchName.ToLower()) || person.Name.Contains(SearchName.ToUpper()))
                     {
                         Person newPerson = new Person();
-                        newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
+                        newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, person.Email, person.Latitude, person.Longitude);
                         newList.Add(newPerson);
                     }
                 }
