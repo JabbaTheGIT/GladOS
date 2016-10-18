@@ -28,6 +28,8 @@ namespace GladOS.Core.Models
         public string Employer { get; set; }
         public string Email { get; set; }
         public bool Contactable { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 
 

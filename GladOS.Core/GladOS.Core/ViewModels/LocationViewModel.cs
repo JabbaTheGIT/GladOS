@@ -22,6 +22,10 @@ namespace GladOS.Core.ViewModels
         public ICommand ProfilePressed { get; private set; }
 
         private readonly IGeoCoder geocoder;
+
+        public string personName = GlobalLocalPerson.Name;
+        public string personNumber = GlobalLocalPerson.Number;
+
         private Action<GeoLocation, float> moveToLocation;
         private GeoLocation myLocation;
         public GeoLocation MyLocation

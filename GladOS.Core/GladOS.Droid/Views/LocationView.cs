@@ -47,8 +47,17 @@ namespace GladOS.Droid.Views
             builder.Zoom(zoom);
             var cameraPosition = builder.Build();
             var cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
-
+            addPersonPin(geoLocation);
             map.MoveCamera(cameraUpdate);
+        }
+
+        private void addPersonPin(GeoLocation geoLocation)
+        {
+            var markerOptions = new MarkerOptions();
+            markerOptions.SetPosition(new LatLng(geoLocation.Latitude, geoLocation.Longitude));
+            markerOptions.SetSnippet(vm.personNumber);
+            markerOptions.SetTitle(vm.personName);
+            map.AddMarker(markerOptions);
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
