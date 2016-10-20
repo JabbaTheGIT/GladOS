@@ -14,11 +14,14 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using GladOS.Core.ViewModels;
 using GladOS.Core.Models;
+using Android.Gms.Common.Apis;
+using Android.Gms.Location;
+using Android.Gms.Common;
 
 namespace GladOS.Droid.Views
 {
     [Activity(Label = "LocationViewModel")]
-    public class LocationView : MvxActivity, IOnMapReadyCallback
+    public class LocationView : MvxActivity, IOnMapReadyCallback, GoogleApiClient.IConnectionCallbacks, GoogleApiClient.IOnConnectionFailedListener
     {
         private delegate IOnMapReadyCallback OnMapReadyCallback();
         private GoogleMap map;
@@ -39,6 +42,13 @@ namespace GladOS.Droid.Views
             var location = new GeoLocation(e.Location.Latitude, e.Location.Longitude, e.Location.Altitude);
             MoveToLocation(location);
             vm.OnMyLocationChanged(location);
+        }
+
+        public void CallUserMapLocation(GoogleMap goolgeMap)
+        {
+            vm.OnMapSetup(MoveToLocation);
+            map.MyLocationEnabled = true;
+            map.MyLocationChange += Map_MyLocationChange;
         }
 
         //Move to current users location, signal from their phone
@@ -92,6 +102,24 @@ namespace GladOS.Droid.Views
             var mapFragment = FragmentManager.FindFragmentById(Resource.Id.locationview)
                               as MapFragment;
             mapFragment.GetMapAsync(this);
+        }
+
+        public void OnConnected(Bundle connectionHint)
+        {
+            var client = new GoogleApiClient.Builder(this)
+                             .AddConnectionCallbacks(this)
+                             .AddOnConnectionFailedListener(this)
+                             .AddApi(LocationServices.API).Build();
+        }
+
+        public void OnConnectionSuspended(int cause)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnConnectionFailed(ConnectionResult result)
+        {
+            throw new NotImplementedException();
         }
     }
 }

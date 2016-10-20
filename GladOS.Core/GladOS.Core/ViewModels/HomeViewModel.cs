@@ -69,6 +69,7 @@ namespace GladOS.Core.ViewModels
         public ICommand SchedulePressed { get; private set; }
         public ICommand SearchPressed { get; private set; }
         public ICommand ProfilePressed { get; private set; }
+        public ICommand UpdateLocationPressed { get; private set; }
 
         private void LoggedInUser()
         {
@@ -100,6 +101,11 @@ namespace GladOS.Core.ViewModels
             SearchPressed = new MvxCommand(() =>
             {
                 base.ShowViewModel<SearchViewModel>();
+            });
+
+            UpdateLocationPressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<PublishLocationViewModel>();
             });
 
         }//End SecondViewModel

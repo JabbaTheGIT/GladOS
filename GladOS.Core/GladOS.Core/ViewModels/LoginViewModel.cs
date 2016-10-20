@@ -55,7 +55,7 @@ namespace GladOS.Core.ViewModels
 
         private void DefaultPerson()
         {
-            GlobalLocalPerson.Id = "1d585760-c31b-40a2-aa73-4210d343d738";
+            GlobalLocalPerson.Id = "755b87ff-dcb4-4529-833b-9157063432ee";
             GlobalLocalPerson.Name = "Bruce Wayne";
             GlobalLocalPerson.Number = "0404889911";
             GlobalLocalPerson.Email = "darkKnight@telstra.com";

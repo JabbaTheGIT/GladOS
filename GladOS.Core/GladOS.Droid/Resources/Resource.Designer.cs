@@ -157,68 +157,86 @@ namespace GladOS.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070008
-			public const int common_action_bar_splitter = 2131165192;
+			// aapt resource value: 0x7f05000e
+			public const int common_action_bar_splitter = 2131034126;
 			
-			// aapt resource value: 0x7f070011
-			public const int common_google_signin_btn_text_dark = 2131165201;
+			// aapt resource value: 0x7f050017
+			public const int common_google_signin_btn_text_dark = 2131034135;
 			
-			// aapt resource value: 0x7f070009
-			public const int common_google_signin_btn_text_dark_default = 2131165193;
+			// aapt resource value: 0x7f05000f
+			public const int common_google_signin_btn_text_dark_default = 2131034127;
 			
-			// aapt resource value: 0x7f07000b
-			public const int common_google_signin_btn_text_dark_disabled = 2131165195;
+			// aapt resource value: 0x7f050011
+			public const int common_google_signin_btn_text_dark_disabled = 2131034129;
 			
-			// aapt resource value: 0x7f07000c
-			public const int common_google_signin_btn_text_dark_focused = 2131165196;
+			// aapt resource value: 0x7f050012
+			public const int common_google_signin_btn_text_dark_focused = 2131034130;
 			
-			// aapt resource value: 0x7f07000a
-			public const int common_google_signin_btn_text_dark_pressed = 2131165194;
+			// aapt resource value: 0x7f050010
+			public const int common_google_signin_btn_text_dark_pressed = 2131034128;
 			
-			// aapt resource value: 0x7f070012
-			public const int common_google_signin_btn_text_light = 2131165202;
+			// aapt resource value: 0x7f050018
+			public const int common_google_signin_btn_text_light = 2131034136;
 			
-			// aapt resource value: 0x7f07000d
-			public const int common_google_signin_btn_text_light_default = 2131165197;
+			// aapt resource value: 0x7f050013
+			public const int common_google_signin_btn_text_light_default = 2131034131;
 			
-			// aapt resource value: 0x7f07000f
-			public const int common_google_signin_btn_text_light_disabled = 2131165199;
+			// aapt resource value: 0x7f050015
+			public const int common_google_signin_btn_text_light_disabled = 2131034133;
 			
-			// aapt resource value: 0x7f070010
-			public const int common_google_signin_btn_text_light_focused = 2131165200;
+			// aapt resource value: 0x7f050016
+			public const int common_google_signin_btn_text_light_focused = 2131034134;
 			
-			// aapt resource value: 0x7f07000e
-			public const int common_google_signin_btn_text_light_pressed = 2131165198;
+			// aapt resource value: 0x7f050014
+			public const int common_google_signin_btn_text_light_pressed = 2131034132;
 			
-			// aapt resource value: 0x7f070013
-			public const int common_plus_signin_btn_text_dark = 2131165203;
+			// aapt resource value: 0x7f050019
+			public const int common_plus_signin_btn_text_dark = 2131034137;
 			
-			// aapt resource value: 0x7f070000
-			public const int common_plus_signin_btn_text_dark_default = 2131165184;
+			// aapt resource value: 0x7f050006
+			public const int common_plus_signin_btn_text_dark_default = 2131034118;
 			
-			// aapt resource value: 0x7f070002
-			public const int common_plus_signin_btn_text_dark_disabled = 2131165186;
+			// aapt resource value: 0x7f050008
+			public const int common_plus_signin_btn_text_dark_disabled = 2131034120;
 			
-			// aapt resource value: 0x7f070003
-			public const int common_plus_signin_btn_text_dark_focused = 2131165187;
+			// aapt resource value: 0x7f050009
+			public const int common_plus_signin_btn_text_dark_focused = 2131034121;
 			
-			// aapt resource value: 0x7f070001
-			public const int common_plus_signin_btn_text_dark_pressed = 2131165185;
+			// aapt resource value: 0x7f050007
+			public const int common_plus_signin_btn_text_dark_pressed = 2131034119;
 			
-			// aapt resource value: 0x7f070014
-			public const int common_plus_signin_btn_text_light = 2131165204;
+			// aapt resource value: 0x7f05001a
+			public const int common_plus_signin_btn_text_light = 2131034138;
 			
-			// aapt resource value: 0x7f070004
-			public const int common_plus_signin_btn_text_light_default = 2131165188;
+			// aapt resource value: 0x7f05000a
+			public const int common_plus_signin_btn_text_light_default = 2131034122;
 			
-			// aapt resource value: 0x7f070006
-			public const int common_plus_signin_btn_text_light_disabled = 2131165190;
+			// aapt resource value: 0x7f05000c
+			public const int common_plus_signin_btn_text_light_disabled = 2131034124;
 			
-			// aapt resource value: 0x7f070007
-			public const int common_plus_signin_btn_text_light_focused = 2131165191;
+			// aapt resource value: 0x7f05000d
+			public const int common_plus_signin_btn_text_light_focused = 2131034125;
 			
-			// aapt resource value: 0x7f070005
-			public const int common_plus_signin_btn_text_light_pressed = 2131165189;
+			// aapt resource value: 0x7f05000b
+			public const int common_plus_signin_btn_text_light_pressed = 2131034123;
+			
+			// aapt resource value: 0x7f050002
+			public const int place_autocomplete_prediction_primary_text = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int place_autocomplete_prediction_primary_text_highlight = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int place_autocomplete_prediction_secondary_text = 2131034116;
+			
+			// aapt resource value: 0x7f050001
+			public const int place_autocomplete_search_hint = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int place_autocomplete_search_text = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int place_autocomplete_separator = 2131034117;
 			
 			static Color()
 			{
@@ -226,6 +244,49 @@ namespace GladOS.Droid
 			}
 			
 			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int place_autocomplete_button_padding = 2131099648;
+			
+			// aapt resource value: 0x7f060008
+			public const int place_autocomplete_powered_by_google_height = 2131099656;
+			
+			// aapt resource value: 0x7f060009
+			public const int place_autocomplete_powered_by_google_start = 2131099657;
+			
+			// aapt resource value: 0x7f060003
+			public const int place_autocomplete_prediction_height = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int place_autocomplete_prediction_horizontal_margin = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int place_autocomplete_prediction_primary_text = 2131099653;
+			
+			// aapt resource value: 0x7f060006
+			public const int place_autocomplete_prediction_secondary_text = 2131099654;
+			
+			// aapt resource value: 0x7f060002
+			public const int place_autocomplete_progress_horizontal_margin = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int place_autocomplete_progress_size = 2131099649;
+			
+			// aapt resource value: 0x7f060007
+			public const int place_autocomplete_separator_start = 2131099655;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
 			{
 			}
 		}
@@ -387,37 +448,49 @@ namespace GladOS.Droid
 			public const int office = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int sample_0 = 2130837555;
+			public const int places_ic_clear = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int sample_1 = 2130837556;
+			public const int places_ic_search = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int sample_2 = 2130837557;
+			public const int powered_by_google_dark = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int sample_3 = 2130837558;
+			public const int powered_by_google_light = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int sample_4 = 2130837559;
+			public const int sample_0 = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int sample_5 = 2130837560;
+			public const int sample_1 = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int sample_6 = 2130837561;
+			public const int sample_2 = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int sample_7 = 2130837562;
+			public const int sample_3 = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int schedule = 2130837563;
+			public const int sample_4 = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int splash = 2130837564;
+			public const int sample_5 = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int steve = 2130837565;
+			public const int sample_6 = 2130837565;
+			
+			// aapt resource value: 0x7f02003e
+			public const int sample_7 = 2130837566;
+			
+			// aapt resource value: 0x7f02003f
+			public const int schedule = 2130837567;
+			
+			// aapt resource value: 0x7f020040
+			public const int splash = 2130837568;
+			
+			// aapt resource value: 0x7f020041
+			public const int steve = 2130837569;
 			
 			static Drawable()
 			{
@@ -432,89 +505,116 @@ namespace GladOS.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080000
-			public const int MvvmCrossTagId = 2131230720;
+			// aapt resource value: 0x7f090000
+			public const int MvvmCrossTagId = 2131296256;
 			
-			// aapt resource value: 0x7f080001
-			public const int MvxBindingTagUnique = 2131230721;
+			// aapt resource value: 0x7f090001
+			public const int MvxBindingTagUnique = 2131296257;
 			
-			// aapt resource value: 0x7f080007
-			public const int adjust_height = 2131230727;
+			// aapt resource value: 0x7f090007
+			public const int adjust_height = 2131296263;
 			
-			// aapt resource value: 0x7f080008
-			public const int adjust_width = 2131230728;
+			// aapt resource value: 0x7f090008
+			public const int adjust_width = 2131296264;
 			
-			// aapt resource value: 0x7f08000c
-			public const int auto = 2131230732;
+			// aapt resource value: 0x7f09000c
+			public const int auto = 2131296268;
 			
-			// aapt resource value: 0x7f08001a
-			public const int checkBoxBluetooth = 2131230746;
+			// aapt resource value: 0x7f09001a
+			public const int checkBoxBluetooth = 2131296282;
 			
-			// aapt resource value: 0x7f080019
-			public const int checkBoxGPS = 2131230745;
+			// aapt resource value: 0x7f090019
+			public const int checkBoxGPS = 2131296281;
 			
-			// aapt resource value: 0x7f080017
-			public const int checkBoxNFC = 2131230743;
+			// aapt resource value: 0x7f090017
+			public const int checkBoxNFC = 2131296279;
 			
-			// aapt resource value: 0x7f080018
-			public const int checkBoxWifi = 2131230744;
+			// aapt resource value: 0x7f090018
+			public const int checkBoxWifi = 2131296280;
 			
-			// aapt resource value: 0x7f08000d
-			public const int dark = 2131230733;
+			// aapt resource value: 0x7f09000d
+			public const int dark = 2131296269;
 			
-			// aapt resource value: 0x7f08000f
-			public const int gridLayout1 = 2131230735;
+			// aapt resource value: 0x7f09000f
+			public const int gridLayout1 = 2131296271;
 			
-			// aapt resource value: 0x7f080002
-			public const int hybrid = 2131230722;
+			// aapt resource value: 0x7f090002
+			public const int hybrid = 2131296258;
 			
-			// aapt resource value: 0x7f080009
-			public const int icon_only = 2131230729;
+			// aapt resource value: 0x7f090009
+			public const int icon_only = 2131296265;
 			
-			// aapt resource value: 0x7f080010
-			public const int imageViewDP = 2131230736;
+			// aapt resource value: 0x7f090010
+			public const int imageViewDP = 2131296272;
 			
-			// aapt resource value: 0x7f080012
-			public const int imageViewFbIcon = 2131230738;
+			// aapt resource value: 0x7f090012
+			public const int imageViewFbIcon = 2131296274;
 			
-			// aapt resource value: 0x7f080014
-			public const int imageViewGitIcon = 2131230740;
+			// aapt resource value: 0x7f090014
+			public const int imageViewGitIcon = 2131296276;
 			
-			// aapt resource value: 0x7f080013
-			public const int imageViewLinkedIcon = 2131230739;
+			// aapt resource value: 0x7f090013
+			public const int imageViewLinkedIcon = 2131296275;
 			
-			// aapt resource value: 0x7f080015
-			public const int imageViewSchedule = 2131230741;
+			// aapt resource value: 0x7f090015
+			public const int imageViewSchedule = 2131296277;
 			
-			// aapt resource value: 0x7f08000e
-			public const int light = 2131230734;
+			// aapt resource value: 0x7f09000e
+			public const int light = 2131296270;
 			
-			// aapt resource value: 0x7f08001b
-			public const int locationview = 2131230747;
+			// aapt resource value: 0x7f09001b
+			public const int locationview = 2131296283;
 			
-			// aapt resource value: 0x7f080003
-			public const int none = 2131230723;
+			// aapt resource value: 0x7f090003
+			public const int none = 2131296259;
 			
-			// aapt resource value: 0x7f080004
-			public const int normal = 2131230724;
+			// aapt resource value: 0x7f090004
+			public const int normal = 2131296260;
 			
-			// aapt resource value: 0x7f080005
-			public const int satellite = 2131230725;
+			// aapt resource value: 0x7f09001e
+			public const int place_autocomplete_clear_button = 2131296286;
 			
-			// aapt resource value: 0x7f08000a
-			public const int standard = 2131230730;
+			// aapt resource value: 0x7f090020
+			public const int place_autocomplete_powered_by_google = 2131296288;
 			
-			// aapt resource value: 0x7f080006
-			public const int terrain = 2131230726;
+			// aapt resource value: 0x7f090022
+			public const int place_autocomplete_prediction_primary_text = 2131296290;
 			
-			// aapt resource value: 0x7f080011
-			public const int textViewEmail = 2131230737;
+			// aapt resource value: 0x7f090023
+			public const int place_autocomplete_prediction_secondary_text = 2131296291;
 			
-			// aapt resource value: 0x7f080016
-			public const int textViewLocate = 2131230742;
+			// aapt resource value: 0x7f090021
+			public const int place_autocomplete_progress = 2131296289;
 			
-			// aapt resource value: 0x7f08000b
-			public const int wide = 2131230731;
+			// aapt resource value: 0x7f09001c
+			public const int place_autocomplete_search_button = 2131296284;
+			
+			// aapt resource value: 0x7f09001d
+			public const int place_autocomplete_search_input = 2131296285;
+			
+			// aapt resource value: 0x7f09001f
+			public const int place_autocomplete_separator = 2131296287;
+			
+			// aapt resource value: 0x7f090024
+			public const int publishlocationview = 2131296292;
+			
+			// aapt resource value: 0x7f090005
+			public const int satellite = 2131296261;
+			
+			// aapt resource value: 0x7f09000a
+			public const int standard = 2131296266;
+			
+			// aapt resource value: 0x7f090006
+			public const int terrain = 2131296262;
+			
+			// aapt resource value: 0x7f090011
+			public const int textViewEmail = 2131296273;
+			
+			// aapt resource value: 0x7f090016
+			public const int textViewLocate = 2131296278;
+			
+			// aapt resource value: 0x7f09000b
+			public const int wide = 2131296267;
 			
 			static Id()
 			{
@@ -529,8 +629,8 @@ namespace GladOS.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int google_play_services_version = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int google_play_services_version = 2131230720;
 			
 			static Integer()
 			{
@@ -564,19 +664,34 @@ namespace GladOS.Droid
 			public const int LoginView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int ProfileView = 2130968582;
+			public const int place_autocomplete_fragment = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int ScheduleView = 2130968583;
+			public const int place_autocomplete_item_powered_by_google = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int SearchView = 2130968584;
+			public const int place_autocomplete_item_prediction = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int SelectedIndividualView = 2130968585;
+			public const int place_autocomplete_progress = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int SplashScreen = 2130968586;
+			public const int ProfileView = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int PublishLocationView = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int ScheduleView = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int SearchView = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int SelectedIndividualView = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int SplashScreen = 2130968591;
 			
 			static Layout()
 			{
@@ -607,104 +722,110 @@ namespace GladOS.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050020
-			public const int ApplicationName = 2131034144;
+			// aapt resource value: 0x7f070022
+			public const int ApplicationName = 2131165218;
 			
-			// aapt resource value: 0x7f05001f
-			public const int Hello = 2131034143;
+			// aapt resource value: 0x7f070021
+			public const int Hello = 2131165217;
 			
-			// aapt resource value: 0x7f050001
-			public const int auth_google_play_services_client_facebook_display_name = 2131034113;
+			// aapt resource value: 0x7f070003
+			public const int auth_google_play_services_client_facebook_display_name = 2131165187;
 			
-			// aapt resource value: 0x7f050000
-			public const int auth_google_play_services_client_google_display_name = 2131034112;
+			// aapt resource value: 0x7f070002
+			public const int auth_google_play_services_client_google_display_name = 2131165186;
 			
-			// aapt resource value: 0x7f050018
-			public const int common_google_play_services_api_unavailable_text = 2131034136;
+			// aapt resource value: 0x7f07001a
+			public const int common_google_play_services_api_unavailable_text = 2131165210;
 			
-			// aapt resource value: 0x7f05000a
-			public const int common_google_play_services_enable_button = 2131034122;
+			// aapt resource value: 0x7f07000c
+			public const int common_google_play_services_enable_button = 2131165196;
 			
-			// aapt resource value: 0x7f050009
-			public const int common_google_play_services_enable_text = 2131034121;
+			// aapt resource value: 0x7f07000b
+			public const int common_google_play_services_enable_text = 2131165195;
 			
-			// aapt resource value: 0x7f050008
-			public const int common_google_play_services_enable_title = 2131034120;
+			// aapt resource value: 0x7f07000a
+			public const int common_google_play_services_enable_title = 2131165194;
 			
-			// aapt resource value: 0x7f050007
-			public const int common_google_play_services_install_button = 2131034119;
+			// aapt resource value: 0x7f070009
+			public const int common_google_play_services_install_button = 2131165193;
 			
-			// aapt resource value: 0x7f050005
-			public const int common_google_play_services_install_text_phone = 2131034117;
+			// aapt resource value: 0x7f070007
+			public const int common_google_play_services_install_text_phone = 2131165191;
 			
-			// aapt resource value: 0x7f050006
-			public const int common_google_play_services_install_text_tablet = 2131034118;
+			// aapt resource value: 0x7f070008
+			public const int common_google_play_services_install_text_tablet = 2131165192;
 			
-			// aapt resource value: 0x7f050004
-			public const int common_google_play_services_install_title = 2131034116;
+			// aapt resource value: 0x7f070006
+			public const int common_google_play_services_install_title = 2131165190;
 			
-			// aapt resource value: 0x7f050013
-			public const int common_google_play_services_invalid_account_text = 2131034131;
+			// aapt resource value: 0x7f070015
+			public const int common_google_play_services_invalid_account_text = 2131165205;
 			
-			// aapt resource value: 0x7f050012
-			public const int common_google_play_services_invalid_account_title = 2131034130;
+			// aapt resource value: 0x7f070014
+			public const int common_google_play_services_invalid_account_title = 2131165204;
 			
-			// aapt resource value: 0x7f050011
-			public const int common_google_play_services_network_error_text = 2131034129;
+			// aapt resource value: 0x7f070013
+			public const int common_google_play_services_network_error_text = 2131165203;
 			
-			// aapt resource value: 0x7f050010
-			public const int common_google_play_services_network_error_title = 2131034128;
+			// aapt resource value: 0x7f070012
+			public const int common_google_play_services_network_error_title = 2131165202;
 			
-			// aapt resource value: 0x7f050003
-			public const int common_google_play_services_notification_ticker = 2131034115;
+			// aapt resource value: 0x7f070005
+			public const int common_google_play_services_notification_ticker = 2131165189;
 			
-			// aapt resource value: 0x7f05001c
-			public const int common_google_play_services_restricted_profile_text = 2131034140;
+			// aapt resource value: 0x7f07001e
+			public const int common_google_play_services_restricted_profile_text = 2131165214;
 			
-			// aapt resource value: 0x7f05001b
-			public const int common_google_play_services_restricted_profile_title = 2131034139;
+			// aapt resource value: 0x7f07001d
+			public const int common_google_play_services_restricted_profile_title = 2131165213;
 			
-			// aapt resource value: 0x7f05001a
-			public const int common_google_play_services_sign_in_failed_text = 2131034138;
+			// aapt resource value: 0x7f07001c
+			public const int common_google_play_services_sign_in_failed_text = 2131165212;
 			
-			// aapt resource value: 0x7f050019
-			public const int common_google_play_services_sign_in_failed_title = 2131034137;
+			// aapt resource value: 0x7f07001b
+			public const int common_google_play_services_sign_in_failed_title = 2131165211;
 			
-			// aapt resource value: 0x7f050002
-			public const int common_google_play_services_unknown_issue = 2131034114;
+			// aapt resource value: 0x7f070004
+			public const int common_google_play_services_unknown_issue = 2131165188;
 			
-			// aapt resource value: 0x7f050015
-			public const int common_google_play_services_unsupported_text = 2131034133;
+			// aapt resource value: 0x7f070017
+			public const int common_google_play_services_unsupported_text = 2131165207;
 			
-			// aapt resource value: 0x7f050014
-			public const int common_google_play_services_unsupported_title = 2131034132;
+			// aapt resource value: 0x7f070016
+			public const int common_google_play_services_unsupported_title = 2131165206;
 			
-			// aapt resource value: 0x7f050016
-			public const int common_google_play_services_update_button = 2131034134;
+			// aapt resource value: 0x7f070018
+			public const int common_google_play_services_update_button = 2131165208;
 			
-			// aapt resource value: 0x7f05000c
-			public const int common_google_play_services_update_text = 2131034124;
+			// aapt resource value: 0x7f07000e
+			public const int common_google_play_services_update_text = 2131165198;
 			
-			// aapt resource value: 0x7f05000b
-			public const int common_google_play_services_update_title = 2131034123;
+			// aapt resource value: 0x7f07000d
+			public const int common_google_play_services_update_title = 2131165197;
 			
-			// aapt resource value: 0x7f05000f
-			public const int common_google_play_services_updating_text = 2131034127;
+			// aapt resource value: 0x7f070011
+			public const int common_google_play_services_updating_text = 2131165201;
 			
-			// aapt resource value: 0x7f05000e
-			public const int common_google_play_services_updating_title = 2131034126;
+			// aapt resource value: 0x7f070010
+			public const int common_google_play_services_updating_title = 2131165200;
 			
-			// aapt resource value: 0x7f05000d
-			public const int common_google_play_services_wear_update_text = 2131034125;
+			// aapt resource value: 0x7f07000f
+			public const int common_google_play_services_wear_update_text = 2131165199;
 			
-			// aapt resource value: 0x7f050017
-			public const int common_open_on_phone = 2131034135;
+			// aapt resource value: 0x7f070019
+			public const int common_open_on_phone = 2131165209;
 			
-			// aapt resource value: 0x7f05001d
-			public const int common_signin_button_text = 2131034141;
+			// aapt resource value: 0x7f07001f
+			public const int common_signin_button_text = 2131165215;
 			
-			// aapt resource value: 0x7f05001e
-			public const int common_signin_button_text_long = 2131034142;
+			// aapt resource value: 0x7f070020
+			public const int common_signin_button_text_long = 2131165216;
+			
+			// aapt resource value: 0x7f070001
+			public const int place_autocomplete_clear_button = 2131165185;
+			
+			// aapt resource value: 0x7f070000
+			public const int place_autocomplete_search_hint = 2131165184;
 			
 			static String()
 			{
@@ -719,8 +840,8 @@ namespace GladOS.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f090000
-			public const int Theme_Splash = 2131296256;
+			// aapt resource value: 0x7f0a0000
+			public const int Theme_Splash = 2131361792;
 			
 			static Style()
 			{

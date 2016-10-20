@@ -175,13 +175,13 @@
         android:layout_row="8"
         android:layout_marginTop="5dp" />
     <Button
-        android:text="Save"
+        android:text="Update Location"
         android:layout_column="2"
         android:layout_row="7"
         android:layout_margin="5dp"
         android:clickable="true"
         android:layout_rowSpan="2"
         android:layout_marginTop="20dp" 
-        local:MvxBind="Click UpdateSearchMethod"/>
+        local:MvxBind="Click UpdateLocationPressed"/>
   </GridLayout>
 </LinearLayout>

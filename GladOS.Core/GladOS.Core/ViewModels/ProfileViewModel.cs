@@ -72,7 +72,6 @@ namespace GladOS.Core.ViewModels
                     }
                 }
             }
-
         }
 
         public async void UpdatedPerson(Person updatePerson)

@@ -8,6 +8,7 @@ using System.Linq;
 using GladOS.Core.Interfaces;
 using GladOS.Core.Database;
 using System;
+using System.Threading.Tasks;
 
 /*This view holds the infomation about the local user, view enables them
  *to decide how they would like to be located and save that choice
@@ -41,6 +42,15 @@ namespace GladOS.Core.ViewModels
             MyLocation = location;
         }
 
+        private async void RunSomething()
+        {
+            while (true)
+            {
+                await Task.Delay(100);
+                //Do a thing
+            }
+        }
+
         public void OnMapSetup(Action<GeoLocation,float> MoveToLocation)
         {
             moveToLocation = MoveToLocation;
@@ -49,7 +59,7 @@ namespace GladOS.Core.ViewModels
         public LocationViewModel(IGeoCoder geocoder)
         {
             this.geocoder = geocoder;
-
+            RunSomething();
             HomePressed = new MvxCommand(() =>
             {
                 base.ShowViewModel<HomeViewModel>();
@@ -61,7 +71,7 @@ namespace GladOS.Core.ViewModels
             });
 
             ProfilePressed = new MvxCommand(() =>
-            {
+            {              
                 base.ShowViewModel<ProfileViewModel>();
             });
 
