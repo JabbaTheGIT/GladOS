@@ -43,7 +43,7 @@ namespace GladOS.Core.Services
             };
         }
 
-        internal Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude)
+        public Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude)
         {
             return new Person()
             {
@@ -54,6 +54,21 @@ namespace GladOS.Core.Services
                 Email = email,
                 Latitude = latitude,
                 Longitude = longitude
+            };
+        }
+
+        public Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude, bool contactable)
+        {
+            return new Person()
+            {
+                id = inputId,
+                Name = name,
+                Number = number,
+                Employer = employer,
+                Email = email,
+                Latitude = latitude,
+                Longitude = longitude,
+                Contactable = contactable
             };
         }
 

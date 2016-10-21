@@ -22,6 +22,20 @@ namespace GladOS.Core.ViewModels
         private List<Person> People { get; set; }
         public string SearchName { get; set; }
 
+        private bool isBusy = true;
+
+        public bool IsBusy
+        {
+            get { return isBusy; }
+
+            set
+            {
+                isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
+
         public ICommand LoginPressed { get; private set; }
 
         public void GetPerson(List<Person> people, string searchName)
@@ -46,22 +60,6 @@ namespace GladOS.Core.ViewModels
                     }
                 }
             }
-            // Person not in Db load a deafult for now
-            if(found == false)
-            {
-                DefaultPerson();
-            }
-        }
-
-        private void DefaultPerson()
-        {
-            GlobalLocalPerson.Id = "755b87ff-dcb4-4529-833b-9157063432ee";
-            GlobalLocalPerson.Name = "Bruce Wayne";
-            GlobalLocalPerson.Number = "0404889911";
-            GlobalLocalPerson.Email = "darkKnight@telstra.com";
-            GlobalLocalPerson.Employer = "Telstra";
-            GlobalLocalPerson.Latitude = -27.4735519;
-            GlobalLocalPerson.Longitude = 153.025281;
         }
 
         public async void GetAllPeople(IPersonInfoDatabase persDb)
@@ -75,10 +73,11 @@ namespace GladOS.Core.ViewModels
                 {
                     Person newPerson = new Person();
                     newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, 
-                                                              person.Email, person.Latitude, person.Longitude);
+                                                              person.Email, person.Latitude, person.Longitude, person.Contactable);
                     newList.Add(newPerson);
                 }
                 People = newList;
+                IsBusy = false;
             }
         }
 
@@ -86,18 +85,21 @@ namespace GladOS.Core.ViewModels
         {
             this.personDb = personDb;
             GetAllPeople(personDb);
-
+           
             LoginPressed = new MvxCommand(() =>
             {
-                if(SearchName == null || SearchName == "")
+                if(isBusy == false)
                 {
-                    DefaultPerson();
-                    base.ShowViewModel<HomeViewModel>();
-                }
-                else
-                {
-                    GetPerson(People, SearchName);
-                    base.ShowViewModel<HomeViewModel>();
+                    if (SearchName == null || SearchName == "")
+                    {
+                        GetPerson(People, "Bruce Wayne");
+                        base.ShowViewModel<HomeViewModel>();
+                    }
+                    else
+                    {
+                        GetPerson(People, SearchName);
+                        base.ShowViewModel<HomeViewModel>();
+                    }
                 }
             });
         }

@@ -47,6 +47,14 @@ namespace GladOS.Core.ViewModels
             set { SetProperty(ref phoneNumber, value); }
         }
 
+        private bool contactable;
+
+        public bool Contactable
+        {
+            get { return contactable; }
+            set { SetProperty(ref contactable, value); }
+        }
+
         private string image;
 
         public string Image
@@ -55,27 +63,45 @@ namespace GladOS.Core.ViewModels
             set { SetProperty(ref image, value); ; }
         }
 
-
-        public void Init(Person parameters)
+        public void SyncGlobalPerson()
         {
-            selectedPerson = parameters;
-
+            GlobalSelectedPerson.Name = selectedPerson.Name;
+            GlobalSelectedPerson.Number = selectedPerson.Number;
+            GlobalSelectedPerson.Contactable = selectedPerson.Contactable;
+            GlobalSelectedPerson.Latitude = selectedPerson.Latitude;
+            GlobalSelectedPerson.Longitude = selectedPerson.Longitude;
         }
-        public override void Start()
+
+        public void InitialiseVars()
         {
-            base.Start();
             Name = selectedPerson.Name;
             Employer = selectedPerson.Employer;
             Email = selectedPerson.Email;
             PhoneNumber = selectedPerson.Number;
-            GlobalSelectedPerson.Name = selectedPerson.Name;
-            GlobalSelectedPerson.Number = selectedPerson.Number;
-            GlobalSelectedPerson.Latitude = selectedPerson.Latitude;
-            GlobalSelectedPerson.Longitude = selectedPerson.Longitude;
+            Contactable = selectedPerson.Contactable;
+        }
+
+        public void Init(Person parameters)
+        {
+            selectedPerson = parameters;
+        }
+        public override void Start()
+        {
+            base.Start();
+            InitialiseVars();
+            SyncGlobalPerson();
             //Image = selectedPerson.Photo;
             ViewMap = new MvxCommand(() =>
             {
-                base.ShowViewModel<LocationViewModel>();
+                if(contactable)
+                {
+                    ShowViewModel<LocationViewModel>();
+                }
+                else
+                {
+                    //Setup a not contactable notification later
+                }
+                
             });
         }
     }

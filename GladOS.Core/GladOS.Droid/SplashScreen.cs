@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content.PM;
+using GladOS.Core.ViewModels;
 using MvvmCross.Droid.Views;
 
 namespace GladOS.Droid
