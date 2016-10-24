@@ -1,6 +1,3 @@
-//William Gwilt n9425438
-//NSC Industries prject GladOS
-
 using GladOS.Core.Models;
 using GladOS.Core.Services;
 using MvvmCross.Core.ViewModels;

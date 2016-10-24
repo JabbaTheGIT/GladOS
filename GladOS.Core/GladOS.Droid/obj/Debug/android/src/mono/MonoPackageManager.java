@@ -100,7 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GladOS.Droid.dll" comes first in this list. */
 		"GladOS.Droid.dll",
 		"GladOS.Core.dll",
-		"Java.Interop.dll",
+		"Mono.Android.Export.dll",
 		"Microsoft.WindowsAzure.Mobile.dll",
 		"Microsoft.WindowsAzure.Mobile.Ext.dll",
 		"Microsoft.WindowsAzure.Mobile.SQLiteStore.dll",
@@ -142,7 +142,6 @@ class MonoPackageManager_Resources {
 		"System.Collections.Concurrent.dll",
 		"System.Runtime.InteropServices.dll",
 		"System.Reflection.Extensions.dll",
-		"System.ServiceModel.Internals.dll",
 		"System.Text.RegularExpressions.dll",
 		"System.Net.Primitives.dll",
 		"System.Diagnostics.Tools.dll",

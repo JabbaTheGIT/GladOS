@@ -1,6 +1,3 @@
-//William Gwilt n9425438
-//NSC Industries prject GladOS
-
 using Android;
 using Android.Widget;
 using MvvmCross.Core.ViewModels;
