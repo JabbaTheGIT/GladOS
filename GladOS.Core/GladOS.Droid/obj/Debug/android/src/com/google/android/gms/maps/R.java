@@ -435,22 +435,23 @@ containing a value of this type.
         public static int google_play_services_version=0x7f080000;
     }
     public static final class layout {
-        public static int eventview=0x7f040000;
-        public static int homeview=0x7f040001;
-        public static int item_events=0x7f040002;
-        public static int item_person=0x7f040003;
-        public static int locationview=0x7f040004;
-        public static int loginview=0x7f040005;
-        public static int place_autocomplete_fragment=0x7f040006;
-        public static int place_autocomplete_item_powered_by_google=0x7f040007;
-        public static int place_autocomplete_item_prediction=0x7f040008;
-        public static int place_autocomplete_progress=0x7f040009;
-        public static int profileview=0x7f04000a;
-        public static int publishlocationview=0x7f04000b;
-        public static int scheduleview=0x7f04000c;
-        public static int searchview=0x7f04000d;
-        public static int selectedindividualview=0x7f04000e;
-        public static int splashscreen=0x7f04000f;
+        public static int createpersonview=0x7f040000;
+        public static int eventview=0x7f040001;
+        public static int homeview=0x7f040002;
+        public static int item_events=0x7f040003;
+        public static int item_person=0x7f040004;
+        public static int locationview=0x7f040005;
+        public static int loginview=0x7f040006;
+        public static int place_autocomplete_fragment=0x7f040007;
+        public static int place_autocomplete_item_powered_by_google=0x7f040008;
+        public static int place_autocomplete_item_prediction=0x7f040009;
+        public static int place_autocomplete_progress=0x7f04000a;
+        public static int profileview=0x7f04000b;
+        public static int publishlocationview=0x7f04000c;
+        public static int scheduleview=0x7f04000d;
+        public static int searchview=0x7f04000e;
+        public static int selectedindividualview=0x7f04000f;
+        public static int splashscreen=0x7f040010;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

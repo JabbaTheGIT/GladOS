@@ -34,6 +34,7 @@ namespace GladOS.Core.ViewModels
 
 
         public ICommand LoginPressed { get; private set; }
+        public ICommand CreatePerson { get; private set; }
 
         public void GetPerson(List<Person> people, string searchName)
         {
@@ -82,10 +83,10 @@ namespace GladOS.Core.ViewModels
         {
             this.personDb = personDb;
             GetAllPeople(personDb);
-           
+
             LoginPressed = new MvxCommand(() =>
             {
-                if(isBusy == false)
+                if (isBusy == false)
                 {
                     if (SearchName == null || SearchName == "")
                     {
@@ -98,6 +99,11 @@ namespace GladOS.Core.ViewModels
                         base.ShowViewModel<HomeViewModel>();
                     }
                 }
+            });
+
+            CreatePerson = new MvxCommand(() =>
+            {
+                ShowViewModel<CreatePersonViewModel>();
             });
         }
 

@@ -10,9 +10,7 @@ using GladOS.Core.Database;
 using System;
 using System.Threading.Tasks;
 
-/*This view holds the infomation about the local user, view enables them
- *to decide how they would like to be located and save that choice
- */
+
 namespace GladOS.Core.ViewModels
 {
     public class PublishLocationViewModel : MvxViewModel

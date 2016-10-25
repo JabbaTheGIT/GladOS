@@ -21,4 +21,9 @@
       android:layout_width="fill_parent"
       android:layout_height="wrap_content" 
       local:MvxBind="Click LoginPressed"/>
+  <Button
+      android:text="Create User"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      local:MvxBind="Click CreatePerson"/>
 </LinearLayout>

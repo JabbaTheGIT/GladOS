@@ -21,6 +21,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="CreatePersonViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.CreatePersonView" />
     <activity android:label="LocationViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.PublishLocationView" />
     <activity android:label="LocationViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.LocationView" />
     <activity android:label="ProfileViewModel" android:name="md5806cbdcde086e6612e76aee9f4ef127b.ProfileView" />

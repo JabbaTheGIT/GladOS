@@ -173,6 +173,7 @@
     <Compile Include="Services\Progress.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\CreatePersonView.cs" />
     <Compile Include="Views\PublishLocationView.cs" />
     <Compile Include="Views\LocationView.cs" />
     <Compile Include="Views\ProfileView.cs" />
@@ -220,6 +221,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\PublishLocationView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CreatePersonView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
