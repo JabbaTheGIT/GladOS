@@ -10,13 +10,13 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.OS;
-using GladOS.Core.Interfaces;
-using GladOS.Core.Models;
+using gladOS.Core.Interfaces;
+using gladOS.Core.Models;
 using System.Collections.Generic;
-using GladOS.Core.Services;
+using gladOS.Core.Services;
 using System.Linq;
 
-namespace GladOS.Core.ViewModels
+namespace gladOS.Core.ViewModels
 {
     public class EventViewModel 
         : MvxViewModel

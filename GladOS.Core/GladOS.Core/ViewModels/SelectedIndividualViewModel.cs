@@ -1,5 +1,5 @@
-﻿using GladOS.Core.Models;
-using GladOS.Core.Services;
+﻿using gladOS.Core.Models;
+using gladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 using System.Windows.Input;
@@ -8,7 +8,7 @@ using System.Windows.Input;
  * person chosen by the user from the search page
  */
 
-namespace GladOS.Core.ViewModels
+namespace gladOS.Core.ViewModels
 {
     public class SelectedIndividualViewModel : MvxViewModel
     {

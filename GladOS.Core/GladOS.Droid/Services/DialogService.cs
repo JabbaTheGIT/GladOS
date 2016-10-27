@@ -9,12 +9,12 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using GladOS.Core.Interfaces;
+using gladOS.Core.Interfaces;
 using System.Threading.Tasks;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 
-namespace GladOS.Droid.Services
+namespace gladOS.Droid.Services
 {
     public class DialogService : IDialogService
     {

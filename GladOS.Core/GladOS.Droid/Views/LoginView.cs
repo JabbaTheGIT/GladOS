@@ -3,11 +3,12 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using MvvmCross.Droid.Views;
-using GladOS.Droid.Services;
-using GladOS.Core.ViewModels;
+using gladOS.Droid.Services;
+using gladOS.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
+using gladOS.Droid.Constants;
 
-namespace GladOS.Droid.Views
+namespace gladOS.Droid.Views
 {
 
     [Activity(Label = "LoginViewModel")]
@@ -25,6 +26,8 @@ namespace GladOS.Droid.Views
             var set = this.CreateBindingSet<LoginView, LoginViewModel>();
             set.Bind(progress).For(p => p.Visible).To(vm => vm.IsBusy);
             set.Apply();
+            
         }
+
     }
 }

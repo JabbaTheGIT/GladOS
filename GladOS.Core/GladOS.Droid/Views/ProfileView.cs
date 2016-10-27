@@ -2,7 +2,7 @@ using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
 
-namespace GladOS.Droid.Views
+namespace gladOS.Droid.Views
 {
     [Activity(Label = "ProfileViewModel")]
     public class ProfileView : MvxActivity

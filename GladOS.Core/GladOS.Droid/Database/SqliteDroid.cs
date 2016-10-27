@@ -9,11 +9,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using GladOS.Core.Interfaces;
+using gladOS.Core.Interfaces;
 using SQLite.Net;
 using System.IO;
 
-namespace GladOS.Droid.Database
+namespace gladOS.Droid.Database
 {
     public class SqliteDroid : ISqlite
     {

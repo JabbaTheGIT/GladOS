@@ -1,7 +1,7 @@
 using Android.App;
 using Android.Content;
 
-namespace GladOS.Droid.Services
+namespace gladOS.Droid.Services
 {
     public class Progress
     {
@@ -30,6 +30,7 @@ namespace GladOS.Droid.Services
                 if (value)
                 {
                     dialogProgress = new ProgressDialog(context);
+                    dialogProgress.SetCanceledOnTouchOutside(false);
                     dialogProgress.SetTitle("Loading...");
                     dialogProgress.Show();
                 }

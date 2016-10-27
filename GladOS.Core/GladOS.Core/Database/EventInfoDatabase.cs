@@ -1,14 +1,14 @@
 ﻿using MvvmCross.Platform;
 using SQLite.Net;
-using GladOS.Core.Interfaces;
+using gladOS.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GladOS.Core.Models;
+using gladOS.Core.Models;
 
-namespace GladOS.Core.Database
+namespace gladOS.Core.Database
 {
     public class EventInfoDatabase : IEventInfoDatabase
     {

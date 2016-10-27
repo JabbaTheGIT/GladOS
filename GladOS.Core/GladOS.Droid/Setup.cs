@@ -3,14 +3,14 @@ using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
 using MvvmCross.Platform;
-using GladOS.Droid.Database;
-using GladOS.Core.Interfaces;
-using GladOS.Droid.Services;
-using GladOS.Core.Database;
-using GladOS.Core.Models;
-using GladOS.Droid.Maps;
+using gladOS.Droid.Database;
+using gladOS.Core.Interfaces;
+using gladOS.Droid.Services;
+using gladOS.Core.Database;
+using gladOS.Core.Models;
+using gladOS.Droid.Maps;
 
-namespace GladOS.Droid
+namespace gladOS.Droid
 {
     public class Setup : MvxAndroidSetup
     {
@@ -20,7 +20,7 @@ namespace GladOS.Droid
 
         protected override IMvxApplication CreateApp()
         {
-            return new GladOS.Core.App();
+            return new gladOS.Core.App();
         }
 
         protected override IMvxTrace CreateDebugTrace()

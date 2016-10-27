@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite.Net;
 
-namespace GladOS.Core.Interfaces
+namespace gladOS.Core.Interfaces
 {
     public interface ISqlite
     {

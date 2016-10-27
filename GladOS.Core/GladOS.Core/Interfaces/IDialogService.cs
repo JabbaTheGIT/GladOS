@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GladOS.Core.Interfaces
+namespace gladOS.Core.Interfaces
 {
     public interface IDialogService
     {

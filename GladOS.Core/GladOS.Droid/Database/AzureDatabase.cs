@@ -10,12 +10,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Microsoft.WindowsAzure.MobileServices;
-using GladOS.Core.Interfaces;
+using gladOS.Core.Interfaces;
 using System.IO;
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
-using GladOS.Core.Models;
+using gladOS.Core.Models;
 
-namespace GladOS.Droid.Database
+namespace gladOS.Droid.Database
 {
     public class AzureDatabase : IAzureDatabase
     {

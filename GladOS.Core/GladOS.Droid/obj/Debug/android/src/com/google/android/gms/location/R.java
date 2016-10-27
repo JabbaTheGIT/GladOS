@@ -372,25 +372,26 @@ containing a value of this type.
         public static int common_plus_signin_btn_text_light_pressed=0x7f02002c;
         public static int facebook_icon=0x7f02002d;
         public static int github_icon=0x7f02002e;
-        public static int icon=0x7f02002f;
-        public static int linkedin_icon=0x7f020030;
-        public static int meeting=0x7f020031;
-        public static int office=0x7f020032;
-        public static int places_ic_clear=0x7f020033;
-        public static int places_ic_search=0x7f020034;
-        public static int powered_by_google_dark=0x7f020035;
-        public static int powered_by_google_light=0x7f020036;
-        public static int sample_0=0x7f020037;
-        public static int sample_1=0x7f020038;
-        public static int sample_2=0x7f020039;
-        public static int sample_3=0x7f02003a;
-        public static int sample_4=0x7f02003b;
-        public static int sample_5=0x7f02003c;
-        public static int sample_6=0x7f02003d;
-        public static int sample_7=0x7f02003e;
-        public static int schedule=0x7f02003f;
-        public static int splash=0x7f020040;
-        public static int steve=0x7f020041;
+        public static int ic_launcher=0x7f02002f;
+        public static int icon=0x7f020030;
+        public static int linkedin_icon=0x7f020031;
+        public static int meeting=0x7f020032;
+        public static int office=0x7f020033;
+        public static int places_ic_clear=0x7f020034;
+        public static int places_ic_search=0x7f020035;
+        public static int powered_by_google_dark=0x7f020036;
+        public static int powered_by_google_light=0x7f020037;
+        public static int sample_0=0x7f020038;
+        public static int sample_1=0x7f020039;
+        public static int sample_2=0x7f02003a;
+        public static int sample_3=0x7f02003b;
+        public static int sample_4=0x7f02003c;
+        public static int sample_5=0x7f02003d;
+        public static int sample_6=0x7f02003e;
+        public static int sample_7=0x7f02003f;
+        public static int schedule=0x7f020040;
+        public static int splash=0x7f020041;
+        public static int steve=0x7f020042;
     }
     public static final class id {
         public static int MvvmCrossTagId=0x7f090000;
@@ -457,8 +458,9 @@ containing a value of this type.
         public static int icon=0x7f030000;
     }
     public static final class string {
-        public static int ApplicationName=0x7f070022;
-        public static int Hello=0x7f070021;
+        public static int ApplicationName=0x7f070023;
+        public static int Hello=0x7f070022;
+        public static int app_name=0x7f070021;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
         public static int auth_google_play_services_client_facebook_display_name=0x7f070003;
@@ -565,6 +567,7 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static int common_signin_button_text_long=0x7f070020;
+        public static int library_name=0x7f070024;
         /**  Description of the button that clears the search input when searching for places. 
          */
         public static int place_autocomplete_clear_button=0x7f070001;

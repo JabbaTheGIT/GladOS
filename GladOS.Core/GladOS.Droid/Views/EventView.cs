@@ -1,8 +1,10 @@
+using System;
 using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
+using gladOS.Droid.Models;
 
-namespace GladOS.Droid.Views
+namespace gladOS.Droid.Views
 {
     [Activity(Label = "EventViewModel")]
     public class EventView : MvxActivity
@@ -13,5 +15,6 @@ namespace GladOS.Droid.Views
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.EventView);
         }
+
     }
 }

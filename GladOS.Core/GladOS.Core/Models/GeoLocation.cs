@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GladOS.Core.Models {
+namespace gladOS.Core.Models {
     public class GeoLocation
     {
         public double Latitude { get; set; }

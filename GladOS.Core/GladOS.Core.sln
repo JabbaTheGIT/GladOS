@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GladOS.Core", "GladOS.Core\GladOS.Core.csproj", "{89709F69-0456-4AE9-BBDA-1B46FA0ACB0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GladOS.Droid", "GladOS.Droid\GladOS.Droid.csproj", "{E164A8B4-0072-4820-94E7-8C9526908F42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gladOS.Droid", "GladOS.Droid\gladOS.Droid.csproj", "{E164A8B4-0072-4820-94E7-8C9526908F42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

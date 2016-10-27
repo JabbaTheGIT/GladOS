@@ -1,6 +1,6 @@
 using MvvmCross.Platform.IoC;
 
-namespace GladOS.Core
+namespace gladOS.Core
 {
     public class App : MvvmCross.Core.ViewModels.MvxApplication
     {

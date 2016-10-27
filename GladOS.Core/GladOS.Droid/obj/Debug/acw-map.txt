@@ -1,47 +1,63 @@
-GladOS.Droid.SplashScreen, GladOS.Droid;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
-GladOS.Droid.SplashScreen, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
-GladOS.Droid.SplashScreen;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
-glados.droid.SplashScreen;md52a75d8120d735f7e9c7a1aaff9b265ff.SplashScreen
-GladOS.Droid.Views.CreatePersonView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.CreatePersonView
-GladOS.Droid.Views.CreatePersonView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.CreatePersonView
-GladOS.Droid.Views.CreatePersonView;md5806cbdcde086e6612e76aee9f4ef127b.CreatePersonView
-glados.droid.views.CreatePersonView;md5806cbdcde086e6612e76aee9f4ef127b.CreatePersonView
-GladOS.Droid.Views.PublishLocationView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.PublishLocationView
-GladOS.Droid.Views.PublishLocationView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.PublishLocationView
-GladOS.Droid.Views.PublishLocationView;md5806cbdcde086e6612e76aee9f4ef127b.PublishLocationView
-glados.droid.views.PublishLocationView;md5806cbdcde086e6612e76aee9f4ef127b.PublishLocationView
-GladOS.Droid.Views.LocationView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.LocationView
-GladOS.Droid.Views.LocationView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.LocationView
-GladOS.Droid.Views.LocationView;md5806cbdcde086e6612e76aee9f4ef127b.LocationView
-glados.droid.views.LocationView;md5806cbdcde086e6612e76aee9f4ef127b.LocationView
-GladOS.Droid.Views.ProfileView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
-GladOS.Droid.Views.ProfileView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
-GladOS.Droid.Views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
-glados.droid.views.ProfileView;md5806cbdcde086e6612e76aee9f4ef127b.ProfileView
-GladOS.Droid.Views.EventView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.EventView
-GladOS.Droid.Views.EventView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.EventView
-GladOS.Droid.Views.EventView;md5806cbdcde086e6612e76aee9f4ef127b.EventView
-glados.droid.views.EventView;md5806cbdcde086e6612e76aee9f4ef127b.EventView
-GladOS.Droid.Views.LoginView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
-GladOS.Droid.Views.LoginView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
-GladOS.Droid.Views.LoginView;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
-glados.droid.views.LoginView;md5806cbdcde086e6612e76aee9f4ef127b.LoginView
-GladOS.Droid.Views.ScheduleView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView
-GladOS.Droid.Views.ScheduleView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView
-GladOS.Droid.Views.ScheduleView;md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView
-glados.droid.views.ScheduleView;md5806cbdcde086e6612e76aee9f4ef127b.ScheduleView
-GladOS.Droid.Views.HomeView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.HomeView
-GladOS.Droid.Views.HomeView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.HomeView
-GladOS.Droid.Views.HomeView;md5806cbdcde086e6612e76aee9f4ef127b.HomeView
-glados.droid.views.HomeView;md5806cbdcde086e6612e76aee9f4ef127b.HomeView
-GladOS.Droid.Views.SelectedIndividualView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView
-GladOS.Droid.Views.SelectedIndividualView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView
-GladOS.Droid.Views.SelectedIndividualView;md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView
-glados.droid.views.SelectedIndividualView;md5806cbdcde086e6612e76aee9f4ef127b.SelectedIndividualView
-GladOS.Droid.Views.SearchView, GladOS.Droid;md5806cbdcde086e6612e76aee9f4ef127b.SearchView
-GladOS.Droid.Views.SearchView, GladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5806cbdcde086e6612e76aee9f4ef127b.SearchView
-GladOS.Droid.Views.SearchView;md5806cbdcde086e6612e76aee9f4ef127b.SearchView
-glados.droid.views.SearchView;md5806cbdcde086e6612e76aee9f4ef127b.SearchView
+gladOS.Droid.SplashScreen, gladOS.Droid;md5b4fd9888613c1dbc3691525f28aa133f.SplashScreen
+gladOS.Droid.SplashScreen, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b4fd9888613c1dbc3691525f28aa133f.SplashScreen
+gladOS.Droid.SplashScreen;md5b4fd9888613c1dbc3691525f28aa133f.SplashScreen
+glados.droid.SplashScreen;md5b4fd9888613c1dbc3691525f28aa133f.SplashScreen
+gladOS.Droid.Views.CreatePersonView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.CreatePersonView
+gladOS.Droid.Views.CreatePersonView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.CreatePersonView
+gladOS.Droid.Views.CreatePersonView;md582645622390dd7fc8b52c1ee662b7717.CreatePersonView
+glados.droid.views.CreatePersonView;md582645622390dd7fc8b52c1ee662b7717.CreatePersonView
+gladOS.Droid.Views.PublishLocationView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.PublishLocationView
+gladOS.Droid.Views.PublishLocationView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.PublishLocationView
+gladOS.Droid.Views.PublishLocationView;md582645622390dd7fc8b52c1ee662b7717.PublishLocationView
+glados.droid.views.PublishLocationView;md582645622390dd7fc8b52c1ee662b7717.PublishLocationView
+gladOS.Droid.Views.LocationView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.LocationView
+gladOS.Droid.Views.LocationView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.LocationView
+gladOS.Droid.Views.LocationView;md582645622390dd7fc8b52c1ee662b7717.LocationView
+glados.droid.views.LocationView;md582645622390dd7fc8b52c1ee662b7717.LocationView
+gladOS.Droid.Views.ProfileView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.ProfileView
+gladOS.Droid.Views.ProfileView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.ProfileView
+gladOS.Droid.Views.ProfileView;md582645622390dd7fc8b52c1ee662b7717.ProfileView
+glados.droid.views.ProfileView;md582645622390dd7fc8b52c1ee662b7717.ProfileView
+gladOS.Droid.Views.EventView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.EventView
+gladOS.Droid.Views.EventView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.EventView
+gladOS.Droid.Views.EventView;md582645622390dd7fc8b52c1ee662b7717.EventView
+glados.droid.views.EventView;md582645622390dd7fc8b52c1ee662b7717.EventView
+gladOS.Droid.Views.LoginView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.LoginView
+gladOS.Droid.Views.LoginView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.LoginView
+gladOS.Droid.Views.LoginView;md582645622390dd7fc8b52c1ee662b7717.LoginView
+glados.droid.views.LoginView;md582645622390dd7fc8b52c1ee662b7717.LoginView
+gladOS.Droid.Views.ScheduleView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
+gladOS.Droid.Views.ScheduleView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
+gladOS.Droid.Views.ScheduleView;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
+glados.droid.views.ScheduleView;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
+gladOS.Droid.Views.HomeView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.HomeView
+gladOS.Droid.Views.HomeView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.HomeView
+gladOS.Droid.Views.HomeView;md582645622390dd7fc8b52c1ee662b7717.HomeView
+glados.droid.views.HomeView;md582645622390dd7fc8b52c1ee662b7717.HomeView
+gladOS.Droid.Views.SelectedIndividualView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
+gladOS.Droid.Views.SelectedIndividualView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
+gladOS.Droid.Views.SelectedIndividualView;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
+glados.droid.views.SelectedIndividualView;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
+gladOS.Droid.Views.SearchView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.SearchView
+gladOS.Droid.Views.SearchView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.SearchView
+gladOS.Droid.Views.SearchView;md582645622390dd7fc8b52c1ee662b7717.SearchView
+glados.droid.views.SearchView;md582645622390dd7fc8b52c1ee662b7717.SearchView
+gladOS.Droid.Models.MyBroadcastReceiver, gladOS.Droid;md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver
+gladOS.Droid.Models.MyBroadcastReceiver, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver
+gladOS.Droid.Models.MyBroadcastReceiver;md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver
+glados.droid.models.MyBroadcastReceiver;md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver
+gladOS.Droid.Models.PushHandlerService, gladOS.Droid;md5391b6db810cdb4c0c4a00257201dc5f1.PushHandlerService
+gladOS.Droid.Models.PushHandlerService, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5391b6db810cdb4c0c4a00257201dc5f1.PushHandlerService
+gladOS.Droid.Models.PushHandlerService;md5391b6db810cdb4c0c4a00257201dc5f1.PushHandlerService
+glados.droid.models.PushHandlerService;md5391b6db810cdb4c0c4a00257201dc5f1.PushHandlerService
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+gcm.client.GcmBroadcastReceiverBase_1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmServiceBase, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+gcm.client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
 Xamarin.Auth._MobileServices.AndroidAccountStore/SecretAccount, Microsoft.WindowsAzure.Mobile.Ext;md5901e742fdf284ed0df9a9602f1963168.AndroidAccountStore_SecretAccount
 Xamarin.Auth._MobileServices.AndroidAccountStore+SecretAccount, Microsoft.WindowsAzure.Mobile.Ext, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;md5901e742fdf284ed0df9a9602f1963168.AndroidAccountStore_SecretAccount
 Xamarin.Auth._MobileServices.AndroidAccountStore.SecretAccount;md5901e742fdf284ed0df9a9602f1963168.AndroidAccountStore_SecretAccount

@@ -1,2 +1,2 @@
 android.app.Application
-GladOS.Droid.GladOS.Droid
+com.glados.droid

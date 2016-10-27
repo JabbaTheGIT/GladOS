@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using MvvmCross.Platform.Platform;
 
-namespace GladOS.Droid
+namespace gladOS.Droid
 {
     public class DebugTrace : IMvxTrace
     {

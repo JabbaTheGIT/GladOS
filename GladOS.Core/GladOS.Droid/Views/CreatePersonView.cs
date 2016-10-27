@@ -1,11 +1,11 @@
 using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
-using GladOS.Droid.Services;
-using GladOS.Core.ViewModels;
+using gladOS.Droid.Services;
+using gladOS.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
 
-namespace GladOS.Droid.Views
+namespace gladOS.Droid.Views
 {
     [Activity(Label = "CreatePersonViewModel")]
     public class CreatePersonView : MvxActivity

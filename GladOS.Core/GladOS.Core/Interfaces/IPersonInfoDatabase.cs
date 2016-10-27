@@ -1,11 +1,11 @@
-﻿using GladOS.Core.Models;
+﻿using gladOS.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GladOS.Core.Interfaces
+namespace gladOS.Core.Interfaces
 {
     public interface IPersonInfoDatabase
     {

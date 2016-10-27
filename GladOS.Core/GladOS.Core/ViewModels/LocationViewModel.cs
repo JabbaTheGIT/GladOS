@@ -1,19 +1,19 @@
-﻿using GladOS.Core.Models;
-using GladOS.Core.Services;
+﻿using gladOS.Core.Models;
+using gladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Linq;
-using GladOS.Core.Interfaces;
-using GladOS.Core.Database;
+using gladOS.Core.Interfaces;
+using gladOS.Core.Database;
 using System;
 using System.Threading.Tasks;
 
 /*This view holds the infomation about the local user, view enables them
  *to decide how they would like to be located and save that choice
  */
-namespace GladOS.Core.ViewModels
+namespace gladOS.Core.ViewModels
 {
     public class LocationViewModel : MvxViewModel
     {

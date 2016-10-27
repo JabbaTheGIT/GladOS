@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 using MvvmCross.Core.ViewModels;
 
-namespace GladOS.Core.Models
+namespace gladOS.Core.Models
 {
     public static class GlobalLocalPerson
     {

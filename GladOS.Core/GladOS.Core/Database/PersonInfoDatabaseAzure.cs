@@ -1,16 +1,16 @@
-using GladOS.Core.Interfaces;
+using gladOS.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GladOS.Core.Models;
+using gladOS.Core.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.Sync;
 using MvvmCross.Platform;
 using System.Diagnostics;
 
-namespace GladOS.Core.Database
+namespace gladOS.Core.Database
 {
     public class PersonInfoDatabaseAzure : IPersonInfoDatabase
     {

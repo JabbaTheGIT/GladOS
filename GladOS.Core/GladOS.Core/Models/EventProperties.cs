@@ -1,7 +1,7 @@
-﻿using GladOS.Core.Models;
+﻿using gladOS.Core.Models;
 
 
-namespace GladOS.Core.Services
+namespace gladOS.Core.Services
 {
     public class EventProperties : IEventProperties
     {

@@ -12,13 +12,13 @@ using Android.Widget;
 using MvvmCross.Droid.Views;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
-using GladOS.Core.ViewModels;
-using GladOS.Core.Models;
+using gladOS.Core.ViewModels;
+using gladOS.Core.Models;
 using Android.Gms.Common.Apis;
 using Android.Gms.Location;
 using Android.Gms.Common;
 
-namespace GladOS.Droid.Views
+namespace gladOS.Droid.Views
 {
     [Activity(Label = "LocationViewModel")]
     public class PublishLocationView : MvxActivity, IOnMapReadyCallback

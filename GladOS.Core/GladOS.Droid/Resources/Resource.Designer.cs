@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("GladOS.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("gladOS.Droid.Resource", IsApplication=true)]
 
-namespace GladOS.Droid
+namespace gladOS.Droid
 {
 	
 	
@@ -26,29 +26,30 @@ namespace GladOS.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::GladOS.Droid.Resource.Attribute.MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::GladOS.Droid.Resource.Attribute.MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::GladOS.Droid.Resource.Attribute.MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::GladOS.Droid.Resource.Attribute.MvxItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::GladOS.Droid.Resource.Attribute.MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::GladOS.Droid.Resource.Attribute.MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::GladOS.Droid.Resource.Attribute.MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::GladOS.Droid.Resource.Id.MvvmCrossTagId;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::GladOS.Droid.Resource.Id.MvxBindingTagUnique;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::GladOS.Droid.Resource.Styleable.MvxBinding;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::GladOS.Droid.Resource.Styleable.MvxBinding_MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::GladOS.Droid.Resource.Styleable.MvxBinding_MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::GladOS.Droid.Resource.Styleable.MvxControl;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::GladOS.Droid.Resource.Styleable.MvxControl_MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::GladOS.Droid.Resource.Styleable.MvxExpandableListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::GladOS.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::GladOS.Droid.Resource.Styleable.MvxImageView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::GladOS.Droid.Resource.Styleable.MvxImageView_MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::GladOS.Droid.Resource.Styleable.MvxListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::GladOS.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::GladOS.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::GladOS.Droid.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::GladOS.Droid.Resource.String.Hello;
+			global::Gcm.Client.Resource.String.library_name = global::gladOS.Droid.Resource.String.library_name;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::gladOS.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::gladOS.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::gladOS.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::gladOS.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::gladOS.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::gladOS.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::gladOS.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::gladOS.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::gladOS.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::gladOS.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::gladOS.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::gladOS.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::gladOS.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::gladOS.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::gladOS.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::gladOS.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::gladOS.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::gladOS.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::gladOS.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::gladOS.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::gladOS.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::gladOS.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::gladOS.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -436,61 +437,64 @@ namespace GladOS.Droid
 			public const int github_icon = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int Icon = 2130837551;
+			public const int ic_launcher = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int linkedin_icon = 2130837552;
+			public const int Icon = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int meeting = 2130837553;
+			public const int linkedin_icon = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int office = 2130837554;
+			public const int meeting = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int places_ic_clear = 2130837555;
+			public const int office = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int places_ic_search = 2130837556;
+			public const int places_ic_clear = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int powered_by_google_dark = 2130837557;
+			public const int places_ic_search = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int powered_by_google_light = 2130837558;
+			public const int powered_by_google_dark = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int sample_0 = 2130837559;
+			public const int powered_by_google_light = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int sample_1 = 2130837560;
+			public const int sample_0 = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int sample_2 = 2130837561;
+			public const int sample_1 = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int sample_3 = 2130837562;
+			public const int sample_2 = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int sample_4 = 2130837563;
+			public const int sample_3 = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int sample_5 = 2130837564;
+			public const int sample_4 = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int sample_6 = 2130837565;
+			public const int sample_5 = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int sample_7 = 2130837566;
+			public const int sample_6 = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int schedule = 2130837567;
+			public const int sample_7 = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int splash = 2130837568;
+			public const int schedule = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int steve = 2130837569;
+			public const int splash = 2130837569;
+			
+			// aapt resource value: 0x7f020042
+			public const int steve = 2130837570;
 			
 			static Drawable()
 			{
@@ -725,11 +729,14 @@ namespace GladOS.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f070023
+			public const int ApplicationName = 2131165219;
+			
 			// aapt resource value: 0x7f070022
-			public const int ApplicationName = 2131165218;
+			public const int Hello = 2131165218;
 			
 			// aapt resource value: 0x7f070021
-			public const int Hello = 2131165217;
+			public const int app_name = 2131165217;
 			
 			// aapt resource value: 0x7f070003
 			public const int auth_google_play_services_client_facebook_display_name = 2131165187;
@@ -823,6 +830,9 @@ namespace GladOS.Droid
 			
 			// aapt resource value: 0x7f070020
 			public const int common_signin_button_text_long = 2131165216;
+			
+			// aapt resource value: 0x7f070024
+			public const int library_name = 2131165220;
 			
 			// aapt resource value: 0x7f070001
 			public const int place_autocomplete_clear_button = 2131165185;

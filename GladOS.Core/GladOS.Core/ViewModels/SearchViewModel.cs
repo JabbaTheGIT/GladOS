@@ -1,19 +1,19 @@
-﻿using GladOS.Core.Models;
-using GladOS.Core.Services;
+﻿using gladOS.Core.Models;
+using gladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.Linq;
-using GladOS.Core.Interfaces;
-using GladOS.Core.Database;
+using gladOS.Core.Interfaces;
+using gladOS.Core.Database;
 using System;
 
 /*This view show all the people in the database, will update to show only searched 
  *for people
  */
 
-namespace GladOS.Core.ViewModels
+namespace gladOS.Core.ViewModels
 {
     public class SearchViewModel : MvxViewModel
     {

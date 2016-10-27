@@ -1,9 +1,9 @@
 using Android.App;
 using Android.Content.PM;
-using GladOS.Core.ViewModels;
+using gladOS.Core.ViewModels;
 using MvvmCross.Droid.Views;
 
-namespace GladOS.Droid
+namespace gladOS.Droid
 {
     [Activity(
         Label = "GladOS.Droid"

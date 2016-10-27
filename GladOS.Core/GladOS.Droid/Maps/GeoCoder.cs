@@ -1,12 +1,12 @@
 
 using Android.App;
 using Android.Locations;
-using GladOS.Core.Interfaces;
-using GladOS.Core.Models;
+using gladOS.Core.Interfaces;
+using gladOS.Core.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GladOS.Droid.Maps
+namespace gladOS.Droid.Maps
 {
     public class GeoCoder: IGeoCoder
     {
