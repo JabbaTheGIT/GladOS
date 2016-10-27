@@ -50,6 +50,5 @@ namespace gladOS.Droid.Views
             GcmClient.Register(this, Constants.Constants.SenderID);
         }
 
-
     }
 }

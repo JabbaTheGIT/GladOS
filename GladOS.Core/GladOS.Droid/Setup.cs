@@ -9,6 +9,7 @@ using gladOS.Droid.Services;
 using gladOS.Core.Database;
 using gladOS.Core.Models;
 using gladOS.Droid.Maps;
+using GladOS.Core.Database;
 
 namespace gladOS.Droid
 {
@@ -36,6 +37,7 @@ namespace gladOS.Droid
             //Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IEventInfoDatabase, EventInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabaseAzure>();
+            Mvx.LazyConstructAndRegisterSingleton<INotify, NotifyFunction>();
             Mvx.LazyConstructAndRegisterSingleton<IAzureDatabase, AzureDatabase>();
             base.InitializeFirstChance();
         }

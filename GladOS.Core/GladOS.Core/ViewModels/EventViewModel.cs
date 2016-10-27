@@ -24,6 +24,7 @@ namespace gladOS.Core.ViewModels
         private readonly IPersonInfoDatabase persDb;
         private readonly IEventInfoDatabase eventDb;
         private readonly IDialogService dialog;
+        private readonly INotify notifyMe;
         public string EventTitle { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
@@ -84,11 +85,19 @@ namespace gladOS.Core.ViewModels
             this.EndTime = "";
         } //End ClearEntries
 
-        public EventViewModel(IDialogService dialog, IPersonInfoDatabase persDb, IEventInfoDatabase eventDb)
+        public EventViewModel(IDialogService dialog, IPersonInfoDatabase persDb, IEventInfoDatabase eventDb, INotify notif)
         {
             this.eventDb = eventDb;
             this.dialog = dialog;
+            this.notifyMe = notif;
             GetEvents(eventDb);
+
+            Notify notifyUs = new Notify();
+
+            notifyUs.Text = "";
+            notifyUs.NotificationSet = true;
+
+            notif.PostNotification(notifyUs);
 
             HomePressed = new MvxCommand(() =>
             {

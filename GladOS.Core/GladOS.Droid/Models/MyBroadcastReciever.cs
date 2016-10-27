@@ -9,6 +9,7 @@ using System;
 using gladOS.Droid.Views;
 using gladOS.Droid.Models;
 using Microsoft.WindowsAzure.MobileServices;
+
 using Newtonsoft.Json.Linq;
 using gladOS.Core.Models;
 using MvvmCross.Droid.Views;
@@ -32,7 +33,6 @@ namespace gladOS.Droid.Models
         Categories = new string[] { "com.glados.droid" })]
     [IntentFilter(new string[] { Gcm.Client.Constants.INTENT_FROM_GCM_LIBRARY_RETRY },
         Categories = new string[] { "com.glados.droid" })]
-
     public class MyBroadcastReceiver : GcmBroadcastReceiverBase<PushHandlerService>
     {
         public static string[] senderIDs = new string[] { "600438788299" };

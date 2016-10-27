@@ -38,12 +38,14 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Database\EventInfoDatabase.cs" />
+    <Compile Include="Database\NotifyFunction.cs" />
     <Compile Include="Database\PersonInfoDatabase.cs" />
     <Compile Include="Database\PersonInfoDatabaseAzure.cs" />
     <Compile Include="Interfaces\IAzureDatabase.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
     <Compile Include="Interfaces\IGeoCoder.cs" />
     <Compile Include="Interfaces\IEventInfoDatabase.cs" />
+    <Compile Include="Interfaces\INotify.cs" />
     <Compile Include="Interfaces\IPersonInfoDatabase.cs" />
     <Compile Include="Interfaces\IEventProperties.cs" />
     <Compile Include="Interfaces\ISqlite.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\GlobalSelectedPerson.cs" />
     <Compile Include="Models\GlobalLocalPerson.cs" />
+    <Compile Include="Models\Notify.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\EventProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
