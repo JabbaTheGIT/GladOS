@@ -41,6 +41,7 @@
     <activity android:label="ProfileViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ProfileView" />
     <activity android:label="EventViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.EventView" />
     <activity android:label="LoginViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.LoginView" />
+    <activity android:label="RequestInfomationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView" />
     <activity android:label="ScheduleViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScheduleView" />
     <activity android:label="HomeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.HomeView" />
     <activity android:label="SelectedIndividualViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView" />

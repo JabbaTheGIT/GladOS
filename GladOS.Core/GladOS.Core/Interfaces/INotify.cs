@@ -11,6 +11,6 @@ namespace gladOS.Core.Interfaces
 {
     public interface INotify
     {
-        Task<int> PostNotification(Notify item);
+        Task<int> PostUpstreamMessages(UpstreamMessages item);
     }
 }

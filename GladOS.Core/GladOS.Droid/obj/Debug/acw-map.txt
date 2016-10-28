@@ -26,6 +26,10 @@ gladOS.Droid.Views.LoginView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.L
 gladOS.Droid.Views.LoginView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.LoginView
 gladOS.Droid.Views.LoginView;md582645622390dd7fc8b52c1ee662b7717.LoginView
 glados.droid.views.LoginView;md582645622390dd7fc8b52c1ee662b7717.LoginView
+gladOS.Droid.Views.RequestInfomationView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView
+gladOS.Droid.Views.RequestInfomationView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView
+gladOS.Droid.Views.RequestInfomationView;md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView
+glados.droid.views.RequestInfomationView;md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView
 gladOS.Droid.Views.ScheduleView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
 gladOS.Droid.Views.ScheduleView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.ScheduleView
 gladOS.Droid.Views.ScheduleView;md582645622390dd7fc8b52c1ee662b7717.ScheduleView

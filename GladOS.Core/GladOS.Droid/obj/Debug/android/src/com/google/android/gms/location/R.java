@@ -396,6 +396,8 @@ containing a value of this type.
     public static final class id {
         public static int MvvmCrossTagId=0x7f090000;
         public static int MvxBindingTagUnique=0x7f090001;
+        public static int RequestInfo=0x7f090026;
+        public static int SelectedPersonViewMap=0x7f090025;
         public static int adjust_height=0x7f090007;
         public static int adjust_width=0x7f090008;
         public static int auto=0x7f09000c;
@@ -449,10 +451,11 @@ containing a value of this type.
         public static int place_autocomplete_progress=0x7f04000a;
         public static int profileview=0x7f04000b;
         public static int publishlocationview=0x7f04000c;
-        public static int scheduleview=0x7f04000d;
-        public static int searchview=0x7f04000e;
-        public static int selectedindividualview=0x7f04000f;
-        public static int splashscreen=0x7f040010;
+        public static int requestinfomationview=0x7f04000d;
+        public static int scheduleview=0x7f04000e;
+        public static int searchview=0x7f04000f;
+        public static int selectedindividualview=0x7f040010;
+        public static int splashscreen=0x7f040011;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

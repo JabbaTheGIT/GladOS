@@ -1,4 +1,5 @@
-﻿using gladOS.Core.Models;
+﻿using gladOS.Core.Interfaces;
+using gladOS.Core.Models;
 using gladOS.Core.Services;
 using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace gladOS.Core.ViewModels
     {
         private Person selectedPerson;
         public ICommand ViewMap { get; private set; }
+        public ICommand RequestInfo { get; private set; }
 
         private string name;
 
@@ -90,18 +92,20 @@ namespace gladOS.Core.ViewModels
             base.Start();
             InitialiseVars();
             SyncGlobalPerson();
+
             //Image = selectedPerson.Photo;
             ViewMap = new MvxCommand(() =>
             {
                 if(contactable)
                 {
+                    //Send Notification
                     ShowViewModel<LocationViewModel>();
-                }
-                else
-                {
-                    //Setup a not contactable notification later
-                }
-                
+                }              
+            });
+
+            RequestInfo = new MvxCommand(() =>
+            {
+                ShowViewModel<RequestInfomationViewModel>();
             });
         }
     }

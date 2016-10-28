@@ -394,8 +394,11 @@ containing a value of this type.
         public static final int steve=0x7f020042;
     }
     public static final class id {
+        public static final int InfoForUser=0x7f090026;
         public static final int MvvmCrossTagId=0x7f090000;
         public static final int MvxBindingTagUnique=0x7f090001;
+        public static final int RequestInfo=0x7f090027;
+        public static final int SelectedPersonViewMap=0x7f090025;
         public static final int adjust_height=0x7f090007;
         public static final int adjust_width=0x7f090008;
         public static final int auto=0x7f09000c;
@@ -449,10 +452,11 @@ containing a value of this type.
         public static final int place_autocomplete_progress=0x7f04000a;
         public static final int profileview=0x7f04000b;
         public static final int publishlocationview=0x7f04000c;
-        public static final int scheduleview=0x7f04000d;
-        public static final int searchview=0x7f04000e;
-        public static final int selectedindividualview=0x7f04000f;
-        public static final int splashscreen=0x7f040010;
+        public static final int requestinfomationview=0x7f04000d;
+        public static final int scheduleview=0x7f04000e;
+        public static final int searchview=0x7f04000f;
+        public static final int selectedindividualview=0x7f040010;
+        public static final int splashscreen=0x7f040011;
     }
     public static final class mipmap {
         public static final int icon=0x7f030000;

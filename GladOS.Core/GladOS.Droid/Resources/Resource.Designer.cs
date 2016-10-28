@@ -509,11 +509,20 @@ namespace gladOS.Droid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f090026
+			public const int InfoForUser = 2131296294;
+			
 			// aapt resource value: 0x7f090000
 			public const int MvvmCrossTagId = 2131296256;
 			
 			// aapt resource value: 0x7f090001
 			public const int MvxBindingTagUnique = 2131296257;
+			
+			// aapt resource value: 0x7f090027
+			public const int RequestInfo = 2131296295;
+			
+			// aapt resource value: 0x7f090025
+			public const int SelectedPersonViewMap = 2131296293;
 			
 			// aapt resource value: 0x7f090007
 			public const int adjust_height = 2131296263;
@@ -689,16 +698,19 @@ namespace gladOS.Droid
 			public const int PublishLocationView = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int ScheduleView = 2130968589;
+			public const int RequestInfomationView = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int SearchView = 2130968590;
+			public const int ScheduleView = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int SelectedIndividualView = 2130968591;
+			public const int SearchView = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int SplashScreen = 2130968592;
+			public const int SelectedIndividualView = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int SplashScreen = 2130968593;
 			
 			static Layout()
 			{

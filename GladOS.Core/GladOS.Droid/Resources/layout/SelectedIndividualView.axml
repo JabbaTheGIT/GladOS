@@ -25,13 +25,26 @@
         android:textSize="30dp"
         local:MvxBind="Text PhoneNumber"/>
   <TextView
-    android:layout_width="fill_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"
         local:MvxBind="Text Image"/>
   <Button
       android:text="View Map"
+      android:id="@+id/SelectedPersonViewMap"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       local:MvxBind="Click ViewMap" />
+  <TextView
+      android:text="Person is not contactable, please request infomation from them below"
+      android:id="@+id/InfoForUser"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"/>
+    <Button
+      android:text="Request Info"
+      android:id="@+id/RequestInfo"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Click RequestInfo" />
 </LinearLayout>

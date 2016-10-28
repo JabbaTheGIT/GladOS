@@ -53,7 +53,7 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\GlobalSelectedPerson.cs" />
     <Compile Include="Models\GlobalLocalPerson.cs" />
-    <Compile Include="Models\Notify.cs" />
+    <Compile Include="Models\UpstreamMessages.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\EventProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +65,7 @@
     <Compile Include="ViewModels\ProfileViewModel.cs" />
     <Compile Include="ViewModels\EventViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\RequestInfomationViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\SelectedIndividualViewModel.cs" />

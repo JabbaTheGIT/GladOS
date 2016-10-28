@@ -97,41 +97,30 @@ namespace gladOS.Droid.Models
                 message = intent.Extras.Get("message").ToString();
                 var title = "Request";
 
-                // Create a notification manager to send the notification.
-                var notificationManager =
-                    GetSystemService(Context.NotificationService) as NotificationManager;
-
-                // Create a new intent to show the notification in the UI. 
-                PendingIntent contentIntent =
-                    PendingIntent.GetActivity(context, 0,
-                    new Intent(this, typeof(PublishLocationView)), 0);
-
-
-                // Create the notification using the builder.
-                var builder = new Notification.Builder(context);
-                builder.SetAutoCancel(true);
-                builder.SetContentTitle(title);
-                builder.SetContentText(message);
-                builder.SetSmallIcon(Android.Resource.Drawable.SymActionEmail);
-                builder.SetContentIntent(contentIntent);
-                var notification = builder.Build();
-
-                // In app notification dialog box
-                HomeView.instance.RunOnUiThread(() =>
+                if (message.Contains(GlobalLocalPerson.Name))
                 {
-                    AlertDialog.Builder dlg = new AlertDialog.Builder(HomeView.instance);
-                    AlertDialog alert = dlg.Create();
-                    alert.SetTitle(title);
-                    alert.SetButton("Ok", delegate
-                    {
-                        alert.Dismiss();
-                    });
-                    alert.SetMessage(message);
-                    alert.Show();
-                });
+                    // Create a notification manager to send the notification.
+                    var notificationManager =
+                        GetSystemService(Context.NotificationService) as NotificationManager;
 
-                // Display the notification in the Notifications Area.
-                notificationManager.Notify(1, notification);
+                    // Create a new intent to show the notification in the UI. 
+                    PendingIntent contentIntent =
+                        PendingIntent.GetActivity(context, 0,
+                        new Intent(this, typeof(PublishLocationView)), 0);
+
+                    // Create the notification using the builder.
+                    var builder = new Notification.Builder(context);
+                    builder.SetAutoCancel(true);
+                    builder.SetContentTitle(title);
+                    builder.SetContentText(message);
+                    builder.SetSmallIcon(Android.Resource.Drawable.SymActionEmail);
+                    builder.SetContentIntent(contentIntent);
+                    var notification = builder.Build();
+
+                    // Display the notification in the Notifications Area.
+                    notificationManager.Notify(1, notification);
+                }
+
             }
         }
 

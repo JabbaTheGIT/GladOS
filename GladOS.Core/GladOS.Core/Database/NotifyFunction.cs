@@ -16,15 +16,15 @@ namespace GladOS.Core.Database
     {
 
         private MobileServiceClient azureNotify;
-        private IMobileServiceSyncTable<Notify> azureNotifySync;
+        private IMobileServiceSyncTable<UpstreamMessages> azureNotifySync;
 
         public NotifyFunction()
         {
             azureNotify = Mvx.Resolve<IAzureDatabase>().GetMobileServiceClient();
-            azureNotifySync = azureNotify.GetSyncTable<Notify>();
+            azureNotifySync = azureNotify.GetSyncTable<UpstreamMessages>();
         }
 
-        public async Task<int> PostNotification(Notify item)
+        public async Task<int> PostUpstreamMessages(UpstreamMessages item)
         {
             await SyncAsync(true);
             await azureNotifySync.InsertAsync(item);
@@ -40,7 +40,7 @@ namespace GladOS.Core.Database
 
                 if (pullData)
                 {
-                    await azureNotifySync.PullAsync("notify", azureNotifySync.CreateQuery());
+                    await azureNotifySync.PullAsync("upstreamMessages", azureNotifySync.CreateQuery());
                 }
             }
             catch (Exception e)
