@@ -406,6 +406,7 @@ containing a value of this type.
         public static final int checkBoxGPS=0x7f090019;
         public static final int checkBoxNFC=0x7f090017;
         public static final int checkBoxWifi=0x7f090018;
+        public static final int contentFrame=0x7f090028;
         public static final int dark=0x7f09000d;
         public static final int gridLayout1=0x7f09000f;
         public static final int hybrid=0x7f090002;
@@ -439,24 +440,31 @@ containing a value of this type.
         public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
-        public static final int createpersonview=0x7f040000;
-        public static final int eventview=0x7f040001;
-        public static final int homeview=0x7f040002;
-        public static final int item_events=0x7f040003;
-        public static final int item_person=0x7f040004;
-        public static final int locationview=0x7f040005;
-        public static final int loginview=0x7f040006;
-        public static final int place_autocomplete_fragment=0x7f040007;
-        public static final int place_autocomplete_item_powered_by_google=0x7f040008;
-        public static final int place_autocomplete_item_prediction=0x7f040009;
-        public static final int place_autocomplete_progress=0x7f04000a;
-        public static final int profileview=0x7f04000b;
-        public static final int publishlocationview=0x7f04000c;
-        public static final int requestinfomationview=0x7f04000d;
-        public static final int scheduleview=0x7f04000e;
-        public static final int searchview=0x7f04000f;
-        public static final int selectedindividualview=0x7f040010;
-        public static final int splashscreen=0x7f040011;
+        public static final int barcodeview=0x7f040000;
+        public static final int createpersonview=0x7f040001;
+        public static final int eventview=0x7f040002;
+        public static final int homeview=0x7f040003;
+        public static final int item_events=0x7f040004;
+        public static final int item_message=0x7f040005;
+        public static final int item_person=0x7f040006;
+        public static final int locationview=0x7f040007;
+        public static final int loginview=0x7f040008;
+        public static final int messagesview=0x7f040009;
+        public static final int place_autocomplete_fragment=0x7f04000a;
+        public static final int place_autocomplete_item_powered_by_google=0x7f04000b;
+        public static final int place_autocomplete_item_prediction=0x7f04000c;
+        public static final int place_autocomplete_progress=0x7f04000d;
+        public static final int profileview=0x7f04000e;
+        public static final int publishlocationview=0x7f04000f;
+        public static final int requestinfomationview=0x7f040010;
+        public static final int scanbarcodeview=0x7f040011;
+        public static final int scheduleview=0x7f040012;
+        public static final int searchview=0x7f040013;
+        public static final int selectedindividualview=0x7f040014;
+        public static final int selectedmessageview=0x7f040015;
+        public static final int splashscreen=0x7f040016;
+        public static final int zxingscanneractivitylayout=0x7f040017;
+        public static final int zxingscannerfragmentlayout=0x7f040018;
     }
     public static final class mipmap {
         public static final int icon=0x7f030000;

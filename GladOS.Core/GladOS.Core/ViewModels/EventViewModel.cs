@@ -10,11 +10,13 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.OS;
-using gladOS.Core.Interfaces;
+using GladOS.Core.Interfaces;
 using gladOS.Core.Models;
 using System.Collections.Generic;
 using gladOS.Core.Services;
 using System.Linq;
+using gladOS.Core.Interfaces;
+using GladOS.Core.ViewModels;
 
 namespace gladOS.Core.ViewModels
 {
@@ -87,6 +89,7 @@ namespace gladOS.Core.ViewModels
 
         public EventViewModel(IDialogService dialog, IPersonInfoDatabase persDb, IEventInfoDatabase eventDb)
         {
+
             this.eventDb = eventDb;
             this.dialog = dialog;
             GetEvents(eventDb);
@@ -113,12 +116,14 @@ namespace gladOS.Core.ViewModels
 
             AddNewEvent = new MvxCommand(() =>
             {
+                /*
                 Event newEvent = new Event();
                 newEvent.EventTitle = EventTitle;
                 newEvent.StartTime = StartTime;
                 newEvent.EndTime = EndTime;
                 UpdateEvent(newEvent);
-                ShowViewModel<ScheduleViewModel>();
+                */
+                ShowViewModel<ScanBarcodeViewModel>();
             });
 
         }

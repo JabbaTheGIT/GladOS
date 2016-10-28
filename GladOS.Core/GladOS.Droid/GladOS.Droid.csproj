@@ -174,6 +174,18 @@
       <HintPath>..\packages\Xamarin.GooglePlayServices.Measurement.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Measurement.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ZXing.Net.Mobile.Core, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.1.47\lib\MonoAndroid403\ZXing.Net.Mobile.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.portable, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.1.47\lib\MonoAndroid403\zxing.portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ZXingNetMobile, Version=2.1.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.Mobile.2.1.47\lib\MonoAndroid403\ZXingNetMobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
@@ -188,9 +200,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Services\Progress.cs" />
+    <Compile Include="Services\QRCodeGenerator.cs" />
+    <Compile Include="Services\ToastService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\BarcodeView.cs" />
     <Compile Include="Views\CreatePersonView.cs" />
+    <Compile Include="Views\ScanBarcodeView.cs" />
     <Compile Include="Views\PublishLocationView.cs" />
     <Compile Include="Views\LocationView.cs" />
     <Compile Include="Views\ProfileView.cs" />
@@ -199,6 +215,8 @@
     <Compile Include="Views\RequestInfomationView.cs" />
     <Compile Include="Views\ScheduleView.cs" />
     <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\MessagesView.cs" />
+    <Compile Include="Views\SelectedMessageView.cs" />
     <Compile Include="Views\SelectedIndividualView.cs" />
     <Compile Include="Views\SearchView.cs" />
   </ItemGroup>
@@ -245,6 +263,21 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\RequestInfomationView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MessagesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_message.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SelectedMessageView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ScanBarcodeView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\BarcodeView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

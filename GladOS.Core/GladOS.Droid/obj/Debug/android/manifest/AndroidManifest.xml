@@ -16,6 +16,7 @@
   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
   <application android:label="GladOS" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
     <!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
@@ -35,7 +36,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="BarcodeView" android:name="md582645622390dd7fc8b52c1ee662b7717.BarcodeView" />
     <activity android:label="CreatePersonViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.CreatePersonView" />
+    <activity android:label="ScanBarcodeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScanBarcodeView" />
     <activity android:label="LocationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.PublishLocationView" />
     <activity android:label="LocationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.LocationView" />
     <activity android:label="ProfileViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ProfileView" />
@@ -44,6 +47,8 @@
     <activity android:label="RequestInfomationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView" />
     <activity android:label="ScheduleViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScheduleView" />
     <activity android:label="HomeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.HomeView" />
+    <activity android:label="SearchViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.MessagesView" />
+    <activity android:label="SelectedMessageViewViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView" />
     <activity android:label="SelectedIndividualViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView" />
     <activity android:label="SearchViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SearchView" />
     <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver">
@@ -70,6 +75,7 @@
         <action android:name="com.google.android.gms.measurement.UPLOAD" />
       </intent-filter>
     </receiver>
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md55109d95aac470e32f9a4031a908f0227.ZxingActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.glados.droid.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

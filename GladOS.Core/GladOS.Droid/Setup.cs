@@ -10,6 +10,8 @@ using gladOS.Core.Database;
 using gladOS.Core.Models;
 using gladOS.Droid.Maps;
 using GladOS.Core.Database;
+using ZXing.Mobile;
+using GladOS.Core.Interfaces;
 
 namespace gladOS.Droid
 {
@@ -39,6 +41,9 @@ namespace gladOS.Droid
             Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabaseAzure>();
             Mvx.LazyConstructAndRegisterSingleton<INotify, NotifyFunction>();
             Mvx.LazyConstructAndRegisterSingleton<IAzureDatabase, AzureDatabase>();
+            Mvx.LazyConstructAndRegisterSingleton<IMobileBarcodeScanner, MobileBarcodeScanner>();
+            Mvx.LazyConstructAndRegisterSingleton<IToast, ToastService>();
+            Mvx.LazyConstructAndRegisterSingleton<IQRCodeGenerator, QRCodeGenerator>();
             base.InitializeFirstChance();
         }
     }

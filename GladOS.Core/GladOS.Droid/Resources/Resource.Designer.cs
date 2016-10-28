@@ -50,6 +50,9 @@ namespace gladOS.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::gladOS.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::gladOS.Droid.Resource.String.ApplicationName;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::gladOS.Droid.Resource.String.Hello;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::gladOS.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::gladOS.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::gladOS.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Attribute
@@ -545,6 +548,9 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090018
 			public const int checkBoxWifi = 2131296280;
 			
+			// aapt resource value: 0x7f090028
+			public const int contentFrame = 2131296296;
+			
 			// aapt resource value: 0x7f09000d
 			public const int dark = 2131296269;
 			
@@ -659,58 +665,79 @@ namespace gladOS.Droid
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int CreatePersonView = 2130968576;
+			public const int BarcodeView = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int EventView = 2130968577;
+			public const int CreatePersonView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int HomeView = 2130968578;
+			public const int EventView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int item_events = 2130968579;
+			public const int HomeView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int item_person = 2130968580;
+			public const int item_events = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int LocationView = 2130968581;
+			public const int item_message = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int LoginView = 2130968582;
+			public const int item_person = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int place_autocomplete_fragment = 2130968583;
+			public const int LocationView = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int place_autocomplete_item_powered_by_google = 2130968584;
+			public const int LoginView = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int place_autocomplete_item_prediction = 2130968585;
+			public const int MessagesView = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int place_autocomplete_progress = 2130968586;
+			public const int place_autocomplete_fragment = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int ProfileView = 2130968587;
+			public const int place_autocomplete_item_powered_by_google = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int PublishLocationView = 2130968588;
+			public const int place_autocomplete_item_prediction = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int RequestInfomationView = 2130968589;
+			public const int place_autocomplete_progress = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int ScheduleView = 2130968590;
+			public const int ProfileView = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int SearchView = 2130968591;
+			public const int PublishLocationView = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int SelectedIndividualView = 2130968592;
+			public const int RequestInfomationView = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int SplashScreen = 2130968593;
+			public const int ScanBarcodeView = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int ScheduleView = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int SearchView = 2130968595;
+			
+			// aapt resource value: 0x7f040014
+			public const int SelectedIndividualView = 2130968596;
+			
+			// aapt resource value: 0x7f040015
+			public const int SelectedMessageView = 2130968597;
+			
+			// aapt resource value: 0x7f040016
+			public const int SplashScreen = 2130968598;
+			
+			// aapt resource value: 0x7f040017
+			public const int zxingscanneractivitylayout = 2130968599;
+			
+			// aapt resource value: 0x7f040018
+			public const int zxingscannerfragmentlayout = 2130968600;
 			
 			static Layout()
 			{

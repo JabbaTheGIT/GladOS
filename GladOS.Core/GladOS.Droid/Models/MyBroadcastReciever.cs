@@ -95,10 +95,12 @@ namespace gladOS.Droid.Models
             if (intent.Extras.ContainsKey("message"))
             {
                 message = intent.Extras.Get("message").ToString();
-                var title = "Request";
+                var title = "Message";
 
                 if (message.Contains(GlobalLocalPerson.Name))
                 {
+                    string info = message.Length.ToString();
+                    GlobalLocalPerson.Message = info;
                     // Create a notification manager to send the notification.
                     var notificationManager =
                         GetSystemService(Context.NotificationService) as NotificationManager;

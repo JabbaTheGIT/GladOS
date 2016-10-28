@@ -17,7 +17,6 @@ namespace gladOS.Core.Models
             Number = person.Number;
             Email = person.Employer;
             Employer = person.Employer;
-
         }
         //All the personal infomation about the person using the service
         [PrimaryKey, AutoIncrement]

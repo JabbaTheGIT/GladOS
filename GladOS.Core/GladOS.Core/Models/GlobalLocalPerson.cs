@@ -75,6 +75,17 @@ namespace gladOS.Core.Models
             set { longitude = value; }
         }
 
+        public static List<string> messages = new List<string>();
+
+        public static string Message
+        {
+            set
+            {
+                messages.Add(value);
+            }
+        }
+
+
     }
 
 
