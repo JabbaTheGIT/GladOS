@@ -216,7 +216,8 @@
     <Compile Include="Views\ScheduleView.cs" />
     <Compile Include="Views\HomeView.cs" />
     <Compile Include="Views\MessagesView.cs" />
-    <Compile Include="Views\SelectedMessageView.cs" />
+    <Compile Include="Views\OfficeLocationView.cs" />
+    <Compile Include="Views\SelectedOfficeView.cs" />
     <Compile Include="Views\SelectedIndividualView.cs" />
     <Compile Include="Views\SearchView.cs" />
   </ItemGroup>
@@ -268,16 +269,19 @@
     <AndroidResource Include="Resources\layout\MessagesView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\item_message.axml">
+    <AndroidResource Include="Resources\layout\item_office.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SelectedMessageView.axml">
+    <AndroidResource Include="Resources\layout\OfficeLocationView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ScanBarcodeView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\BarcodeView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SelectedOfficeView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

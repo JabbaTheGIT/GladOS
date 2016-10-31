@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 using MvvmCross.Core.ViewModels;
+using GladOS.Core.Models;
 
 namespace gladOS.Core.Models
 {
@@ -83,6 +84,13 @@ namespace gladOS.Core.Models
             {
                 messages.Add(value);
             }
+        }
+
+        private static OfficeLocationBarcodes officeLocation;
+        public static OfficeLocationBarcodes OfficeLocation
+        {
+            get { return officeLocation; }
+            set { officeLocation = value; }
         }
 
 

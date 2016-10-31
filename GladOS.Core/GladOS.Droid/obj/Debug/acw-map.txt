@@ -50,10 +50,14 @@ gladOS.Droid.Views.MessagesView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b771
 gladOS.Droid.Views.MessagesView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.MessagesView
 gladOS.Droid.Views.MessagesView;md582645622390dd7fc8b52c1ee662b7717.MessagesView
 glados.droid.views.MessagesView;md582645622390dd7fc8b52c1ee662b7717.MessagesView
-gladOS.Droid.Views.SelectedMessageView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView
-gladOS.Droid.Views.SelectedMessageView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView
-gladOS.Droid.Views.SelectedMessageView;md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView
-glados.droid.views.SelectedMessageView;md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView
+gladOS.Droid.Views.OfficeLocationView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
+gladOS.Droid.Views.OfficeLocationView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
+gladOS.Droid.Views.OfficeLocationView;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
+glados.droid.views.OfficeLocationView;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
+gladOS.Droid.Views.SelectedOfficeView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView
+gladOS.Droid.Views.SelectedOfficeView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView
+gladOS.Droid.Views.SelectedOfficeView;md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView
+glados.droid.views.SelectedOfficeView;md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView
 gladOS.Droid.Views.SelectedIndividualView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
 gladOS.Droid.Views.SelectedIndividualView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView
 gladOS.Droid.Views.SelectedIndividualView;md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView

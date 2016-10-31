@@ -51,8 +51,8 @@ namespace gladOS.Core.ViewModels
             }
         }
         
-        private List<Person> persons;
-        public List<Person> Persons
+        private List<PersonInfo> persons;
+        public List<PersonInfo> Persons
         {
             get { return persons; }
             set { persons = value; RaisePropertyChanged(() => Persons); }
@@ -60,12 +60,12 @@ namespace gladOS.Core.ViewModels
 
         public async void GetPeople(IPersonInfoDatabase personDb)
         {
-            var newList = new List<Person>();
+            var newList = new List<PersonInfo>();
             PersonProperties personProperties = new PersonProperties();
             var personInfo = await personDb.GetPersons();
             foreach (var person in personInfo)
             {
-                Person newPerson = new Person();
+                PersonInfo newPerson = new PersonInfo();
                 newPerson = personProperties.CreatePerson(person.Name, person.Number, person.Employer, person.Email);
                 newList.Add(newPerson);
             }
@@ -97,7 +97,7 @@ namespace gladOS.Core.ViewModels
 
         public void ChangeBusyStatus()
         {
-            Person person = new Person();
+            PersonInfo person = new PersonInfo();
             person.id = GlobalLocalPerson.Id;
             person.Name = GlobalLocalPerson.Name;
             person.Number = GlobalLocalPerson.Number;
@@ -119,7 +119,7 @@ namespace gladOS.Core.ViewModels
             UpdatedPerson(person);
         }
 
-        public async void UpdatedPerson(Person updatePerson)
+        public async void UpdatedPerson(PersonInfo updatePerson)
         {
             await personDb.UpdatePerson(updatePerson);
         } //End UpdateddPerson

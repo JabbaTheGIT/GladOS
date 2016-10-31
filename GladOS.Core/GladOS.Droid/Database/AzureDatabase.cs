@@ -14,6 +14,7 @@ using gladOS.Core.Interfaces;
 using System.IO;
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 using gladOS.Core.Models;
+using GladOS.Core.Models;
 
 namespace gladOS.Droid.Database
 {
@@ -41,8 +42,9 @@ namespace gladOS.Droid.Database
                 File.Create(path).Dispose();
             }
             var store = new MobileServiceSQLiteStore(path);
-            store.DefineTable<Person>();
+            store.DefineTable<PersonInfo>();
             store.DefineTable<UpstreamMessages>();
+            store.DefineTable<OfficeLocationBarcodes>();
             azureDatabase.SyncContext.InitializeAsync(store);
 
         }

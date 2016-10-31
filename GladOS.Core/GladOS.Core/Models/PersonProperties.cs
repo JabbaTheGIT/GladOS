@@ -7,9 +7,9 @@ namespace gladOS.Core.Services
     public class PersonProperties : IPersonProperties
     {
 
-        public Person CreatePerson()
+        public PersonInfo CreatePerson()
         {
-            return new Person()
+            return new PersonInfo()
             {
                 Name = "",
                 Number = "",
@@ -18,10 +18,10 @@ namespace gladOS.Core.Services
             };
         }
 
-        public Person CreatePerson(string name, string number,  string employer,
+        public PersonInfo CreatePerson(string name, string number,  string employer,
                                    string email)
         {
-            return new Person()
+            return new PersonInfo()
             {
                 Name = name,
                 Number = number,
@@ -30,10 +30,10 @@ namespace gladOS.Core.Services
             };
         }
 
-        public Person CreatePerson(string inputId, string name, string number, string employer,
+        public PersonInfo CreatePerson(string inputId, string name, string number, string employer,
                            string email)
         {
-            return new Person()
+            return new PersonInfo()
             {
                 id = inputId,
                 Name = name,
@@ -43,9 +43,9 @@ namespace gladOS.Core.Services
             };
         }
 
-        public Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude)
+        public PersonInfo CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude)
         {
-            return new Person()
+            return new PersonInfo()
             {
                 id = inputId,
                 Name = name,
@@ -57,9 +57,9 @@ namespace gladOS.Core.Services
             };
         }
 
-        public Person CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude, bool contactable)
+        public PersonInfo CreatePerson(string inputId, string name, string number, string employer, string email, double latitude, double longitude, bool contactable)
         {
-            return new Person()
+            return new PersonInfo()
             {
                 id = inputId,
                 Name = name,
@@ -72,22 +72,22 @@ namespace gladOS.Core.Services
             };
         }
 
-        public void SetName(Person person,string name)
+        public void SetName(PersonInfo person,string name)
         {
             person.Name = name;
         }
 
-        public void SetNumber(Person person, string number)
+        public void SetNumber(PersonInfo person, string number)
         {
             person.Number = number;
         }
 
-        public void SetEmployer(Person person, string employer)
+        public void SetEmployer(PersonInfo person, string employer)
         {
             person.Employer = employer;
         }
 
-        public void SetEmail(Person person, string email)
+        public void SetEmail(PersonInfo person, string email)
         {
             person.Email = email;
         }

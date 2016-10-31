@@ -39,6 +39,7 @@ namespace gladOS.Droid
             //Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IEventInfoDatabase, EventInfoDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IPersonInfoDatabase, PersonInfoDatabaseAzure>();
+            Mvx.LazyConstructAndRegisterSingleton<IOfficeLocationBarcodesDatabase, OfficeLocationBarcodesDatabaseAzure>();
             Mvx.LazyConstructAndRegisterSingleton<INotify, NotifyFunction>();
             Mvx.LazyConstructAndRegisterSingleton<IAzureDatabase, AzureDatabase>();
             Mvx.LazyConstructAndRegisterSingleton<IMobileBarcodeScanner, MobileBarcodeScanner>();

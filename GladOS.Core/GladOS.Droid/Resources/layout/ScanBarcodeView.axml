@@ -13,5 +13,6 @@
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
        android:textSize="40dp"
-       local:MvxBind="ItemsSource Barcode; ItemClick GenerateQRCodeCommand"/>
+       local:MvxBind="ItemsSource Barcode; ItemClick GenerateQRCodeCommand"
+       local:MvxTemplate="@layout/item_office"/>
 </LinearLayout>

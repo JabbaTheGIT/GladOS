@@ -13,7 +13,7 @@ namespace gladOS.Core.ViewModels
 {
     public class SelectedIndividualViewModel : MvxViewModel
     {
-        private Person selectedPerson;
+        private PersonInfo selectedPerson;
         public ICommand ViewMap { get; private set; }
         public ICommand RequestInfo { get; private set; }
 
@@ -83,7 +83,7 @@ namespace gladOS.Core.ViewModels
             Contactable = selectedPerson.Contactable;
         }
 
-        public void Init(Person parameters)
+        public void Init(PersonInfo parameters)
         {
             selectedPerson = parameters;
         }

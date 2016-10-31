@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 using MvvmCross.Core.ViewModels;
+using GladOS.Core.Models;
 
 namespace gladOS.Core.Models
 {
-    public class Person
+    public class PersonInfo
     {
-        public Person() { }
-        public Person(Person person)
+        public PersonInfo() { }
+        public PersonInfo(PersonInfo person)
         {
             Name = person.Name;
             Number = person.Number;
@@ -29,6 +30,7 @@ namespace gladOS.Core.Models
         public bool Contactable { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public string OfficeLocation { get; set; }
     }
 
 

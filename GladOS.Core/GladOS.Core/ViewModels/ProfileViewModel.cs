@@ -25,7 +25,7 @@ namespace gladOS.Core.ViewModels
         public string Number { get; set; }
         public string Email { get; set; }
         public string Employer { get; set; }
-        public List<Person> People { get; set; }
+        public List<PersonInfo> People { get; set; }
 
         public ICommand HomePressed { get; private set; }
         public ICommand SchedulePressed { get; private set; }
@@ -74,7 +74,7 @@ namespace gladOS.Core.ViewModels
             }
         }
 
-        public async void UpdatedPerson(Person updatePerson)
+        public async void UpdatedPerson(PersonInfo updatePerson)
         {
             await personDb.UpdatePerson(updatePerson);
         } //End UpdateddPerson
@@ -107,7 +107,7 @@ namespace gladOS.Core.ViewModels
             UpdatePerson = new MvxCommand(() =>
             {
                 SyncWithGlobal();
-                Person uPerson = new Person();
+                PersonInfo uPerson = new PersonInfo();
                 uPerson.id = Identify;
                 uPerson.Name = Name;
                 uPerson.Number = Number;

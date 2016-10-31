@@ -7,14 +7,14 @@ using MvvmCross.Droid.Views;
 
 namespace gladOS.Droid.Views
 {
-    [Activity(Label = "SelectedMessageViewViewModel")]
-    public class SelectedMessageView : MvxActivity
+    [Activity(Label = "OfficeLocationViewViewModel")]
+    public class OfficeLocationView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             Window.RequestFeature(Android.Views.WindowFeatures.NoTitle);
-            SetContentView(Resource.Layout.SelectedMessageView);
+            SetContentView(Resource.Layout.OfficeLocationView);
         }
     }
 }

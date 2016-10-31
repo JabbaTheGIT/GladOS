@@ -18,35 +18,35 @@ namespace gladOS.Core.Database
         {
             var sqlite = Mvx.Resolve<ISqlite>();
             database = sqlite.GetConnection();
-            database.CreateTable<Person>();
+            database.CreateTable<PersonInfo>();
         }
 
-        public async Task<IEnumerable<Person>> GetPersons()
+        public async Task<IEnumerable<PersonInfo>> GetPersons()
         {
-            var persons = database.Table<Person>().ToList();
+            var persons = database.Table<PersonInfo>().ToList();
             return persons;
         }
 
         public async Task<int> DeletePerson(object id)
         {
-            return database.Delete<Person>(Convert.ToInt16(id));
+            return database.Delete<PersonInfo>(Convert.ToInt16(id));
         }
 
-        public async Task<int> InsertPerson(Person person)
+        public async Task<int> InsertPerson(PersonInfo person)
         {
             var num = database.Insert(person);
             database.Commit();
             return num;
         }
 
-        public async Task<bool> CheckIfExists(Person person)
+        public async Task<bool> CheckIfExists(PersonInfo person)
         {
-            var exists = database.Table<Person>()
+            var exists = database.Table<PersonInfo>()
                 .Any(x => x.Name == person.Name || x.Email == person.Email);
             return exists;
         }
 
-        public Task<int> UpdatePerson(Person person)
+        public Task<int> UpdatePerson(PersonInfo person)
         {
             throw new NotImplementedException();
         }

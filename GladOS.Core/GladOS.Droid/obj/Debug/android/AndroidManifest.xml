@@ -48,7 +48,8 @@
     <activity android:label="ScheduleViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScheduleView" />
     <activity android:label="HomeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.HomeView" />
     <activity android:label="SearchViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.MessagesView" />
-    <activity android:label="SelectedMessageViewViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedMessageView" />
+    <activity android:label="OfficeLocationViewViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView" />
+    <activity android:label="SelectedOfficeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView" />
     <activity android:label="SelectedIndividualViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView" />
     <activity android:label="SearchViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SearchView" />
     <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver">

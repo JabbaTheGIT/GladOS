@@ -16,7 +16,7 @@ namespace gladOS.Core.ViewModels
     {
         private readonly IPersonInfoDatabase personDb;
         
-        private List<Person> People { get; set; }
+        private List<PersonInfo> People { get; set; }
         public string SearchName { get; set; }
 
         private bool isBusy = true;
@@ -36,13 +36,13 @@ namespace gladOS.Core.ViewModels
         public ICommand LoginPressed { get; private set; }
         public ICommand CreatePerson { get; private set; }
 
-        public void GetPerson(List<Person> people, string searchName)
+        public void GetPerson(List<PersonInfo> people, string searchName)
         {
             bool found = false;
 
             if(people.Count() > 0)
             {
-                foreach (Person person in people)
+                foreach (PersonInfo person in people)
                 {
                     //Find the searched person and assign him/her to the Global Person
                     if (person.Name.ToUpper() == searchName.ToUpper() && found == false)
@@ -62,14 +62,14 @@ namespace gladOS.Core.ViewModels
 
         public async void GetAllPeople(IPersonInfoDatabase persDb)
         {
-            var newList = new List<Person>();
+            var newList = new List<PersonInfo>();
             PersonProperties personProperties = new PersonProperties();
             var people = await personDb.GetPersons();
             if(people.Count() > 0)
             {
                 foreach(var person in people)
                 {
-                    Person newPerson = new Person();
+                    PersonInfo newPerson = new PersonInfo();
                     newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, 
                                                               person.Email, person.Latitude, person.Longitude, person.Contactable);
                     newList.Add(newPerson);

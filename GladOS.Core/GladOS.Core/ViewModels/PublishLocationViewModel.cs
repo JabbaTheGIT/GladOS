@@ -52,7 +52,7 @@ namespace gladOS.Core.ViewModels
 
         public async void UpdatedPersonDb()
         {
-            Person updatePerson = new Person();
+            PersonInfo updatePerson = new PersonInfo();
             updatePerson.id = GlobalLocalPerson.Id;
             updatePerson.Name = GlobalLocalPerson.Name;
             updatePerson.Number = GlobalLocalPerson.Number;

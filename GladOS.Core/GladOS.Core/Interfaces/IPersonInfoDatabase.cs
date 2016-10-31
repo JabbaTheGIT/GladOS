@@ -9,11 +9,11 @@ namespace gladOS.Core.Interfaces
 {
     public interface IPersonInfoDatabase
     {
-        Task<IEnumerable<Person>> GetPersons();
+        Task<IEnumerable<PersonInfo>> GetPersons();
         Task<int> DeletePerson(object id);
-        Task<int> InsertPerson(Person person);
-        Task<bool> CheckIfExists(Person person);
-        Task<int> UpdatePerson(Person person);
+        Task<int> InsertPerson(PersonInfo person);
+        Task<bool> CheckIfExists(PersonInfo person);
+        Task<int> UpdatePerson(PersonInfo person);
 
     }
 }

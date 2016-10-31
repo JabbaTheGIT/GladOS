@@ -680,7 +680,7 @@ namespace gladOS.Droid
 			public const int item_events = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int item_message = 2130968581;
+			public const int item_office = 2130968581;
 			
 			// aapt resource value: 0x7f040006
 			public const int item_person = 2130968582;
@@ -695,49 +695,52 @@ namespace gladOS.Droid
 			public const int MessagesView = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int place_autocomplete_fragment = 2130968586;
+			public const int OfficeLocationView = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int place_autocomplete_item_powered_by_google = 2130968587;
+			public const int place_autocomplete_fragment = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int place_autocomplete_item_prediction = 2130968588;
+			public const int place_autocomplete_item_powered_by_google = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int place_autocomplete_progress = 2130968589;
+			public const int place_autocomplete_item_prediction = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int ProfileView = 2130968590;
+			public const int place_autocomplete_progress = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int PublishLocationView = 2130968591;
+			public const int ProfileView = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int RequestInfomationView = 2130968592;
+			public const int PublishLocationView = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int ScanBarcodeView = 2130968593;
+			public const int RequestInfomationView = 2130968593;
 			
 			// aapt resource value: 0x7f040012
-			public const int ScheduleView = 2130968594;
+			public const int ScanBarcodeView = 2130968594;
 			
 			// aapt resource value: 0x7f040013
-			public const int SearchView = 2130968595;
+			public const int ScheduleView = 2130968595;
 			
 			// aapt resource value: 0x7f040014
-			public const int SelectedIndividualView = 2130968596;
+			public const int SearchView = 2130968596;
 			
 			// aapt resource value: 0x7f040015
-			public const int SelectedMessageView = 2130968597;
+			public const int SelectedIndividualView = 2130968597;
 			
 			// aapt resource value: 0x7f040016
-			public const int SplashScreen = 2130968598;
+			public const int SelectedOfficeView = 2130968598;
 			
 			// aapt resource value: 0x7f040017
-			public const int zxingscanneractivitylayout = 2130968599;
+			public const int SplashScreen = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public const int zxingscannerfragmentlayout = 2130968600;
+			public const int zxingscanneractivitylayout = 2130968600;
+			
+			// aapt resource value: 0x7f040019
+			public const int zxingscannerfragmentlayout = 2130968601;
 			
 			static Layout()
 			{

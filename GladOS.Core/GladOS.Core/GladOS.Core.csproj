@@ -40,12 +40,14 @@
     <Compile Include="Database\EventInfoDatabase.cs" />
     <Compile Include="Database\NotifyFunction.cs" />
     <Compile Include="Database\PersonInfoDatabase.cs" />
+    <Compile Include="Database\OfficeLocationBarcodesDatabaseAzure.cs" />
     <Compile Include="Database\PersonInfoDatabaseAzure.cs" />
     <Compile Include="Interfaces\IAzureDatabase.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
     <Compile Include="Interfaces\IGeoCoder.cs" />
     <Compile Include="Interfaces\IEventInfoDatabase.cs" />
     <Compile Include="Interfaces\INotify.cs" />
+    <Compile Include="Interfaces\IOfficeLocationBarcodesDatabase.cs" />
     <Compile Include="Interfaces\IPersonInfoDatabase.cs" />
     <Compile Include="Interfaces\IEventProperties.cs" />
     <Compile Include="Interfaces\IQRCodeGenerator.cs" />
@@ -55,8 +57,10 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\GlobalSelectedPerson.cs" />
     <Compile Include="Models\GlobalLocalPerson.cs" />
+    <Compile Include="Models\OfficeLocalProp.cs" />
+    <Compile Include="Models\OfficeLocationBarcodes.cs" />
     <Compile Include="Models\UpstreamMessages.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PersonInfo.cs" />
     <Compile Include="Models\EventProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IPersonProperties.cs" />
@@ -73,7 +77,8 @@
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\MessagesViewModel.cs" />
-    <Compile Include="ViewModels\SelectedMessageViewModel.cs" />
+    <Compile Include="ViewModels\OfficeLocationViewModel.cs" />
+    <Compile Include="ViewModels\SelectedOfficeViewModel.cs" />
     <Compile Include="ViewModels\SelectedIndividualViewModel.cs" />
     <Compile Include="ViewModels\SearchViewModel.cs" />
   </ItemGroup>

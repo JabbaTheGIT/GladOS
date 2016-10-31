@@ -55,7 +55,7 @@ namespace gladOS.Core.ViewModels
                 base.ShowViewModel<SearchViewModel>();
             });
                                     
-            SelectedMessage = new MvxCommand<Person>(selectedMessage => 
+            SelectedMessage = new MvxCommand<PersonInfo>(selectedMessage => 
                              base.ShowViewModel<SelectedIndividualViewModel>(selectedMessage));
       
         }//EndSearchViewModel

@@ -53,7 +53,7 @@ namespace gladOS.Core.ViewModels
                 GetPeople(personDb, SearchName);
             });
                                     
-            SelectedPerson = new MvxCommand<Person>(selectedPerson => 
+            SelectedPerson = new MvxCommand<PersonInfo>(selectedPerson => 
                              base.ShowViewModel<SelectedIndividualViewModel>(selectedPerson));
       
         }//EndSearchViewModel
@@ -67,8 +67,8 @@ namespace gladOS.Core.ViewModels
 
         private readonly IPersonInfoDatabase personDb;
 
-        private List<Person> persons;
-        public List<Person> Persons
+        private List<PersonInfo> persons;
+        public List<PersonInfo> Persons
         {
             get { return persons; }
             set { persons = value; RaisePropertyChanged(() => Persons); }
@@ -76,7 +76,7 @@ namespace gladOS.Core.ViewModels
 
         public async void GetPeople(IPersonInfoDatabase personDb, string searchName)
         {
-            var newList = new List<Person>();
+            var newList = new List<PersonInfo>();
             PersonProperties personProperties = new PersonProperties();
             var personInfo = await personDb.GetPersons();
             if(personInfo.Count() > 0)
@@ -85,7 +85,7 @@ namespace gladOS.Core.ViewModels
                 {
                     if (person.Name.Contains(SearchName.ToLower()) || person.Name.Contains(SearchName.ToUpper()))
                     {
-                        Person newPerson = new Person();
+                        PersonInfo newPerson = new PersonInfo();
                         newPerson = personProperties.CreatePerson(person.id, person.Name, person.Number, person.Employer, 
                                                                   person.Email, person.Latitude, person.Longitude, person.Contactable);
                         newList.Add(newPerson);

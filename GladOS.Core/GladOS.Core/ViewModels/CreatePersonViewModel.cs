@@ -62,7 +62,7 @@ namespace gladOS.Core.ViewModels
             set { employer = value; }
         }
 
-        public List<Person> People { get; set; }
+        public List<PersonInfo> People { get; set; }
 
         public ICommand UploadDetails { get; private set; }
 
@@ -91,7 +91,7 @@ namespace gladOS.Core.ViewModels
             return true;
         }
 
-        public async void SyncWithDb(Person person)
+        public async void SyncWithDb(PersonInfo person)
         {
             await personDb.InsertPerson(person);
         }
@@ -114,7 +114,7 @@ namespace gladOS.Core.ViewModels
             ShowViewModel<PublishLocationViewModel>();
         }
 
-        public void SyncWithGlobal(Person person)
+        public void SyncWithGlobal(PersonInfo person)
         {
             GlobalLocalPerson.Id = person.id;
             GlobalLocalPerson.Name = person.Name;
@@ -130,7 +130,7 @@ namespace gladOS.Core.ViewModels
 
             UploadDetails = new MvxCommand(() =>
             {
-                Person upload = new Person();
+                PersonInfo upload = new PersonInfo();
                 bool test = CheckDetailsPerson(dialog);
 
                 if(test)
