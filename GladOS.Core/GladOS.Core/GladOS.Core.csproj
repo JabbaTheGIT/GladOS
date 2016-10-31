@@ -55,6 +55,7 @@
     <Compile Include="Interfaces\IToast.cs" />
     <Compile Include="Models\GeoLocation.cs" />
     <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\GlobalBarcode.cs" />
     <Compile Include="Models\GlobalSelectedPerson.cs" />
     <Compile Include="Models\GlobalLocalPerson.cs" />
     <Compile Include="Models\OfficeLocalProp.cs" />

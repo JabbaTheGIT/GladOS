@@ -17,6 +17,7 @@ namespace gladOS.Core.ViewModels
         public ICommand ViewMap { get; private set; }
         public ICommand RequestInfo { get; private set; }
 
+
         private string name;
 
         public string Name
@@ -93,12 +94,10 @@ namespace gladOS.Core.ViewModels
             InitialiseVars();
             SyncGlobalPerson();
 
-            //Image = selectedPerson.Photo;
             ViewMap = new MvxCommand(() =>
             {
                 if(contactable)
                 {
-                    //Send Notification
                     ShowViewModel<LocationViewModel>();
                 }              
             });
@@ -108,5 +107,6 @@ namespace gladOS.Core.ViewModels
                 ShowViewModel<RequestInfomationViewModel>();
             });
         }
+
     }
 }

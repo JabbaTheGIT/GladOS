@@ -15,8 +15,9 @@ namespace gladOS.Core.ViewModels
     public class SelectedOfficeViewModel : MvxViewModel
     {
         private OfficeLocationBarcodes selectedOffice;
-        public ScanBarcodeViewModel scanVm;
         public ICommand SaveOffice { get; private set; }
+        public ICommand GoBack { get; private set; }
+        IPersonInfoDatabase personDb;
 
         private string barcode;
 
@@ -80,11 +81,34 @@ namespace gladOS.Core.ViewModels
         {
             base.Start();
             InitialiseVars();
+        }
+
+        public async void SyncWithPersonDb()
+        {
+
+            PersonInfo updateMe = new Models.PersonInfo();
+            PersonProperties persProp = new PersonProperties();
+            updateMe = persProp.CreatePerson(GlobalLocalPerson.Id, GlobalLocalPerson.Name, GlobalLocalPerson.Number, GlobalLocalPerson.Employer, GlobalLocalPerson.Email
+                                              , GlobalLocalPerson.Latitude, GlobalLocalPerson.Longitude, GlobalLocalPerson.Contactable);
+            updateMe.OfficeLocation = "Office: " + GlobalLocalPerson.OfficeLocation.OfficeNumber + ", Level: " + GlobalLocalPerson.OfficeLocation.BuildingLevel + ", " +
+                                      GlobalLocalPerson.OfficeLocation.BuildingAddress + ", Post Code: " + GlobalLocalPerson.OfficeLocation.BuildingPostCode;
+            await personDb.UpdatePerson(updateMe);
+        }
+
+        public SelectedOfficeViewModel(IPersonInfoDatabase personDb)
+        {
+            this.personDb = personDb;
 
             SaveOffice = new MvxCommand(() =>
             {
                 SyncGlobalPerson();
-                ShowViewModel<ScanBarcodeViewModel>();           
+                SyncWithPersonDb();
+                ShowViewModel<ScanBarcodeViewModel>();
+            });
+
+            GoBack = new MvxCommand(() =>
+            {
+                ShowViewModel<ScanBarcodeViewModel>();
             });
         }
     }

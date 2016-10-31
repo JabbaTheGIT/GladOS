@@ -30,8 +30,13 @@
         android:textSize="30dp"
         local:MvxBind="Text BuildingPostCode"/>
   <Button
-      android:text="Current Office"
+      android:text="Select as current Office"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       local:MvxBind="Click SaveOffice"/>
+  <Button
+    android:text="Go Back"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="Click GoBack"/>
 </LinearLayout>

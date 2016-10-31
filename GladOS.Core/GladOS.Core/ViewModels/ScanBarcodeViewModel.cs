@@ -30,6 +30,7 @@ namespace gladOS.Core.ViewModels
     {
         public bool saveOffice = false;
         public bool createOffice = false;
+        public bool officeExists = false;
 
         private List<OfficeLocationBarcodes> barcode;
 
@@ -118,17 +119,9 @@ namespace gladOS.Core.ViewModels
             PersonProperties persProp = new PersonProperties();
             updateMe = persProp.CreatePerson(GlobalLocalPerson.Id, GlobalLocalPerson.Name, GlobalLocalPerson.Number, GlobalLocalPerson.Employer, GlobalLocalPerson.Email
                                               , GlobalLocalPerson.Latitude, GlobalLocalPerson.Longitude, GlobalLocalPerson.Contactable);
-            updateMe.OfficeLocation = "Office " + GlobalLocalPerson.OfficeLocation.OfficeNumber + ", Level" + GlobalLocalPerson.OfficeLocation.BuildingLevel + ", " + 
-                                      GlobalLocalPerson.OfficeLocation.BuildingAddress + ", Post Code" + GlobalLocalPerson.OfficeLocation.BuildingPostCode;
+            updateMe.OfficeLocation = "Office: " + GlobalLocalPerson.OfficeLocation.OfficeNumber + ", Level: " + GlobalLocalPerson.OfficeLocation.BuildingLevel + ", " +
+                                      GlobalLocalPerson.OfficeLocation.BuildingAddress + ", Post Code: " + GlobalLocalPerson.OfficeLocation.BuildingPostCode;
             await personDb.UpdatePerson(updateMe);
-        }
-
-        public async void SyncLocation()
-        {
-            OfficeLocationBarcodes newOffice = new OfficeLocationBarcodes();
-            OfficeLocalProp officeProp = new OfficeLocalProp();
-            newOffice = officeProp.CreateBarcode(BarcodeNumber, OfficeNumber, BuildingLevel, BuildingAdress, BuildingPostCode);
-            await officeLocations.InsertOfficeLocation(newOffice);
         }
 
         public ScanBarcodeViewModel(IOfficeLocationBarcodesDatabase officeLocations, IPersonInfoDatabase personDb)
@@ -138,20 +131,14 @@ namespace gladOS.Core.ViewModels
 
             GetAllBarcodeLocations();
 
+            //Select list item, inside you can confirm then come back here and update
             SelectOffice = new MvxCommand<OfficeLocationBarcodes>(selectedOffice =>
                                     base.ShowViewModel<SelectedOfficeViewModel>(selectedOffice));
 
+            //Scans office, if in Db will auto set you in that place
             ScanOnceCommand = new MvxCommand(ScanOnce);
-
-            CreateOffice = new MvxCommand(() =>
-            {
-                SyncLocation();
-                createOffice = false;
-                saveOffice = true;
-            });
-
-            UpdateOffice = new MvxCommand(SyncWithPersonDb);
         }
+
         public async void ScanOnce()
         {
             var result = await scanner.Scan();
@@ -177,8 +164,10 @@ namespace gladOS.Core.ViewModels
 
             if(officeExists == false)
             {
-                Mvx.Resolve<IToast>().Show(string.Format("Bar code = {0}, office does not exist please add.", barcode));
+                Mvx.Resolve<IToast>().Show(string.Format("Bar code = {0}, office does not exist please add.", barResult));
                 createOffice = true;
+                GlobalBarcode.GlobalBarcodes = barResult;
+                ShowViewModel<OfficeLocationViewModel>();
             }
         }
         public override void Start()
