@@ -394,11 +394,17 @@ containing a value of this type.
         public static final int steve=0x7f020042;
     }
     public static final class id {
-        public static final int InfoForUser=0x7f090026;
+        public static final int BuildingAdress=0x7f090028;
+        public static final int BuildingLevel=0x7f090027;
+        public static final int BuildingPostCode=0x7f090029;
+        public static final int CreateOffice=0x7f09002a;
+        public static final int InfoForUser=0x7f09002c;
         public static final int MvvmCrossTagId=0x7f090000;
         public static final int MvxBindingTagUnique=0x7f090001;
-        public static final int RequestInfo=0x7f090027;
-        public static final int SelectedPersonViewMap=0x7f090025;
+        public static final int OfficeNumber=0x7f090026;
+        public static final int RequestInfo=0x7f09002d;
+        public static final int SelectedPersonViewMap=0x7f09002b;
+        public static final int UpdateOffice=0x7f090025;
         public static final int adjust_height=0x7f090007;
         public static final int adjust_width=0x7f090008;
         public static final int auto=0x7f09000c;
@@ -406,7 +412,7 @@ containing a value of this type.
         public static final int checkBoxGPS=0x7f090019;
         public static final int checkBoxNFC=0x7f090017;
         public static final int checkBoxWifi=0x7f090018;
-        public static final int contentFrame=0x7f090028;
+        public static final int contentFrame=0x7f09002e;
         public static final int dark=0x7f09000d;
         public static final int gridLayout1=0x7f09000f;
         public static final int hybrid=0x7f090002;

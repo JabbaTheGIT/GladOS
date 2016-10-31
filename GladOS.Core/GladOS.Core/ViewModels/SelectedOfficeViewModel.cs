@@ -15,6 +15,7 @@ namespace gladOS.Core.ViewModels
     public class SelectedOfficeViewModel : MvxViewModel
     {
         private OfficeLocationBarcodes selectedOffice;
+        public ScanBarcodeViewModel scanVm;
         public ICommand SaveOffice { get; private set; }
 
         private string barcode;
@@ -60,13 +61,6 @@ namespace gladOS.Core.ViewModels
         public void SyncGlobalPerson()
         {
             GlobalLocalPerson.OfficeLocation = selectedOffice;
-
-         /*   GlobalLocalPerson.OfficeLocation.Barcode = selectedOffice.Barcode;
-            GlobalLocalPerson.OfficeLocation.BuildingAddress = selectedOffice.BuildingAddress;
-            GlobalLocalPerson.OfficeLocation.BuildingLevel = selectedOffice.BuildingLevel;
-            GlobalLocalPerson.OfficeLocation.BuildingPostCode = selectedOffice.BuildingPostCode;
-            GlobalLocalPerson.OfficeLocation.OfficeNumber = selectedOffice.OfficeNumber;
-    */    
         }
 
         public void InitialiseVars()

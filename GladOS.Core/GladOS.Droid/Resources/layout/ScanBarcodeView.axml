@@ -7,12 +7,48 @@
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Click to scan once"
+    android:text="Click to scan barcode"
     local:MvxBind="Click ScanOnceCommand"/>
-  <MvxListView
+  <Button
+    android:id="@+id/UpdateOffice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Save Location"
+    local:MvxBind="Click UpdateOffice"/>
+  <EditText
+    android:id="@+id/OfficeNumber"    
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+      local:MvxBind="Text OfficeNumber"/>
+  <EditText
+    android:id="@+id/BuildingLevel"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    local:MvxBind="Text BuildingLevel"/>
+  <EditText
+    android:id="@+id/BuildingAdress"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    local:MvxBind="Text BuildingAdress"/>
+  <EditText
+    android:id="@+id/BuildingPostCode"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    local:MvxBind="Text BuildingPostCode"/>
+  <Button
+    android:id="@+id/CreateOffice"    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Upload New Office Barcode"
+    local:MvxBind="Click CreateOffice"/>
+  <Mvx.MvxListView
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
        android:textSize="40dp"
-       local:MvxBind="ItemsSource Barcode; ItemClick GenerateQRCodeCommand"
-       local:MvxTemplate="@layout/item_office"/>
+       local:MvxBind="ItemsSource Barcode; ItemClick SelectOffice"
+       local:MvxItemTemplate="@layout/item_office"/>
 </LinearLayout>

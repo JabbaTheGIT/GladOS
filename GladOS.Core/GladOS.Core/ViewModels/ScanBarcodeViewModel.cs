@@ -28,7 +28,6 @@ namespace gladOS.Core.ViewModels
 {
     public class ScanBarcodeViewModel : MvxViewModel
     {
-        public bool officeExists = false;
         public bool saveOffice = false;
         public bool createOffice = false;
 
@@ -48,14 +47,6 @@ namespace gladOS.Core.ViewModels
         {
             get { return barcodeNumber; }
             set { barcodeNumber = value; }
-        }
-
-        private string location;
-
-        public string Location
-        {
-            get { return location; }
-            set { location = value; }
         }
 
         private string officeNumber;
@@ -92,13 +83,16 @@ namespace gladOS.Core.ViewModels
 
 
 
-        public ICommand GenerateQRCodeCommand { get; private set; }
+        public ICommand SelectOffice { get; private set; }
         public ICommand ScanOnceCommand { get; private set; }
         public ICommand SaveNewBarcode { get; private set; }
+        public ICommand CreateOffice { get; private set; }
+        public ICommand UpdateOffice { get; set; }
         public IMobileBarcodeScanner scanner;
         IOfficeLocationBarcodesDatabase officeLocations;
+        IPersonInfoDatabase personDb;
 
-        public async void GetAllBarcodeLocations(IOfficeLocationBarcodesDatabase officeLocations)
+        public async void GetAllBarcodeLocations()
         {
             var newList = new List<OfficeLocationBarcodes>();
             OfficeLocalProp localProps = new OfficeLocalProp();
@@ -117,21 +111,46 @@ namespace gladOS.Core.ViewModels
             }
         }
 
-        public ScanBarcodeViewModel(IOfficeLocationBarcodesDatabase officeLocations)
+        public async void SyncWithPersonDb()
+        {
+
+            PersonInfo updateMe = new Models.PersonInfo();
+            PersonProperties persProp = new PersonProperties();
+            updateMe = persProp.CreatePerson(GlobalLocalPerson.Id, GlobalLocalPerson.Name, GlobalLocalPerson.Number, GlobalLocalPerson.Employer, GlobalLocalPerson.Email
+                                              , GlobalLocalPerson.Latitude, GlobalLocalPerson.Longitude, GlobalLocalPerson.Contactable);
+            updateMe.OfficeLocation = "Office " + GlobalLocalPerson.OfficeLocation.OfficeNumber + ", Level" + GlobalLocalPerson.OfficeLocation.BuildingLevel + ", " + 
+                                      GlobalLocalPerson.OfficeLocation.BuildingAddress + ", Post Code" + GlobalLocalPerson.OfficeLocation.BuildingPostCode;
+            await personDb.UpdatePerson(updateMe);
+        }
+
+        public async void SyncLocation()
+        {
+            OfficeLocationBarcodes newOffice = new OfficeLocationBarcodes();
+            OfficeLocalProp officeProp = new OfficeLocalProp();
+            newOffice = officeProp.CreateBarcode(BarcodeNumber, OfficeNumber, BuildingLevel, BuildingAdress, BuildingPostCode);
+            await officeLocations.InsertOfficeLocation(newOffice);
+        }
+
+        public ScanBarcodeViewModel(IOfficeLocationBarcodesDatabase officeLocations, IPersonInfoDatabase personDb)
         {
             this.officeLocations = officeLocations;
+            this.personDb = personDb;
 
-            GetAllBarcodeLocations(officeLocations);
+            GetAllBarcodeLocations();
 
-            GenerateQRCodeCommand = new MvxCommand<OfficeLocationBarcodes>(selectedOffice =>
+            SelectOffice = new MvxCommand<OfficeLocationBarcodes>(selectedOffice =>
                                     base.ShowViewModel<SelectedOfficeViewModel>(selectedOffice));
 
-            /*GenerateQRCodeCommand = new MvxCommand<string>(selectedBarcode =>
-            {
-                ShowViewModel<SelectedOfficeViewModel>(new { param = selectedBarcode });
-            });  */
-
             ScanOnceCommand = new MvxCommand(ScanOnce);
+
+            CreateOffice = new MvxCommand(() =>
+            {
+                SyncLocation();
+                createOffice = false;
+                saveOffice = true;
+            });
+
+            UpdateOffice = new MvxCommand(SyncWithPersonDb);
         }
         public async void ScanOnce()
         {
@@ -149,15 +168,16 @@ namespace gladOS.Core.ViewModels
                 {
                     if(barc.Barcode == BarcodeNumber)
                     {
-                        officeExists = true;
                         Mvx.Resolve<IToast>().Show(string.Format("This office is {0}.", barc.OfficeNumber));
-                        saveOffice = true;
+                        GlobalLocalPerson.OfficeLocation = barc;
+                        SyncWithPersonDb();
                     }
                 }
             }
+
             if(officeExists == false)
             {
-                Mvx.Resolve<IToast>().Show(string.Format("Bar code = {0}", barcode));
+                Mvx.Resolve<IToast>().Show(string.Format("Bar code = {0}, office does not exist please add.", barcode));
                 createOffice = true;
             }
         }
