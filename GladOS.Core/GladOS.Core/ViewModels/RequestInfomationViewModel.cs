@@ -63,17 +63,16 @@ namespace gladOS.Core.ViewModels
             RequestMapLocation = new MvxCommand(() =>
             {
                 UpstreamMessages notifyUs = new UpstreamMessages();
-                notifyUs.Message = GlobalLocalPerson.Name + " would like your map location";
+                notifyUs.Message = GlobalSelectedPerson.Name + ". " + GlobalLocalPerson.Name + " would like your map location";
                 notify.PostUpstreamMessages(notifyUs);
             });
 
             RequestOfficeAddress = new MvxCommand(() =>
             {
                 UpstreamMessages notifyUs = new UpstreamMessages();
-                notifyUs.Message = GlobalLocalPerson.Name + " would like your office location";
+                notifyUs.Message = GlobalSelectedPerson.Name + ". " + GlobalLocalPerson.Name + " would like your office location";
                 notify.PostUpstreamMessages(notifyUs);
             });
-
         }
     }
 }

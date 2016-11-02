@@ -302,12 +302,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\drawable\loginBtn.xml" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\mipmap\Icon.png" />
-    <AndroidResource Include="Resources\drawable\calendar.png" />
     <AndroidResource Include="Resources\drawable\available.png" />
     <AndroidResource Include="Resources\drawable\busy.png" />
     <AndroidResource Include="Resources\drawable\meeting.png" />

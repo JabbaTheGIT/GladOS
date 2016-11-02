@@ -1,1 +1,1 @@
-<resources><string name="Hello">Hello World, Click Me!</string><string name="ApplicationName">GladOS.Droid</string></resources>
+<resources><string name="Hello">Hello World, Click Me!</string><string name="ApplicationName">GladOS.Droid</string><style name="defaultFont" parent="android:style/Theme"><item name="android:fontFamily">sans-serif-condensed</item></style></resources>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
           package="com.glados.droid" 
           android:versionCode="1" 
-          android:versionName="1.0" 
+          android:versionName="1.0"
           android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="19" />
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +11,7 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<application android:label="GladOS">
+	<application android:label="GladOS" android:theme="@style/defaultFont">
 		<!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
 		<meta-data android:name="com.google.android.geo.API_KEY" 
                android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />

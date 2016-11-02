@@ -88,6 +88,7 @@ namespace gladOS.Core.ViewModels
         {
             selectedPerson = parameters;
         }
+
         public override void Start()
         {
             base.Start();
@@ -96,10 +97,10 @@ namespace gladOS.Core.ViewModels
 
             ViewMap = new MvxCommand(() =>
             {
-                if(contactable)
+                if (contactable)
                 {
                     ShowViewModel<LocationViewModel>();
-                }              
+                }
             });
 
             RequestInfo = new MvxCommand(() =>
@@ -107,6 +108,5 @@ namespace gladOS.Core.ViewModels
                 ShowViewModel<RequestInfomationViewModel>();
             });
         }
-
     }
 }

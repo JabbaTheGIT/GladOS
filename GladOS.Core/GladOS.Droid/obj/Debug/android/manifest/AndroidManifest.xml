@@ -18,7 +18,7 @@
   <uses-permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <application android:label="GladOS" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+  <application android:label="GladOS" android:theme="@style/defaultFont" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
     <!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />
     <meta-date android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />

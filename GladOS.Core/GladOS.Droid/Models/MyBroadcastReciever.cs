@@ -97,7 +97,7 @@ namespace gladOS.Droid.Models
                 message = intent.Extras.Get("message").ToString();
                 var title = "Message";
 
-                if (message.Contains(GlobalLocalPerson.Name))
+                if (message.StartsWith(GlobalLocalPerson.Name + "."))
                 {
                     string info = message.Length.ToString();
                     GlobalLocalPerson.Message = info;

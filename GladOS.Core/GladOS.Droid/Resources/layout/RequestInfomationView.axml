@@ -35,30 +35,6 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.3">
-      <Mvx.MvxListView
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:textSize="40dp"
-          local:MvxBind="ItemsSource Events" 
-          local:MvxItemTemplate="@layout/item_events"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:minWidth="25px"
-        android:minHeight="25px">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            local:MvxBind="Text Update" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="0.9"
         android:minWidth="25px"

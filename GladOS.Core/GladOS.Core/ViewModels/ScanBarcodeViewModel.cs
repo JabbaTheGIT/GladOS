@@ -155,6 +155,7 @@ namespace gladOS.Core.ViewModels
                 {
                     if(barc.Barcode == BarcodeNumber)
                     {
+                        officeExists = true;
                         Mvx.Resolve<IToast>().Show(string.Format("This office is {0}.", barc.OfficeNumber));
                         GlobalLocalPerson.OfficeLocation = barc;
                         SyncWithPersonDb();
@@ -169,6 +170,8 @@ namespace gladOS.Core.ViewModels
                 GlobalBarcode.GlobalBarcodes = barResult;
                 ShowViewModel<OfficeLocationViewModel>();
             }
+
+            officeExists = false;
         }
         public override void Start()
         {
