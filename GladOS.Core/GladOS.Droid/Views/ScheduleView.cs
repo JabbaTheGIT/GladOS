@@ -25,6 +25,16 @@ namespace gladOS.Droid.Views
             TextView officeLevelTitle = FindViewById<TextView>(Resource.Id.officeLevelTitle);
             TextView officeAddressTitle = FindViewById<TextView>(Resource.Id.officeAddressTitle);
             TextView officePostCodeTitle = FindViewById<TextView>(Resource.Id.officePostCodeTitle);
+            ImageButton contactable = FindViewById<ImageButton>(Resource.Id.contactable);
+
+            if(GlobalLocalPerson.Contactable == true)
+            {
+                contactable.SetImageResource(Resource.Drawable.free);
+            }
+            if (GlobalLocalPerson.Contactable == false)
+            {
+                contactable.SetImageResource(Resource.Drawable.busy);
+            }
 
             if (GlobalLocalPerson.OfficeLocation == null)
             {

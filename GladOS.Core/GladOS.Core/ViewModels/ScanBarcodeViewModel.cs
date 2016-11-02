@@ -99,9 +99,7 @@ namespace gladOS.Core.ViewModels
 
         public ICommand SelectOffice { get; private set; }
         public ICommand ScanOnceCommand { get; private set; }
-        public ICommand SaveNewBarcode { get; private set; }
-        public ICommand CreateOffice { get; private set; }
-        public ICommand UpdateOffice { get; set; }
+
         public IMobileBarcodeScanner scanner;
         IOfficeLocationBarcodesDatabase officeLocations;
         IPersonInfoDatabase personDb;

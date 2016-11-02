@@ -434,70 +434,76 @@ namespace gladOS.Droid
 			public const int facebook_icon = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int github_icon = 2130837549;
+			public const int free = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int ic_launcher = 2130837550;
+			public const int github_icon = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int Icon = 2130837551;
+			public const int ic_launcher = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int linkedin_icon = 2130837552;
+			public const int Icon = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int loginBtn = 2130837553;
+			public const int linkedin_icon = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int meeting = 2130837554;
+			public const int loginBtn = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int office = 2130837555;
+			public const int map = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int places_ic_clear = 2130837556;
+			public const int meeting = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int places_ic_search = 2130837557;
+			public const int office = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int powered_by_google_dark = 2130837558;
+			public const int places_ic_clear = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int powered_by_google_light = 2130837559;
+			public const int places_ic_search = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int sample_0 = 2130837560;
+			public const int powered_by_google_dark = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int sample_1 = 2130837561;
+			public const int powered_by_google_light = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int sample_2 = 2130837562;
+			public const int sample_0 = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int sample_3 = 2130837563;
+			public const int sample_1 = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int sample_4 = 2130837564;
+			public const int sample_2 = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int sample_5 = 2130837565;
+			public const int sample_3 = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int sample_6 = 2130837566;
+			public const int sample_4 = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int sample_7 = 2130837567;
+			public const int sample_5 = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int schedule = 2130837568;
+			public const int sample_6 = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int splash = 2130837569;
+			public const int sample_7 = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int steve = 2130837570;
+			public const int schedule = 2130837570;
+			
+			// aapt resource value: 0x7f020043
+			public const int splash = 2130837571;
+			
+			// aapt resource value: 0x7f020044
+			public const int steve = 2130837572;
 			
 			static Drawable()
 			{
@@ -512,23 +518,23 @@ namespace gladOS.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090010
-			public const int Barcode = 2131296272;
-			
-			// aapt resource value: 0x7f090013
-			public const int BuildingAdress = 2131296275;
-			
-			// aapt resource value: 0x7f090012
-			public const int BuildingLevel = 2131296274;
+			// aapt resource value: 0x7f090011
+			public const int Barcode = 2131296273;
 			
 			// aapt resource value: 0x7f090014
-			public const int BuildingPostCode = 2131296276;
+			public const int BuildingAdress = 2131296276;
+			
+			// aapt resource value: 0x7f090013
+			public const int BuildingLevel = 2131296275;
 			
 			// aapt resource value: 0x7f090015
-			public const int CreateOffice = 2131296277;
+			public const int BuildingPostCode = 2131296277;
 			
-			// aapt resource value: 0x7f090029
-			public const int InfoForUser = 2131296297;
+			// aapt resource value: 0x7f090016
+			public const int CreateOffice = 2131296278;
+			
+			// aapt resource value: 0x7f09002a
+			public const int InfoForUser = 2131296298;
 			
 			// aapt resource value: 0x7f090000
 			public const int MvvmCrossTagId = 2131296256;
@@ -536,17 +542,17 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090001
 			public const int MvxBindingTagUnique = 2131296257;
 			
-			// aapt resource value: 0x7f090011
-			public const int OfficeNumber = 2131296273;
+			// aapt resource value: 0x7f090012
+			public const int OfficeNumber = 2131296274;
 			
-			// aapt resource value: 0x7f09002a
-			public const int RequestInfo = 2131296298;
+			// aapt resource value: 0x7f09002b
+			public const int RequestInfo = 2131296299;
 			
-			// aapt resource value: 0x7f090028
-			public const int SelectedPersonViewMap = 2131296296;
+			// aapt resource value: 0x7f090029
+			public const int SelectedPersonViewMap = 2131296297;
 			
-			// aapt resource value: 0x7f09001f
-			public const int UpdateOffice = 2131296287;
+			// aapt resource value: 0x7f090010
+			public const int UserPrompt = 2131296272;
 			
 			// aapt resource value: 0x7f090007
 			public const int adjust_height = 2131296263;
@@ -557,8 +563,11 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f09000c
 			public const int auto = 2131296268;
 			
-			// aapt resource value: 0x7f09002b
-			public const int contentFrame = 2131296299;
+			// aapt resource value: 0x7f090020
+			public const int contactable = 2131296288;
+			
+			// aapt resource value: 0x7f09002c
+			public const int contentFrame = 2131296300;
 			
 			// aapt resource value: 0x7f09000d
 			public const int dark = 2131296269;
@@ -581,56 +590,56 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090004
 			public const int normal = 2131296260;
 			
+			// aapt resource value: 0x7f090026
+			public const int officeAddress = 2131296294;
+			
 			// aapt resource value: 0x7f090025
-			public const int officeAddress = 2131296293;
+			public const int officeAddressTitle = 2131296293;
 			
 			// aapt resource value: 0x7f090024
-			public const int officeAddressTitle = 2131296292;
+			public const int officeLevel = 2131296292;
 			
 			// aapt resource value: 0x7f090023
-			public const int officeLevel = 2131296291;
+			public const int officeLevelTitle = 2131296291;
 			
 			// aapt resource value: 0x7f090022
-			public const int officeLevelTitle = 2131296290;
+			public const int officeNumber = 2131296290;
 			
 			// aapt resource value: 0x7f090021
-			public const int officeNumber = 2131296289;
+			public const int officeNumberTitle = 2131296289;
 			
-			// aapt resource value: 0x7f090020
-			public const int officeNumberTitle = 2131296288;
+			// aapt resource value: 0x7f090028
+			public const int officePostCode = 2131296296;
 			
 			// aapt resource value: 0x7f090027
-			public const int officePostCode = 2131296295;
-			
-			// aapt resource value: 0x7f090026
-			public const int officePostCodeTitle = 2131296294;
-			
-			// aapt resource value: 0x7f090018
-			public const int place_autocomplete_clear_button = 2131296280;
-			
-			// aapt resource value: 0x7f09001a
-			public const int place_autocomplete_powered_by_google = 2131296282;
-			
-			// aapt resource value: 0x7f09001c
-			public const int place_autocomplete_prediction_primary_text = 2131296284;
-			
-			// aapt resource value: 0x7f09001d
-			public const int place_autocomplete_prediction_secondary_text = 2131296285;
-			
-			// aapt resource value: 0x7f09001b
-			public const int place_autocomplete_progress = 2131296283;
-			
-			// aapt resource value: 0x7f090016
-			public const int place_autocomplete_search_button = 2131296278;
-			
-			// aapt resource value: 0x7f090017
-			public const int place_autocomplete_search_input = 2131296279;
+			public const int officePostCodeTitle = 2131296295;
 			
 			// aapt resource value: 0x7f090019
-			public const int place_autocomplete_separator = 2131296281;
+			public const int place_autocomplete_clear_button = 2131296281;
+			
+			// aapt resource value: 0x7f09001b
+			public const int place_autocomplete_powered_by_google = 2131296283;
+			
+			// aapt resource value: 0x7f09001d
+			public const int place_autocomplete_prediction_primary_text = 2131296285;
 			
 			// aapt resource value: 0x7f09001e
-			public const int publishlocationview = 2131296286;
+			public const int place_autocomplete_prediction_secondary_text = 2131296286;
+			
+			// aapt resource value: 0x7f09001c
+			public const int place_autocomplete_progress = 2131296284;
+			
+			// aapt resource value: 0x7f090017
+			public const int place_autocomplete_search_button = 2131296279;
+			
+			// aapt resource value: 0x7f090018
+			public const int place_autocomplete_search_input = 2131296280;
+			
+			// aapt resource value: 0x7f09001a
+			public const int place_autocomplete_separator = 2131296282;
+			
+			// aapt resource value: 0x7f09001f
+			public const int publishlocationview = 2131296287;
 			
 			// aapt resource value: 0x7f090005
 			public const int satellite = 2131296261;
@@ -680,76 +689,70 @@ namespace gladOS.Droid
 			public const int CreatePersonView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int EventView = 2130968578;
+			public const int HomeView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int HomeView = 2130968579;
+			public const int item_events = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int item_events = 2130968580;
+			public const int item_office = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int item_office = 2130968581;
+			public const int item_person = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int item_person = 2130968582;
+			public const int LocationView = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int LocationView = 2130968583;
+			public const int LoginView = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int LoginView = 2130968584;
+			public const int OfficeLocationView = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int MessagesView = 2130968585;
+			public const int place_autocomplete_fragment = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int OfficeLocationView = 2130968586;
+			public const int place_autocomplete_item_powered_by_google = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int place_autocomplete_fragment = 2130968587;
+			public const int place_autocomplete_item_prediction = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int place_autocomplete_item_powered_by_google = 2130968588;
+			public const int place_autocomplete_progress = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int place_autocomplete_item_prediction = 2130968589;
+			public const int ProfileView = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int place_autocomplete_progress = 2130968590;
+			public const int PublishLocationView = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int ProfileView = 2130968591;
+			public const int RequestInfomationView = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int PublishLocationView = 2130968592;
+			public const int ScanBarcodeView = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int RequestInfomationView = 2130968593;
+			public const int ScheduleView = 2130968593;
 			
 			// aapt resource value: 0x7f040012
-			public const int ScanBarcodeView = 2130968594;
+			public const int SearchView = 2130968594;
 			
 			// aapt resource value: 0x7f040013
-			public const int ScheduleView = 2130968595;
+			public const int SelectedIndividualView = 2130968595;
 			
 			// aapt resource value: 0x7f040014
-			public const int SearchView = 2130968596;
+			public const int SelectedOfficeView = 2130968596;
 			
 			// aapt resource value: 0x7f040015
-			public const int SelectedIndividualView = 2130968597;
+			public const int SplashScreen = 2130968597;
 			
 			// aapt resource value: 0x7f040016
-			public const int SelectedOfficeView = 2130968598;
+			public const int zxingscanneractivitylayout = 2130968598;
 			
 			// aapt resource value: 0x7f040017
-			public const int SplashScreen = 2130968599;
-			
-			// aapt resource value: 0x7f040018
-			public const int zxingscanneractivitylayout = 2130968600;
-			
-			// aapt resource value: 0x7f040019
-			public const int zxingscannerfragmentlayout = 2130968601;
+			public const int zxingscannerfragmentlayout = 2130968599;
 			
 			static Layout()
 			{

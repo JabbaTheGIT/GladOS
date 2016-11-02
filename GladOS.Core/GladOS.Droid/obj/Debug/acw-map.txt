@@ -26,10 +26,6 @@ gladOS.Droid.Views.ProfileView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717
 gladOS.Droid.Views.ProfileView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.ProfileView
 gladOS.Droid.Views.ProfileView;md582645622390dd7fc8b52c1ee662b7717.ProfileView
 glados.droid.views.ProfileView;md582645622390dd7fc8b52c1ee662b7717.ProfileView
-gladOS.Droid.Views.EventView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.EventView
-gladOS.Droid.Views.EventView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.EventView
-gladOS.Droid.Views.EventView;md582645622390dd7fc8b52c1ee662b7717.EventView
-glados.droid.views.EventView;md582645622390dd7fc8b52c1ee662b7717.EventView
 gladOS.Droid.Views.LoginView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.LoginView
 gladOS.Droid.Views.LoginView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.LoginView
 gladOS.Droid.Views.LoginView;md582645622390dd7fc8b52c1ee662b7717.LoginView
@@ -46,10 +42,6 @@ gladOS.Droid.Views.HomeView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.Ho
 gladOS.Droid.Views.HomeView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.HomeView
 gladOS.Droid.Views.HomeView;md582645622390dd7fc8b52c1ee662b7717.HomeView
 glados.droid.views.HomeView;md582645622390dd7fc8b52c1ee662b7717.HomeView
-gladOS.Droid.Views.MessagesView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.MessagesView
-gladOS.Droid.Views.MessagesView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.MessagesView
-gladOS.Droid.Views.MessagesView;md582645622390dd7fc8b52c1ee662b7717.MessagesView
-glados.droid.views.MessagesView;md582645622390dd7fc8b52c1ee662b7717.MessagesView
 gladOS.Droid.Views.OfficeLocationView, gladOS.Droid;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
 gladOS.Droid.Views.OfficeLocationView, gladOS.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView
 gladOS.Droid.Views.OfficeLocationView;md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView

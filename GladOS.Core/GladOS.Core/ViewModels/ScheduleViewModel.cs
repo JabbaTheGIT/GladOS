@@ -152,13 +152,13 @@ namespace gladOS.Core.ViewModels
 
             EventPressed = new MvxCommand(() =>
             {
-                ShowViewModel<EventViewModel>();
+                ShowViewModel<ScanBarcodeViewModel>();
             });
 
             BusyPressed = new MvxCommand(() =>
             {
                 ChangeBusyStatus();
-                Update = GlobalLocalPerson.Contactable.ToString();          
+                ShowViewModel<ScheduleViewModel>();        
             });
 
         }

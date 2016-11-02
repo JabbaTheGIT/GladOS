@@ -17,12 +17,16 @@ using gladOS.Core.Models;
 using Android.Gms.Common.Apis;
 using Android.Gms.Location;
 using Android.Gms.Common;
+using gladOS.Droid.Services;
+using MvvmCross.Binding.BindingContext;
 
 namespace gladOS.Droid.Views
 {
     [Activity(Label = "LocationViewModel")]
     public class PublishLocationView : MvxActivity, IOnMapReadyCallback
     {
+        private Progress progress;
+
         private delegate IOnMapReadyCallback OnMapReadyCallback();
         private GoogleMap map;
         PublishLocationViewModel vm;
@@ -80,6 +84,11 @@ namespace gladOS.Droid.Views
             var mapFragment = FragmentManager.FindFragmentById(Resource.Id.publishlocationview)
                               as MapFragment;
             mapFragment.GetMapAsync(this);
+            progress = new Progress(this);
+
+            var set = this.CreateBindingSet<PublishLocationView, PublishLocationViewModel>();
+            set.Bind(progress).For(p => p.Visible).To(vm => vm.IsBusy);
+            set.Apply();
         }
 
     }

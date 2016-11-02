@@ -9,7 +9,7 @@
   <LinearLayout
       android:orientation="horizontal"
       android:layout_width="fill_parent"
-      android:layout_height="0dp"
+      android:layout_height="wrap_content"
       android:layout_weight="12"
       android:weightSum="100">
     <Button
@@ -48,18 +48,18 @@
   <LinearLayout
       android:orientation="vertical"
       android:layout_width="fill_parent"
-      android:layout_height="0dp"
+      android:layout_height="wrap_content"
       android:layout_weight="18"
       android:weightSum="100">
     <EditText
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="50"
         local:MvxBind="Text SearchName" />
     <Button
         android:text="Search"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:layout_gravity="center"

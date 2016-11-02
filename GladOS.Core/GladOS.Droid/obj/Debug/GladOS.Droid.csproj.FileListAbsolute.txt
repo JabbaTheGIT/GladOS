@@ -264,7 +264,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\se
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\profileview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_events.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\loginview.xml
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\eventview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\locationview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Xamarin.GooglePlayServices.Location.dll
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\publishlocationview.xml
@@ -364,7 +363,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GCM.Client.dl
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Xamarin.Azure.NotificationHubs.Android.dll
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\bin\com.glados.droid.apk
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\requestinfomationview.xml
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\messagesview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\ZXing.Net.Mobile.Core.dll
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\zxing.portable.dll
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\ZXingNetMobile.dll
@@ -374,6 +372,7 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\of
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_office.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\selectedofficeview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\loginbtn.xml
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\free.png
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\gladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Java.Interop.dll.mdb
@@ -410,5 +409,6 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\asset
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\map.png
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\gladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\gladOS.Droid.dll.mdb

@@ -49,6 +49,25 @@
       android:orientation="horizontal"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
+      android:layout_weight="8"
+      android:weightSum="100">
+    <TextView
+        android:text="Scan Office Location"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:gravity="center"/>
+    <TextView
+        android:text="Contactable Status"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:gravity="center"/>
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
       android:layout_weight="30"
       android:weightSum="100">
     <ImageButton
@@ -61,6 +80,7 @@
         local:MvxBind="Click EventPressed" />
     <ImageButton
         android:layout_weight="50"
+        android:id="@+id/contactable"
         android:src="@drawable/busy"
         android:layout_width="0dp"
         android:layout_height="match_parent"

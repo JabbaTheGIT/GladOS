@@ -19,6 +19,10 @@ namespace gladOS.Core.ViewModels
         private readonly IPersonInfoDatabase personDb;
 
         public ICommand UpdateLocation { get; private set; }
+        public ICommand HomePressed { get; private set; }
+        public ICommand SchedulePressed { get; private set; }
+        public ICommand SearchPressed { get; private set; }
+        public ICommand ProfilePressed { get; private set; }
 
         private Action<GeoLocation, float> moveLocation;
 
@@ -28,7 +32,20 @@ namespace gladOS.Core.ViewModels
             get { return myLocation; }
             set { myLocation = value; }
         }
-        
+
+        private bool isBusy = false;
+
+        public bool IsBusy
+        {
+            get { return isBusy; }
+
+            set
+            {
+                isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
         public void OnMyLocationChanged(GeoLocation location)
         {
             MyLocation = location;
@@ -38,16 +55,6 @@ namespace gladOS.Core.ViewModels
         {
             GlobalLocalPerson.Longitude = location.Longitude;
             GlobalLocalPerson.Latitude = location.Latitude;
-        }
-
-        private async void RunSomething()
-        {
-            while (true)
-            {
-                await Task.Delay(100);
-                //Do a thing
-                
-            }
         }
 
         public async void UpdatedPersonDb()
@@ -62,6 +69,8 @@ namespace gladOS.Core.ViewModels
             updatePerson.Latitude = GlobalLocalPerson.Latitude;
             updatePerson.Longitude = GlobalLocalPerson.Longitude;
             await personDb.UpdatePerson(updatePerson);
+            IsBusy = false;
+            ShowViewModel<HomeViewModel>();
         } //End UpdateddPerson
 
         public void MapSetup(Action<GeoLocation,float> MoveLocation)
@@ -75,10 +84,30 @@ namespace gladOS.Core.ViewModels
             this.geocoder = geocoder;
             this.personDb = personDb;
 
+            HomePressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<HomeViewModel>();
+            });
+
+            SchedulePressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<ScheduleViewModel>();
+            });
+
+            SearchPressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<SearchViewModel>();
+            });
+
+            ProfilePressed = new MvxCommand(() =>
+            {
+                base.ShowViewModel<ProfileViewModel>();
+            });
+
             UpdateLocation = new MvxCommand(() =>
             {
+                IsBusy = true;
                 UpdatedPersonDb();
-                ShowViewModel<HomeViewModel>();
             });
         }//End PublishLocationViewModel
 
