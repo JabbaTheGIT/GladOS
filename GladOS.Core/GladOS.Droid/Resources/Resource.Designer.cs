@@ -527,8 +527,8 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090015
 			public const int CreateOffice = 2131296277;
 			
-			// aapt resource value: 0x7f090021
-			public const int InfoForUser = 2131296289;
+			// aapt resource value: 0x7f090029
+			public const int InfoForUser = 2131296297;
 			
 			// aapt resource value: 0x7f090000
 			public const int MvvmCrossTagId = 2131296256;
@@ -539,11 +539,11 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090011
 			public const int OfficeNumber = 2131296273;
 			
-			// aapt resource value: 0x7f090022
-			public const int RequestInfo = 2131296290;
+			// aapt resource value: 0x7f09002a
+			public const int RequestInfo = 2131296298;
 			
-			// aapt resource value: 0x7f090020
-			public const int SelectedPersonViewMap = 2131296288;
+			// aapt resource value: 0x7f090028
+			public const int SelectedPersonViewMap = 2131296296;
 			
 			// aapt resource value: 0x7f09001f
 			public const int UpdateOffice = 2131296287;
@@ -557,8 +557,8 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f09000c
 			public const int auto = 2131296268;
 			
-			// aapt resource value: 0x7f090023
-			public const int contentFrame = 2131296291;
+			// aapt resource value: 0x7f09002b
+			public const int contentFrame = 2131296299;
 			
 			// aapt resource value: 0x7f09000d
 			public const int dark = 2131296269;
@@ -580,6 +580,30 @@ namespace gladOS.Droid
 			
 			// aapt resource value: 0x7f090004
 			public const int normal = 2131296260;
+			
+			// aapt resource value: 0x7f090025
+			public const int officeAddress = 2131296293;
+			
+			// aapt resource value: 0x7f090024
+			public const int officeAddressTitle = 2131296292;
+			
+			// aapt resource value: 0x7f090023
+			public const int officeLevel = 2131296291;
+			
+			// aapt resource value: 0x7f090022
+			public const int officeLevelTitle = 2131296290;
+			
+			// aapt resource value: 0x7f090021
+			public const int officeNumber = 2131296289;
+			
+			// aapt resource value: 0x7f090020
+			public const int officeNumberTitle = 2131296288;
+			
+			// aapt resource value: 0x7f090027
+			public const int officePostCode = 2131296295;
+			
+			// aapt resource value: 0x7f090026
+			public const int officePostCodeTitle = 2131296294;
 			
 			// aapt resource value: 0x7f090018
 			public const int place_autocomplete_clear_button = 2131296280;

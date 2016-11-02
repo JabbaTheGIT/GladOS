@@ -159,6 +159,7 @@ namespace gladOS.Core.ViewModels
                         Mvx.Resolve<IToast>().Show(string.Format("This office is {0}.", barc.OfficeNumber));
                         GlobalLocalPerson.OfficeLocation = barc;
                         SyncWithPersonDb();
+                        ShowViewModel<HomeViewModel>();
                     }
                 }
             }

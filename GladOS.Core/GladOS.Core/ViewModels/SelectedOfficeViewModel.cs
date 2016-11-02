@@ -103,7 +103,7 @@ namespace gladOS.Core.ViewModels
             {
                 SyncGlobalPerson();
                 SyncWithPersonDb();
-                ShowViewModel<ScanBarcodeViewModel>();
+                ShowViewModel<HomeViewModel>();
             });
 
             GoBack = new MvxCommand(() =>

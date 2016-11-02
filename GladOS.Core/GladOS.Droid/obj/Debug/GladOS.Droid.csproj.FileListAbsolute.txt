@@ -373,6 +373,7 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\sc
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\officelocationview.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\item_office.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\layout\selectedofficeview.xml
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\loginbtn.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\gladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\Java.Interop.dll.mdb
@@ -409,6 +410,5 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\asset
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\res\drawable\loginbtn.xml
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\obj\Debug\gladOS.Droid.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Droid\bin\Debug\gladOS.Droid.dll.mdb
