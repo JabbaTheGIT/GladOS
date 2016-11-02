@@ -32,6 +32,19 @@ namespace gladOS.Core.ViewModels
         public bool createOffice = false;
         public bool officeExists = false;
 
+        private bool isBusy = false;
+
+        public bool IsBusy
+        {
+            get { return isBusy; }
+
+            set
+            {
+                isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
         private List<OfficeLocationBarcodes> barcode;
 
         public List<OfficeLocationBarcodes> Barcode
@@ -95,6 +108,7 @@ namespace gladOS.Core.ViewModels
 
         public async void GetAllBarcodeLocations()
         {
+            IsBusy = true;
             var newList = new List<OfficeLocationBarcodes>();
             OfficeLocalProp localProps = new OfficeLocalProp();
             var locations = await officeLocations.GetOfficeLocation();
@@ -110,6 +124,7 @@ namespace gladOS.Core.ViewModels
                 }
                 Barcode = newList;
             }
+            IsBusy = false;
         }
 
         public async void SyncWithPersonDb()

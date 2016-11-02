@@ -20,6 +20,19 @@ namespace gladOS.Core.ViewModels
         //private readonly ILocalPersonInfoDatabase localPersonDb;
         private readonly IDialogService dialog;
 
+        private bool isBusy = false;
+
+        public bool IsBusy
+        {
+            get { return isBusy; }
+
+            set
+            {
+                isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
         public string Identify { get; set; }
         public string Name { get; set; }
         public string Number { get; set; }
@@ -76,7 +89,10 @@ namespace gladOS.Core.ViewModels
 
         public async void UpdatedPerson(PersonInfo updatePerson)
         {
+            IsBusy = true;
             await personDb.UpdatePerson(updatePerson);
+            IsBusy = false;
+            ShowViewModel<HomeViewModel>();
         } //End UpdateddPerson
 
         public ProfileViewModel(IDialogService dialog, IPersonInfoDatabase personDb)
@@ -115,7 +131,6 @@ namespace gladOS.Core.ViewModels
                 uPerson.Employer = Employer;
                 UpdatedPerson(uPerson);
                 UpdateGlobalValues(personDb);
-                base.ShowViewModel<ScheduleViewModel>();
             });
 
         }//End ProfileViewModel
