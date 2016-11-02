@@ -437,73 +437,70 @@ namespace gladOS.Droid
 			public const int free = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int github_icon = 2130837550;
+			public const int ic_launcher = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int ic_launcher = 2130837551;
+			public const int Icon = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int Icon = 2130837552;
+			public const int linkedin_icon = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int linkedin_icon = 2130837553;
+			public const int loginBtn = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int loginBtn = 2130837554;
+			public const int map = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int map = 2130837555;
+			public const int meeting = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int meeting = 2130837556;
+			public const int office = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int office = 2130837557;
+			public const int places_ic_clear = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int places_ic_clear = 2130837558;
+			public const int places_ic_search = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int places_ic_search = 2130837559;
+			public const int powered_by_google_dark = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int powered_by_google_dark = 2130837560;
+			public const int powered_by_google_light = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int powered_by_google_light = 2130837561;
+			public const int sample_0 = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int sample_0 = 2130837562;
+			public const int sample_1 = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int sample_1 = 2130837563;
+			public const int sample_2 = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int sample_2 = 2130837564;
+			public const int sample_3 = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int sample_3 = 2130837565;
+			public const int sample_4 = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int sample_4 = 2130837566;
+			public const int sample_5 = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int sample_5 = 2130837567;
+			public const int sample_6 = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int sample_6 = 2130837568;
+			public const int sample_7 = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int sample_7 = 2130837569;
+			public const int schedule = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int schedule = 2130837570;
+			public const int splash = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int splash = 2130837571;
-			
-			// aapt resource value: 0x7f020044
-			public const int steve = 2130837572;
+			public const int steve = 2130837571;
 			
 			static Drawable()
 			{

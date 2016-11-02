@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 using MvvmCross.Core.ViewModels;
 
+//For later builds
+
 namespace gladOS.Core.Models
 {
     public class Event

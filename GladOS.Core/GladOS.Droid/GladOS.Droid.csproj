@@ -307,7 +307,6 @@
     <AndroidResource Include="Resources\drawable\meeting.png" />
     <AndroidResource Include="Resources\drawable\office.png" />
     <AndroidResource Include="Resources\drawable\facebook_icon.png" />
-    <AndroidResource Include="Resources\drawable\github_icon.png" />
     <AndroidResource Include="Resources\drawable\linkedin_icon.png" />
     <AndroidResource Include="Resources\drawable\schedule.png" />
     <AndroidResource Include="Resources\drawable\steve.jpg" />
