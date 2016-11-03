@@ -29,3 +29,7 @@ C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Release\GladOS.Core.
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Release\GladOS.Core.csprojResolveAssemblyReference.cache
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Release\GladOS.Core.dll.mdb
 C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Release\GladOS.Core.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Release\GladOS.Core.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Release\GladOS.Core.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\obj\Release\GladOS.Core.dll.mdb
+C:\QUT\Year2\Sem2\IAB330\GladOS\GladOS.Core\GladOS.Core\bin\Release\GladOS.Core.dll.mdb

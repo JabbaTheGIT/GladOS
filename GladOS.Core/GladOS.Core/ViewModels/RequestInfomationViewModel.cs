@@ -70,7 +70,7 @@ namespace gladOS.Core.ViewModels
             RequestOfficeAddress = new MvxCommand(() =>
             {
                 UpstreamMessages notifyUs = new UpstreamMessages();
-                notifyUs.Message = GlobalSelectedPerson.Name + ". " + GlobalLocalPerson.Name + " would like your office location";
+                notifyUs.Message = GlobalSelectedPerson.Name + ". " + GlobalLocalPerson.Name + " would like your office number";
                 notify.PostUpstreamMessages(notifyUs);
             });
         }

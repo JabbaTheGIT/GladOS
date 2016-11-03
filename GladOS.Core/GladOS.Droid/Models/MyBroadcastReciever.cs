@@ -90,7 +90,9 @@ namespace gladOS.Droid.Models
         protected override void OnMessage(Context context, Intent intent)
         {
             string message = string.Empty;
-
+            PendingIntent intender =
+                PendingIntent.GetActivity(context, 0,
+                new Intent(this, typeof(HomeView)), 0);
             // Extract the push notification message from the intent.
             if (intent.Extras.ContainsKey("message"))
             {
@@ -105,10 +107,22 @@ namespace gladOS.Droid.Models
                     var notificationManager =
                         GetSystemService(Context.NotificationService) as NotificationManager;
 
-                    // Create a new intent to show the notification in the UI. 
-                    PendingIntent contentIntent =
-                        PendingIntent.GetActivity(context, 0,
-                        new Intent(this, typeof(PublishLocationView)), 0);
+                    // Create a new intent to show the notification in the UI.
+                    if (message.EndsWith("location ."))
+                    {
+                        PendingIntent contentIntent =
+                            PendingIntent.GetActivity(context, 0,
+                            new Intent(this, typeof(PublishLocationView)), 0);
+                        intender = contentIntent;
+                    }
+                    if (message.EndsWith("number ."))
+                    {
+                        PendingIntent contentIntent =
+                            PendingIntent.GetActivity(context, 0,
+                            new Intent(this, typeof(ScanBarcodeView)), 0);
+                        intender = contentIntent;
+                    }
+
 
                     // Create the notification using the builder.
                     var builder = new Notification.Builder(context);
@@ -116,7 +130,7 @@ namespace gladOS.Droid.Models
                     builder.SetContentTitle(title);
                     builder.SetContentText(message);
                     builder.SetSmallIcon(Android.Resource.Drawable.SymActionEmail);
-                    builder.SetContentIntent(contentIntent);
+                    builder.SetContentIntent(intender);
                     var notification = builder.Build();
 
                     // Display the notification in the Notifications Area.

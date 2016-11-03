@@ -121,7 +121,7 @@
         android:gravity="center"
         android:padding="3dp"
         android:layout_height="fill_parent"
-        android:textSize="20sp"/>
+        android:textSize="15sp"/>
   </LinearLayout>
   <LinearLayout
       android:orientation="horizontal"
