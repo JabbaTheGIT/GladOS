@@ -51,13 +51,14 @@
       android:layout_height="0dp"
       android:layout_weight="17"
       android:weightSum="100">
-    <Mvx.MvxImageView
+    <ImageView
+        android:id="@+id/homePicture"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="50"
-        androidlayout_gravity="center"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:src="@drawable/sample_0"/>
+        android:src="@drawable/steve"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"

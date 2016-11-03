@@ -6,11 +6,19 @@
     android:layout_height="fill_parent"
     android:background="@android:color/background_light"
     android:weightSum="100">
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="10"
+      android:layout_gravity="center"
+      android:layout_margin="10dp"
+      android:id="@+id/selectedPicture"
+      android:src="@drawable/steve"/>
   <LinearLayout
       android:orientation="horizontal"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
-      android:layout_weight="10"
+      android:layout_weight="9"
       android:weightSum="100">
     <TextView
         android:text="Name : "
@@ -31,7 +39,7 @@
       android:orientation="horizontal"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
-      android:layout_weight="10">
+      android:layout_weight="9">
     <TextView
         android:text="Employer : "
         android:textColor="#000000"
@@ -50,7 +58,7 @@
       android:orientation="horizontal"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
-      android:layout_weight="10">
+      android:layout_weight="9">
     <TextView
         android:text="Email : "
         android:textColor="#000000"
@@ -69,7 +77,7 @@
       android:orientation="horizontal"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
-      android:layout_weight="10">
+      android:layout_weight="9">
     <TextView
         android:text="Number : "
         android:textColor="#000000"
@@ -110,7 +118,7 @@
         android:text="Person is not contactable, please request infomation from them below"
         android:id="@+id/InfoForUser"
         android:layout_width="fill_parent"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:padding="3dp"
         android:layout_height="fill_parent"
         android:textSize="20sp"/>

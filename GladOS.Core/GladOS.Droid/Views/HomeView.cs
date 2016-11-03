@@ -4,7 +4,9 @@ using Android.Gms.Gcm;
 using Android.Gms.Gcm.Iid;
 using Android.OS;
 using Android.Util;
+using Android.Widget;
 using Gcm.Client;
+using gladOS.Core.Models;
 using gladOS.Droid.Models;
 using Java.Lang;
 using Microsoft.WindowsAzure.MobileServices;
@@ -48,6 +50,35 @@ namespace gladOS.Droid.Views
             GcmClient.CheckManifest(this);
             //register the app for push
             GcmClient.Register(this, Constants.Constants.SenderID);
+
+            ImageView homePicture = FindViewById<ImageView>(Resource.Id.homePicture);
+
+            string name = GlobalLocalPerson.Name;
+
+            switch(name)
+            {
+                case "Bruce Wayne":
+                    homePicture.SetImageResource(Resource.Drawable.brucewayne);
+                    break;
+                case "John Wayne":
+                    homePicture.SetImageResource(Resource.Drawable.johnwayne);
+                    break;
+                case "Gandalf Grey":
+                    homePicture.SetImageResource(Resource.Drawable.gandalf);
+                    break;
+                case "Winston Churchill":
+                    homePicture.SetImageResource(Resource.Drawable.winston);
+                    break;
+                case "Peter Parker":
+                    homePicture.SetImageResource(Resource.Drawable.spiderman);
+                    break;
+                case "Tony Stark":
+                    homePicture.SetImageResource(Resource.Drawable.ironMan);
+                    break;
+                default:
+                    homePicture.SetImageResource(Resource.Drawable.steve);
+                    break;
+            }
         }
 
     }

@@ -299,7 +299,7 @@ namespace gladOS.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int available = 2130837504;
+			public const int brucewayne = 2130837504;
 			
 			// aapt resource value: 0x7f020001
 			public const int busy = 2130837505;
@@ -431,22 +431,22 @@ namespace gladOS.Droid
 			public const int common_plus_signin_btn_text_light_pressed = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int facebook_icon = 2130837548;
+			public const int free = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int free = 2130837549;
+			public const int gandalf = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int github_icon = 2130837550;
+			public const int ic_launcher = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int ic_launcher = 2130837551;
+			public const int Icon = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int Icon = 2130837552;
+			public const int ironMan = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int linkedin_icon = 2130837553;
+			public const int johnwayne = 2130837553;
 			
 			// aapt resource value: 0x7f020032
 			public const int loginBtn = 2130837554;
@@ -455,55 +455,31 @@ namespace gladOS.Droid
 			public const int map = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int meeting = 2130837556;
+			public const int office = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int office = 2130837557;
+			public const int places_ic_clear = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int places_ic_clear = 2130837558;
+			public const int places_ic_search = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int places_ic_search = 2130837559;
+			public const int powered_by_google_dark = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int powered_by_google_dark = 2130837560;
+			public const int powered_by_google_light = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int powered_by_google_light = 2130837561;
+			public const int spiderman = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int sample_0 = 2130837562;
+			public const int splash = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int sample_1 = 2130837563;
+			public const int steve = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int sample_2 = 2130837564;
-			
-			// aapt resource value: 0x7f02003d
-			public const int sample_3 = 2130837565;
-			
-			// aapt resource value: 0x7f02003e
-			public const int sample_4 = 2130837566;
-			
-			// aapt resource value: 0x7f02003f
-			public const int sample_5 = 2130837567;
-			
-			// aapt resource value: 0x7f020040
-			public const int sample_6 = 2130837568;
-			
-			// aapt resource value: 0x7f020041
-			public const int sample_7 = 2130837569;
-			
-			// aapt resource value: 0x7f020042
-			public const int schedule = 2130837570;
-			
-			// aapt resource value: 0x7f020043
-			public const int splash = 2130837571;
-			
-			// aapt resource value: 0x7f020044
-			public const int steve = 2130837572;
+			public const int winston = 2130837564;
 			
 			static Drawable()
 			{
@@ -518,23 +494,23 @@ namespace gladOS.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090011
-			public const int Barcode = 2131296273;
-			
-			// aapt resource value: 0x7f090014
-			public const int BuildingAdress = 2131296276;
-			
 			// aapt resource value: 0x7f090013
-			public const int BuildingLevel = 2131296275;
-			
-			// aapt resource value: 0x7f090015
-			public const int BuildingPostCode = 2131296277;
+			public const int Barcode = 2131296275;
 			
 			// aapt resource value: 0x7f090016
-			public const int CreateOffice = 2131296278;
+			public const int BuildingAdress = 2131296278;
 			
-			// aapt resource value: 0x7f09002a
-			public const int InfoForUser = 2131296298;
+			// aapt resource value: 0x7f090015
+			public const int BuildingLevel = 2131296277;
+			
+			// aapt resource value: 0x7f090017
+			public const int BuildingPostCode = 2131296279;
+			
+			// aapt resource value: 0x7f090018
+			public const int CreateOffice = 2131296280;
+			
+			// aapt resource value: 0x7f09002d
+			public const int InfoForUser = 2131296301;
 			
 			// aapt resource value: 0x7f090000
 			public const int MvvmCrossTagId = 2131296256;
@@ -542,17 +518,17 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090001
 			public const int MvxBindingTagUnique = 2131296257;
 			
+			// aapt resource value: 0x7f090014
+			public const int OfficeNumber = 2131296276;
+			
+			// aapt resource value: 0x7f09002e
+			public const int RequestInfo = 2131296302;
+			
+			// aapt resource value: 0x7f09002c
+			public const int SelectedPersonViewMap = 2131296300;
+			
 			// aapt resource value: 0x7f090012
-			public const int OfficeNumber = 2131296274;
-			
-			// aapt resource value: 0x7f09002b
-			public const int RequestInfo = 2131296299;
-			
-			// aapt resource value: 0x7f090029
-			public const int SelectedPersonViewMap = 2131296297;
-			
-			// aapt resource value: 0x7f090010
-			public const int UserPrompt = 2131296272;
+			public const int UserPrompt = 2131296274;
 			
 			// aapt resource value: 0x7f090007
 			public const int adjust_height = 2131296263;
@@ -563,14 +539,17 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f09000c
 			public const int auto = 2131296268;
 			
-			// aapt resource value: 0x7f090020
-			public const int contactable = 2131296288;
+			// aapt resource value: 0x7f090022
+			public const int contactable = 2131296290;
 			
-			// aapt resource value: 0x7f09002c
-			public const int contentFrame = 2131296300;
+			// aapt resource value: 0x7f09002f
+			public const int contentFrame = 2131296303;
 			
 			// aapt resource value: 0x7f09000d
 			public const int dark = 2131296269;
+			
+			// aapt resource value: 0x7f09000f
+			public const int homePicture = 2131296271;
 			
 			// aapt resource value: 0x7f090002
 			public const int hybrid = 2131296258;
@@ -578,11 +557,14 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090009
 			public const int icon_only = 2131296265;
 			
+			// aapt resource value: 0x7f090010
+			public const int itemPerson = 2131296272;
+			
 			// aapt resource value: 0x7f09000e
 			public const int light = 2131296270;
 			
-			// aapt resource value: 0x7f09000f
-			public const int locationview = 2131296271;
+			// aapt resource value: 0x7f090011
+			public const int locationview = 2131296273;
 			
 			// aapt resource value: 0x7f090003
 			public const int none = 2131296259;
@@ -590,59 +572,62 @@ namespace gladOS.Droid
 			// aapt resource value: 0x7f090004
 			public const int normal = 2131296260;
 			
-			// aapt resource value: 0x7f090026
-			public const int officeAddress = 2131296294;
-			
-			// aapt resource value: 0x7f090025
-			public const int officeAddressTitle = 2131296293;
-			
-			// aapt resource value: 0x7f090024
-			public const int officeLevel = 2131296292;
-			
-			// aapt resource value: 0x7f090023
-			public const int officeLevelTitle = 2131296291;
-			
-			// aapt resource value: 0x7f090022
-			public const int officeNumber = 2131296290;
-			
-			// aapt resource value: 0x7f090021
-			public const int officeNumberTitle = 2131296289;
-			
 			// aapt resource value: 0x7f090028
-			public const int officePostCode = 2131296296;
+			public const int officeAddress = 2131296296;
 			
 			// aapt resource value: 0x7f090027
-			public const int officePostCodeTitle = 2131296295;
+			public const int officeAddressTitle = 2131296295;
 			
-			// aapt resource value: 0x7f090019
-			public const int place_autocomplete_clear_button = 2131296281;
+			// aapt resource value: 0x7f090026
+			public const int officeLevel = 2131296294;
+			
+			// aapt resource value: 0x7f090025
+			public const int officeLevelTitle = 2131296293;
+			
+			// aapt resource value: 0x7f090024
+			public const int officeNumber = 2131296292;
+			
+			// aapt resource value: 0x7f090023
+			public const int officeNumberTitle = 2131296291;
+			
+			// aapt resource value: 0x7f09002a
+			public const int officePostCode = 2131296298;
+			
+			// aapt resource value: 0x7f090029
+			public const int officePostCodeTitle = 2131296297;
 			
 			// aapt resource value: 0x7f09001b
-			public const int place_autocomplete_powered_by_google = 2131296283;
+			public const int place_autocomplete_clear_button = 2131296283;
 			
 			// aapt resource value: 0x7f09001d
-			public const int place_autocomplete_prediction_primary_text = 2131296285;
-			
-			// aapt resource value: 0x7f09001e
-			public const int place_autocomplete_prediction_secondary_text = 2131296286;
-			
-			// aapt resource value: 0x7f09001c
-			public const int place_autocomplete_progress = 2131296284;
-			
-			// aapt resource value: 0x7f090017
-			public const int place_autocomplete_search_button = 2131296279;
-			
-			// aapt resource value: 0x7f090018
-			public const int place_autocomplete_search_input = 2131296280;
-			
-			// aapt resource value: 0x7f09001a
-			public const int place_autocomplete_separator = 2131296282;
+			public const int place_autocomplete_powered_by_google = 2131296285;
 			
 			// aapt resource value: 0x7f09001f
-			public const int publishlocationview = 2131296287;
+			public const int place_autocomplete_prediction_primary_text = 2131296287;
+			
+			// aapt resource value: 0x7f090020
+			public const int place_autocomplete_prediction_secondary_text = 2131296288;
+			
+			// aapt resource value: 0x7f09001e
+			public const int place_autocomplete_progress = 2131296286;
+			
+			// aapt resource value: 0x7f090019
+			public const int place_autocomplete_search_button = 2131296281;
+			
+			// aapt resource value: 0x7f09001a
+			public const int place_autocomplete_search_input = 2131296282;
+			
+			// aapt resource value: 0x7f09001c
+			public const int place_autocomplete_separator = 2131296284;
+			
+			// aapt resource value: 0x7f090021
+			public const int publishlocationview = 2131296289;
 			
 			// aapt resource value: 0x7f090005
 			public const int satellite = 2131296261;
+			
+			// aapt resource value: 0x7f09002b
+			public const int selectedPicture = 2131296299;
 			
 			// aapt resource value: 0x7f09000a
 			public const int standard = 2131296266;

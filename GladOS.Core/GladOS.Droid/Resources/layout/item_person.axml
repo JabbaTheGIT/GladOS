@@ -6,11 +6,12 @@
     android:layout_height="wrap_content"
     android:background="@android:color/background_light"
     android:layout_margin="10dp">
-  <Mvx.MvxImageView
+  <ImageView
+        android:id="@+id/itemPerson"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_margin="10dp"
-        android:src="@drawable/sample_0"/>
+        android:src="@drawable/steve"/>
   <LinearLayout
     android:orientation="vertical"
     android:layout_width="fill_parent"

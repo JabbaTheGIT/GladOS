@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.glados.droid" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="19" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
+  <permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="com.glados.droid.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:label="GladOS" android:theme="@style/defaultFont" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon">
+    <!--AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />
+    <meta-date android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBTh_lnRB4CEQeSBNZyfS9OX65hH6Zcy5g" />
+    <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.glados.droid" />
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:icon="@mipmap/icon" android:label="GladOS.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="md5b4fd9888613c1dbc3691525f28aa133f.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="BarcodeView" android:name="md582645622390dd7fc8b52c1ee662b7717.BarcodeView" />
+    <activity android:label="CreatePersonViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.CreatePersonView" />
+    <activity android:label="ScanBarcodeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScanBarcodeView" />
+    <activity android:label="LocationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.PublishLocationView" />
+    <activity android:label="LocationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.LocationView" />
+    <activity android:label="ProfileViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ProfileView" />
+    <activity android:label="LoginViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.LoginView" />
+    <activity android:label="RequestInfomationViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.RequestInfomationView" />
+    <activity android:label="ScheduleViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.ScheduleView" />
+    <activity android:label="HomeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.HomeView" />
+    <activity android:label="OfficeLocationViewViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.OfficeLocationView" />
+    <activity android:label="SelectedOfficeViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedOfficeView" />
+    <activity android:label="SelectedIndividualViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SelectedIndividualView" />
+    <activity android:label="SearchViewModel" android:name="md582645622390dd7fc8b52c1ee662b7717.SearchView" />
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md5391b6db810cdb4c0c4a00257201dc5f1.MyBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.glados.droid" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.glados.droid" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.gcm.intent.RETRY" />
+        <category android:name="com.glados.droid" />
+      </intent-filter>
+    </receiver>
+    <service android:name="md5391b6db810cdb4c0c4a00257201dc5f1.PushHandlerService" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5901e742fdf284ed0df9a9602f1963168.WebAuthenticatorActivity" />
+    <provider android:authorities="com.glados.droid.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" />
+    <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+    <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.gms.measurement.UPLOAD" />
+      </intent-filter>
+    </receiver>
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md55109d95aac470e32f9a4031a908f0227.ZxingActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.glados.droid.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
